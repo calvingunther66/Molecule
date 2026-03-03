@@ -50,6 +50,7 @@ typedef struct {
   char result_buffer[128];
   char rx_line_buffer[64];
   int rx_line_idx;
+  char cmd_buffer[300];
 
   DrawLine lines[MAX_DRAW_LINES];
   int num_lines;
@@ -63,11 +64,12 @@ static void trigger_drawing(MolRetroApp *app) {
   app->num_lines = 0;
   view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewCanvas);
 
-  char cmd[300];
-  snprintf(cmd, sizeof(cmd), "DRAW:%s\n", app->smiles_buffer);
+  snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "DRAW:%s\n",
+           app->smiles_buffer);
 
   if (app->serial_handle) {
-    furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+    furi_hal_serial_tx(app->serial_handle, (uint8_t *)app->cmd_buffer,
+                       strlen(app->cmd_buffer));
   }
 }
 
@@ -191,11 +193,12 @@ static bool canvas_input_cb(InputEvent *event, void *context) {
       app->is_analyzing = true;
       memset(app->result_buffer, 0, sizeof(app->result_buffer));
 
-      char cmd[300];
-      snprintf(cmd, sizeof(cmd), "RETRO:%s\n", app->smiles_buffer);
+      snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "RETRO:%s\n",
+               app->smiles_buffer);
 
       if (app->serial_handle) {
-        furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+        furi_hal_serial_tx(app->serial_handle, (uint8_t *)app->cmd_buffer,
+                           strlen(app->cmd_buffer));
       }
 
       widget_reset(app->widget);
