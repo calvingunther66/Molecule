@@ -1,4 +1,6 @@
+#include <core/stream_buffer.h>
 #include <dialogs/dialogs.h>
+#include <expansion/expansion.h>
 #include <furi.h>
 #include <furi_hal.h>
 #include <furi_hal_serial.h>
@@ -13,8 +15,6 @@
 #include <stdlib.h>
 #include <storage/storage.h>
 #include <string.h>
-#include <expansion/expansion.h>
-#include <core/stream_buffer.h>
 
 #define BAUD_RATE 115200
 #define MAX_DRAW_LINES 120
@@ -65,7 +65,10 @@ static void trigger_drawing(MolRetroApp *app) {
 
   char cmd[300];
   snprintf(cmd, sizeof(cmd), "DRAW:%s\n", app->smiles_buffer);
-  furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+
+  if (app->serial_handle) {
+    furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+  }
 }
 
 static void parse_uart_line(MolRetroApp *app, const char *line) {
@@ -121,25 +124,32 @@ static void submenu_callback(void *context, uint32_t index) {
                                         &browser_options);
     furi_record_close(RECORD_DIALOGS);
 
-    if (res) {
+    if (res && !furi_string_empty(file_path)) {
       Storage *storage = furi_record_open(RECORD_STORAGE);
       File *file = storage_file_alloc(storage);
 
-      if (storage_file_open(file, furi_string_get_cstr(file_path), FSAM_READ,
-                            FSOM_OPEN_EXISTING)) {
+      const char *cstr_path = furi_string_get_cstr(file_path);
+
+      if (cstr_path != NULL &&
+          storage_file_open(file, cstr_path, FSAM_READ, FSOM_OPEN_EXISTING)) {
         memset(app->smiles_buffer, 0, sizeof(app->smiles_buffer));
-        storage_file_read(file, app->smiles_buffer,
-                          sizeof(app->smiles_buffer) - 1);
 
-        for (size_t i = 0; i < strlen(app->smiles_buffer); i++) {
-          if (app->smiles_buffer[i] == '\n' || app->smiles_buffer[i] == '\r') {
-            app->smiles_buffer[i] = '\0';
-            break;
+        uint16_t read_bytes = storage_file_read(file, app->smiles_buffer,
+                                                sizeof(app->smiles_buffer) - 1);
+
+        if (read_bytes > 0) {
+          for (size_t i = 0; i < strlen(app->smiles_buffer); i++) {
+            if (app->smiles_buffer[i] == '\n' ||
+                app->smiles_buffer[i] == '\r') {
+              app->smiles_buffer[i] = '\0';
+              break;
+            }
           }
+          storage_file_close(file);
+          trigger_drawing(app);
+        } else {
+          storage_file_close(file);
         }
-
-        storage_file_close(file);
-        trigger_drawing(app);
       }
       storage_file_free(file);
       furi_record_close(RECORD_STORAGE);
@@ -183,7 +193,10 @@ static bool canvas_input_cb(InputEvent *event, void *context) {
 
       char cmd[300];
       snprintf(cmd, sizeof(cmd), "RETRO:%s\n", app->smiles_buffer);
-      furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+
+      if (app->serial_handle) {
+        furi_hal_serial_tx(app->serial_handle, (uint8_t *)cmd, strlen(cmd));
+      }
 
       widget_reset(app->widget);
       widget_add_string_element(app->widget, 2, 10, AlignLeft, AlignTop,
@@ -218,9 +231,9 @@ static uint32_t widget_prev_callback(void *context) {
 
 static void app_tick(void *context) {
   MolRetroApp *app = context;
-  
+
   uint8_t data;
-  while(furi_stream_buffer_receive(app->rx_stream, &data, 1, 0) == 1) {
+  while (furi_stream_buffer_receive(app->rx_stream, &data, 1, 0) == 1) {
     if (data == '\n') {
       app->rx_line_buffer[app->rx_line_idx] = '\0';
       parse_uart_line(app, app->rx_line_buffer);
@@ -294,7 +307,7 @@ int32_t mol_retro_app(void *p) {
   expansion_disable(expansion);
 
   app->serial_handle = furi_hal_serial_control_acquire(FuriHalSerialIdUsart);
-  furi_assert(app->serial_handle); 
+  furi_assert(app->serial_handle);
 
   furi_hal_serial_init(app->serial_handle, BAUD_RATE);
   furi_hal_serial_async_rx_start(app->serial_handle, uart_on_irq_cb, app,
@@ -320,7 +333,7 @@ int32_t mol_retro_app(void *p) {
   widget_free(app->widget);
   view_dispatcher_free(app->view_dispatcher);
   furi_record_close(RECORD_GUI);
-  
+
   furi_stream_buffer_free(app->rx_stream);
   free(app);
 
