@@ -1,4 +1,5 @@
 #include <dialogs/dialogs.h>
+#include <expansion/expansion.h>
 #include <furi.h>
 #include <furi_hal.h>
 #include <furi_hal_serial.h>
@@ -294,7 +295,14 @@ int32_t mol_retro_app(void *p) {
                            widget_get_view(app->widget));
 
   // Modern FuriHalSerial initialization
+  // We MUST disable the expansion service first, otherwise FuriHalSerialIdUsart
+  // is busy and returns NULL!
+  Expansion *expansion = furi_record_open(RECORD_EXPANSION);
+  expansion_disable(expansion);
+
   app->serial_handle = furi_hal_serial_control_acquire(FuriHalSerialIdUsart);
+  furi_assert(app->serial_handle); // Graceful crash if it still fails
+
   furi_hal_serial_init(app->serial_handle, BAUD_RATE);
   furi_hal_serial_async_rx_start(app->serial_handle, uart_on_irq_cb, app,
                                  false);
@@ -307,6 +315,9 @@ int32_t mol_retro_app(void *p) {
   furi_hal_serial_async_rx_stop(app->serial_handle);
   furi_hal_serial_deinit(app->serial_handle);
   furi_hal_serial_control_release(app->serial_handle);
+
+  expansion_enable(expansion);
+  furi_record_close(RECORD_EXPANSION);
 
   view_dispatcher_remove_view(app->view_dispatcher, MolRetroViewSubmenu);
   view_dispatcher_remove_view(app->view_dispatcher, MolRetroViewTextInput);
