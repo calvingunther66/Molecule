@@ -72,21 +72,24 @@ static void furi_hal_serial_tx_chunked(FuriHalSerialHandle *handle,
     }
     furi_hal_serial_tx(handle, buffer + sent, chunk);
     sent += chunk;
-    furi_delay_tick(1);
   }
 }
 
 static void trigger_drawing(MolRetroApp *app) {
   app->is_drawing = true;
   app->num_lines = 0;
+  FURI_LOG_I("MolRetroApp", "trigger_drawing: switching view");
   view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewCanvas);
 
   snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "DRAW:%s\n",
            app->smiles_buffer);
 
+  FURI_LOG_I("MolRetroApp", "trigger_drawing: checking serial_handle");
   if (app->serial_handle) {
+    FURI_LOG_I("MolRetroApp", "trigger_drawing: starting tx_chunked");
     furi_hal_serial_tx_chunked(app->serial_handle, (uint8_t *)app->cmd_buffer,
                                strlen(app->cmd_buffer));
+    FURI_LOG_I("MolRetroApp", "trigger_drawing: tx_chunked complete");
   }
 }
 
@@ -136,6 +139,7 @@ static void submenu_callback(void *context, uint32_t index) {
     DialogsApp *dialogs = furi_record_open(RECORD_DIALOGS);
 
     DialogsFileBrowserOptions browser_options;
+    memset(&browser_options, 0, sizeof(DialogsFileBrowserOptions));
     dialog_file_browser_set_basic_options(&browser_options, ".txt", NULL);
     browser_options.base_path = EXT_PATH("");
 
@@ -144,6 +148,7 @@ static void submenu_callback(void *context, uint32_t index) {
     furi_record_close(RECORD_DIALOGS);
 
     if (res && !furi_string_empty(file_path)) {
+      FURI_LOG_I("MolRetroApp", "1. Opening Storage");
       Storage *storage = furi_record_open(RECORD_STORAGE);
       File *file = storage_file_alloc(storage);
 
@@ -151,10 +156,13 @@ static void submenu_callback(void *context, uint32_t index) {
 
       if (cstr_path != NULL &&
           storage_file_open(file, cstr_path, FSAM_READ, FSOM_OPEN_EXISTING)) {
+        FURI_LOG_I("MolRetroApp", "2. Storage File Open Success");
         memset(app->smiles_buffer, 0, sizeof(app->smiles_buffer));
 
         uint16_t read_bytes = storage_file_read(file, app->smiles_buffer,
                                                 sizeof(app->smiles_buffer) - 1);
+
+        FURI_LOG_I("MolRetroApp", "3. Bytes Read: %d", read_bytes);
 
         if (read_bytes > 0) {
           for (size_t i = 0; i < strlen(app->smiles_buffer); i++) {
@@ -164,14 +172,20 @@ static void submenu_callback(void *context, uint32_t index) {
               break;
             }
           }
-          storage_file_close(file);
-          trigger_drawing(app);
-        } else {
-          storage_file_close(file);
+          FURI_LOG_I("MolRetroApp", "4. Newline filtered");
         }
+        FURI_LOG_I("MolRetroApp", "5. Closing Storage File");
+        storage_file_close(file);
       }
       storage_file_free(file);
       furi_record_close(RECORD_STORAGE);
+      FURI_LOG_I("MolRetroApp", "6. Storage Record Closed");
+
+      if (strlen(app->smiles_buffer) > 0) {
+        FURI_LOG_I("MolRetroApp", "7. Triggering Drawing");
+        trigger_drawing(app);
+        FURI_LOG_I("MolRetroApp", "8. Triggering Finished");
+      }
     }
     furi_string_free(file_path);
   }
