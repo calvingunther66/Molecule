@@ -2714,7 +2714,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x7fb8
+.text           0x10000100     0x7fb0
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -2805,702 +2805,702 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x10000dc0      0x51c CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
                 0x10000dc0                calculate_2d_layout
  .text.format_next_draw_command
-                0x100012dc       0xf4 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+                0x100012dc       0xec CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
                 0x100012dc                format_next_draw_command
  .text.gpio_set_function
-                0x100013d0       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100013d0                gpio_set_function
+                0x100013c8       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100013c8                gpio_set_function
  .text.rp2040_chip_version
-                0x10001404        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
-                0x10001404                rp2040_chip_version
- .text.panic    0x10001410       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10001410                panic
+                0x100013fc        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x100013fc                rp2040_chip_version
+ .text.panic    0x10001408       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10001408                panic
  .text.hw_claim_or_assert
-                0x10001440       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10001440                hw_claim_or_assert
+                0x10001438       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10001438                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10001484       0x88 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10001484                hw_claim_unused_from_range
+                0x1000147c       0x88 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x1000147c                hw_claim_unused_from_range
  .text.next_striped_spin_lock_num
-                0x1000150c       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x1000150c                next_striped_spin_lock_num
+                0x10001504       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10001504                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x10001524       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10001524                spin_lock_claim_unused
+                0x1000151c       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x1000151c                spin_lock_claim_unused
  .text.spin_locks_reset
-                0x10001548       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10001548                spin_locks_reset
+                0x10001540       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10001540                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x10001564       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10001564                runtime_init_per_core_irq_priorities
+                0x1000155c       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000155c                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10001588       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10001588                irq_set_enabled
+                0x10001580       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10001580                irq_set_enabled
  .text.irq_is_enabled
-                0x100015ac       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100015ac                irq_is_enabled
+                0x100015a4       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100015a4                irq_is_enabled
  .text.irq_set_pending
-                0x100015c4       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100015c4                irq_set_pending
+                0x100015bc       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100015bc                irq_set_pending
  .text.irq_has_shared_handler
-                0x100015d4       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100015d4                irq_has_shared_handler
+                0x100015cc       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100015cc                irq_has_shared_handler
  .text.irq_set_exclusive_handler
-                0x100015f8       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100015f8                irq_set_exclusive_handler
+                0x100015f0       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100015f0                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x1000164c      0x1f4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000164c                irq_add_shared_handler
+                0x10001644      0x1f4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10001644                irq_add_shared_handler
  .text.irq_add_tail_to_free_list
-                0x10001840       0xb4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10001840                irq_add_tail_to_free_list
+                0x10001838       0xb4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10001838                irq_add_tail_to_free_list
  .text.user_irq_claim_unused
-                0x100018f4       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100018f4                user_irq_claim_unused
+                0x100018ec       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100018ec                user_irq_claim_unused
  .text.lock_init
-                0x10001920       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10001920                lock_init
+                0x10001918       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x10001918                lock_init
  .text.runtime_init_mutex
-                0x10001930       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10001930                runtime_init_mutex
+                0x10001928       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10001928                runtime_init_mutex
  .text.mutex_init
-                0x10001980       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10001980                mutex_init
+                0x10001978       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10001978                mutex_init
  .text.critical_section_init
-                0x1000199c       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
-                0x1000199c                critical_section_init
+                0x10001994       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x10001994                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x100019b8       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
-                0x100019b8                critical_section_init_with_lock_num
+                0x100019b0       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x100019b0                critical_section_init_with_lock_num
  .text.sleep_until_callback
-                0x100019cc       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100019c4       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x100019fc      0x300 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100019f4      0x300 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10001cfc       0xdc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001cfc                runtime_init_default_alarm_pool
+                0x10001cf4       0xdc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001cf4                runtime_init_default_alarm_pool
  .text.alarm_pool_get_default
-                0x10001dd8        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001dd8                alarm_pool_get_default
+                0x10001dd0        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001dd0                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10001de0       0xd0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001de0                alarm_pool_add_alarm_at
+                0x10001dd8       0xd0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001dd8                alarm_pool_add_alarm_at
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10001eb0       0xb0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001eb0                alarm_pool_add_alarm_at_force_in_context
+                0x10001ea8       0xb0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001ea8                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10001f60       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001f60                alarm_pool_cancel_alarm
+                0x10001f58       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001f58                alarm_pool_cancel_alarm
  .text.alarm_pool_core_num
-                0x10001fd4        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001fd4                alarm_pool_core_num
+                0x10001fcc        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001fcc                alarm_pool_core_num
  .text.sleep_ms
-                0x10001fd8       0xfc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001fd8                sleep_ms
+                0x10001fd0       0xfc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001fd0                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x100020d4      0x10c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x100020d4                best_effort_wfe_or_timeout
+                0x100020cc      0x10c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100020cc                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x100021e0       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x100021e0                timer_hardware_alarm_claim
+                0x100021d8       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100021d8                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x100021f4       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x100021f4                timer_time_us_64
+                0x100021ec       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100021ec                timer_time_us_64
  .text.time_us_64
-                0x10002204       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10002204                time_us_64
+                0x100021fc       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100021fc                time_us_64
  .text.busy_wait_us
-                0x10002218       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10002218                busy_wait_us
+                0x10002210       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10002210                busy_wait_us
  .text.busy_wait_until
-                0x10002280       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10002280                busy_wait_until
+                0x10002278       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10002278                busy_wait_until
  .text.uart_init
-                0x100022a0      0x120 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-                0x100022a0                uart_init
+                0x10002298      0x120 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10002298                uart_init
  .text.clock_configure_int_divider
-                0x100023c0       0xf4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100023c0                clock_configure_int_divider
+                0x100023b8       0xf4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x100023b8                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x100024b4       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100024b4                clock_configure_undivided
+                0x100024ac       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x100024ac                clock_configure_undivided
  .text.clock_get_hz
-                0x1000259c        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x1000259c                clock_get_hz
+                0x10002594        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10002594                clock_get_hz
  .text.pll_init
-                0x100025a8       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x100025a8                pll_init
+                0x100025a0       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x100025a0                pll_init
  .text.watchdog_reboot
-                0x1000264c       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-                0x1000264c                watchdog_reboot
+                0x10002644       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+                0x10002644                watchdog_reboot
  .text.tick_start
-                0x100026e8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x100026e8                tick_start
+                0x100026e0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x100026e0                tick_start
  .text.rom_func_lookup
-                0x100026f8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100026f8                rom_func_lookup
+                0x100026f0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100026f0                rom_func_lookup
  .text.rom_data_lookup
-                0x10002708       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002708                rom_data_lookup
+                0x10002700       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10002700                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10002718       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002718                rom_funcs_lookup
+                0x10002710       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10002710                rom_funcs_lookup
  .text.rom_reset_usb_boot_extra
-                0x1000275c       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x1000275c                rom_reset_usb_boot_extra
+                0x10002754       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10002754                rom_reset_usb_boot_extra
  .text.xosc_init
-                0x10002780       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x10002780                xosc_init
+                0x10002778       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x10002778                xosc_init
  .text.first_per_core_initializer
-                0x100027a8        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100027a0        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x100027ac        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100027ac                hard_assertion_failure
+                0x100027a4        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100027a4                hard_assertion_failure
  .text.runtime_run_initializers
-                0x100027b8       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100027b8                runtime_run_initializers
+                0x100027b0       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100027b0                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x100027e0       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100027e0                runtime_init_early_resets
+                0x100027d8       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100027d8                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x1000280c       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000280c                runtime_init_usb_power_down
+                0x10002804       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002804                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10002828       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002828                runtime_init_post_clock_resets
+                0x10002820       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002820                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10002848       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002848                runtime_init_rp2040_gpio_ie_disable
+                0x10002840       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002840                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x1000285c        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000285c                runtime_init_spin_locks_reset
+                0x10002854        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002854                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x10002864       0xb4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002864                runtime_init_install_ram_vector_table
+                0x1000285c       0xb4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000285c                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10002918       0xd8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10002918                runtime_init_clocks
- .text          0x100029f0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10002910       0xd8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10002910                runtime_init_clocks
+ .text          0x100029e8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_idiv
-                0x10002a00       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002a00                __wrap___aeabi_idivmod
-                0x10002a00                divmod_s32s32
-                0x10002a00                div_s32s32
-                0x10002a00                __wrap___aeabi_idiv
-                0x10002a08                divmod_s32s32_unsafe
-                0x10002a34                divmod_s32s32_savestate
+                0x100029f8       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x100029f8                __wrap___aeabi_idivmod
+                0x100029f8                divmod_s32s32
+                0x100029f8                div_s32s32
+                0x100029f8                __wrap___aeabi_idiv
+                0x10002a00                divmod_s32s32_unsafe
+                0x10002a2c                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10002a50       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002a50                __wrap___aeabi_uidiv
-                0x10002a50                __wrap___aeabi_uidivmod
-                0x10002a50                div_u32u32
-                0x10002a50                divmod_u32u32
-                0x10002a58                divmod_u32u32_unsafe
-                0x10002a80                divmod_u32u32_savestate
+                0x10002a48       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10002a48                __wrap___aeabi_uidiv
+                0x10002a48                __wrap___aeabi_uidivmod
+                0x10002a48                div_u32u32
+                0x10002a48                divmod_u32u32
+                0x10002a50                divmod_u32u32_unsafe
+                0x10002a78                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10002a9c      0x424 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002a9c                div_s64s64
-                0x10002a9c                divmod_s64s64
-                0x10002a9c                __wrap___aeabi_ldivmod
-                0x10002acc                div_u64u64
-                0x10002acc                divmod_u64u64
-                0x10002acc                __wrap___aeabi_uldivmod
-                0x10002adc                divmod_u64u64_savestate
-                0x10002afc                divmod_s64s64_unsafe
-                0x10002b84                divmod_u64u64_unsafe
+                0x10002a94      0x424 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10002a94                div_s64s64
+                0x10002a94                divmod_s64s64
+                0x10002a94                __wrap___aeabi_ldivmod
+                0x10002ac4                div_u64u64
+                0x10002ac4                divmod_u64u64
+                0x10002ac4                __wrap___aeabi_uldivmod
+                0x10002ad4                divmod_u64u64_savestate
+                0x10002af4                divmod_s64s64_unsafe
+                0x10002b7c                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10002ec0       0x80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002ec0                __wrap___aeabi_drsub
-                0x10002ec6                __wrap___aeabi_dsub
-                0x10002ed8                __wrap___aeabi_dadd
-                0x10002eea                __wrap___aeabi_ddiv
-                0x10002f26                __wrap___aeabi_dmul
+                0x10002eb8       0x80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002eb8                __wrap___aeabi_drsub
+                0x10002ebe                __wrap___aeabi_dsub
+                0x10002ed0                __wrap___aeabi_dadd
+                0x10002ee2                __wrap___aeabi_ddiv
+                0x10002f1e                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10002f40       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002f40                __wrap___aeabi_cdrcmple
-                0x10002f50                __wrap___aeabi_cdcmple
-                0x10002f50                __wrap___aeabi_cdcmpeq
+                0x10002f38       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002f38                __wrap___aeabi_cdrcmple
+                0x10002f48                __wrap___aeabi_cdcmple
+                0x10002f48                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10002fac        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002fac                __wrap___aeabi_dcmplt
+                0x10002fa4        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002fa4                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10002fb8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002fb8                __wrap___aeabi_dcmple
+                0x10002fb0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002fb0                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10002fc8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002fc8                __wrap___aeabi_dcmpge
+                0x10002fc0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002fc0                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10002fd8        0xa CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002fd8                __wrap___aeabi_dcmpgt
+                0x10002fd0        0xa CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002fd0                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10002fe2       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002fe2                __wrap___aeabi_dcmpun
- *fill*         0x10002ffa        0x2 
+                0x10002fda       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002fda                __wrap___aeabi_dcmpun
+ *fill*         0x10002ff2        0x2 
  .text.__wrap___aeabi_i2d
-                0x10002ffc       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002ffc                __wrap___aeabi_ui2d
-                0x10002ffc                uint2double
-                0x10003004                __wrap___aeabi_i2d
-                0x10003004                int2double
+                0x10002ff4       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002ff4                __wrap___aeabi_ui2d
+                0x10002ff4                uint2double
+                0x10002ffc                __wrap___aeabi_i2d
+                0x10002ffc                int2double
  .text.__wrap___aeabi_d2iz
-                0x10003034       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10003034                __wrap___aeabi_d2iz
-                0x10003034                double2int_z
+                0x1000302c       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x1000302c                __wrap___aeabi_d2iz
+                0x1000302c                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x1000307c       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x1000307c                double2uint_z
-                0x1000307c                double2uint
-                0x1000307c                __wrap___aeabi_d2uiz
+                0x10003074       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10003074                double2uint_z
+                0x10003074                double2uint
+                0x10003074                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x10003094       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10003094                __aeabi_double_init
+                0x1000308c       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x1000308c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10003138       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10003138                double_table_shim_on_use_helper
+                0x10003130       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003130                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10003164       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10003164                drsub_shim
-                0x1000316a                dsub_shim
+                0x1000315c       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x1000315c                drsub_shim
+                0x10003162                dsub_shim
  .text.dadd_shim
-                0x10003174      0x15c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10003174                dadd_shim
+                0x1000316c      0x15c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x1000316c                dadd_shim
  .text.dmul_shim
-                0x100032d0      0x15c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x100032d0                dmul_shim
+                0x100032c8      0x15c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x100032c8                dmul_shim
  .text.ddiv_shim
-                0x1000342c      0x1b0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x1000342c                ddiv_shim
+                0x10003424      0x1b0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003424                ddiv_shim
  .text.double2uint_shim
-                0x100035dc        0xe CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x100035dc                double2uint_shim
-                0x100035de                double2ufix_shim
- *fill*         0x100035ea        0x2 
+                0x100035d4        0xe CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x100035d4                double2uint_shim
+                0x100035d6                double2ufix_shim
+ *fill*         0x100035e2        0x2 
  .text.double2uint64_shim
-                0x100035ec       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x100035ec                double2uint64_shim
-                0x100035ee                double2ufix64_shim
-                0x1000360e                d2fix_a
+                0x100035e4       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x100035e4                double2uint64_shim
+                0x100035e6                double2ufix64_shim
+                0x10003606                d2fix_a
  .text.dunpacks
-                0x1000365c       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x1000365c                dunpacks
+                0x10003654       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003654                dunpacks
  .text.__aeabi_lmul
-                0x10003698       0x32 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x10003698                __wrap___aeabi_lmul
- *fill*         0x100036ca        0x2 
+                0x10003690       0x32 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x10003690                __wrap___aeabi_lmul
+ *fill*         0x100036c2        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x100036cc       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x100036cc                __wrap___aeabi_frsub
-                0x100036d2                __wrap___aeabi_fsub
-                0x100036d8                __wrap___aeabi_fadd
-                0x100036de                __wrap___aeabi_fdiv
-                0x10003706                __wrap___aeabi_fmul
+                0x100036c4       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x100036c4                __wrap___aeabi_frsub
+                0x100036ca                __wrap___aeabi_fsub
+                0x100036d0                __wrap___aeabi_fadd
+                0x100036d6                __wrap___aeabi_fdiv
+                0x100036fe                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x10003714       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003714                __wrap___aeabi_cfrcmple
-                0x10003720                __wrap___aeabi_cfcmpeq
-                0x10003720                __wrap___aeabi_cfcmple
+                0x1000370c       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000370c                __wrap___aeabi_cfrcmple
+                0x10003718                __wrap___aeabi_cfcmpeq
+                0x10003718                __wrap___aeabi_cfcmple
  .text.__wrap___aeabi_fcmplt
-                0x10003764        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003764                __wrap___aeabi_fcmplt
+                0x1000375c        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000375c                __wrap___aeabi_fcmplt
  .text.__wrap___aeabi_fcmpgt
-                0x10003770        0xa CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003770                __wrap___aeabi_fcmpgt
- *fill*         0x1000377a        0x2 
+                0x10003768        0xa CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003768                __wrap___aeabi_fcmpgt
+ *fill*         0x10003772        0x2 
  .text.__wrap___aeabi_i2f
-                0x1000377c       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x1000377c                int2float
-                0x1000377c                __wrap___aeabi_i2f
+                0x10003774       0x44 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003774                int2float
+                0x10003774                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2iz
-                0x100037c0       0x4e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x100037c0                __wrap___aeabi_f2iz
-                0x100037c0                float2int_z
- *fill*         0x1000380e        0x2 
+                0x100037b8       0x4e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x100037b8                __wrap___aeabi_f2iz
+                0x100037b8                float2int_z
+ *fill*         0x10003806        0x2 
  .text.float2int
-                0x10003810       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003810                float2int
+                0x10003808       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003808                float2int
  .text.__wrap___aeabi_f2uiz
-                0x10003824        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003824                float2uint
-                0x10003824                float2uint_z
-                0x10003824                __wrap___aeabi_f2uiz
+                0x1000381c        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000381c                float2uint
+                0x1000381c                float2uint_z
+                0x1000381c                __wrap___aeabi_f2uiz
  .text.__wrap_sqrtf
-                0x10003830       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003830                __wrap_sqrtf
+                0x10003828       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003828                __wrap_sqrtf
  .text.__wrap_expf
-                0x10003850        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-                0x10003850                __wrap_expf
+                0x10003848        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003848                __wrap_expf
  .text.__aeabi_float_init
-                0x1000385c       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x1000385c                __aeabi_float_init
+                0x10003854       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x10003854                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x100038c0       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x100038c0                float_table_shim_on_use_helper
+                0x100038b8       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x100038b8                float_table_shim_on_use_helper
  .text.float232_shims
-                0x100038ec       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x100038ec                float2int_shim
-                0x100038ee                float2fix_shim
- .text          0x10003904       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10003904                __aeabi_mem_init
- .text.memset   0x10003914        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10003914                __wrap_memset
- .text.memcpy   0x10003920        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10003920                __wrap___aeabi_memcpy
-                0x10003920                __wrap_memcpy
+                0x100038e4       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x100038e4                float2int_shim
+                0x100038e6                float2fix_shim
+ .text          0x100038fc       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100038fc                __aeabi_mem_init
+ .text.memset   0x1000390c        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000390c                __wrap_memset
+ .text.memcpy   0x10003918        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10003918                __wrap___aeabi_memcpy
+                0x10003918                __wrap_memcpy
  .text._out_buffer
-                0x1000392c        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003924        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_null
-                0x10003934        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000392c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_rev
-                0x10003938       0xac CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003930       0xac CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_format
-                0x100039e4      0x1cc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100039dc      0x1cc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_char
-                0x10003bb0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003ba8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_fct
-                0x10003bc0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._ftoa    0x10003bd0      0x4a8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._etoa    0x10004078      0x57c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003bb8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._ftoa    0x10003bc8      0x4a8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._etoa    0x10004070      0x57c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._vsnprintf
-                0x100045f4      0xbe0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100045ec      0xbe0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.__wrap_snprintf
-                0x100051d4       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x100051d4                __wrap_snprintf
+                0x100051cc       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100051cc                __wrap_snprintf
  .text.vfctprintf
-                0x100051fc       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x100051fc                vfctprintf
+                0x100051f4       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100051f4                vfctprintf
  .text.weak_raw_vprintf
-                0x10005220       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10005220                weak_raw_vprintf
- .text._exit    0x10005250        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10005250                _exit
- .text.exit     0x10005254        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10005254                exit
+                0x10005218       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10005218                weak_raw_vprintf
+ .text._exit    0x10005248        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10005248                _exit
+ .text.exit     0x1000524c        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x1000524c                exit
  .text.runtime_init
-                0x1000525c       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x1000525c                runtime_init
+                0x10005254       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10005254                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10005288       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10005280       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x10005298       0xb0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10005290       0xb0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_buffered_printer
-                0x10005348       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10005340       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x100053ac       0xfc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100053ac                stdio_put_string
+                0x100053a4       0xfc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100053a4                stdio_put_string
  .text.stdio_set_driver_enabled
-                0x100054a8       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100054a8                stdio_set_driver_enabled
+                0x100054a0       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100054a0                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x100054d8        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100054d8                stdio_init_all
+                0x100054d0        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100054d0                stdio_init_all
  .text.__wrap_putchar
-                0x100054e0       0x94 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100054e0                stdio_putchar
-                0x100054e0                __wrap_putchar
+                0x100054d8       0x94 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100054d8                stdio_putchar
+                0x100054d8                __wrap_putchar
  .text.__wrap_puts
-                0x10005574       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10005574                __wrap_puts
-                0x10005574                stdio_puts
+                0x1000556c       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x1000556c                __wrap_puts
+                0x1000556c                stdio_puts
  .text.__wrap_vprintf
-                0x100055b0       0xcc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100055b0                __wrap_vprintf
-                0x100055b0                stdio_vprintf
+                0x100055a8       0xcc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100055a8                __wrap_vprintf
+                0x100055a8                stdio_vprintf
  .text.__wrap_printf
-                0x1000567c       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000567c                stdio_printf
-                0x1000567c                __wrap_printf
+                0x10005674       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10005674                stdio_printf
+                0x10005674                __wrap_printf
  .text.resetd_init
-                0x10005694        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1000568c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_reset
-                0x10005698        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10005690        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_open
-                0x100056a4       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1000569c       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_xfer_cb
-                0x100056cc        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x100056c4        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_control_xfer_cb
-                0x100056d0       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x100056c8       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.tud_descriptor_bos_cb
-                0x10005724        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10005724                tud_descriptor_bos_cb
+                0x1000571c        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1000571c                tud_descriptor_bos_cb
  .text.tud_vendor_control_xfer_cb
-                0x1000572c       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x1000572c                tud_vendor_control_xfer_cb
+                0x10005724       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10005724                tud_vendor_control_xfer_cb
  .text.usbd_app_driver_get_cb
-                0x10005760        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10005760                usbd_app_driver_get_cb
+                0x10005758        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10005758                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x1000576c       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x1000576c                tud_cdc_line_coding_cb
+                0x10005764       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10005764                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x10005798       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10005798                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x100057ac       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005790       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005790                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x100057a4       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.timer_task
-                0x100057bc       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x100057b4       0x64 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_in_chars
-                0x10005820       0x8c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10005820                stdio_usb_in_chars
+                0x10005818       0x8c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005818                stdio_usb_in_chars
  .text.stdio_usb_out_flush
-                0x100058ac       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x100058a4       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_out_chars
-                0x100058f8      0x100 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x100058f0      0x100 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.low_priority_worker_irq
-                0x100059f8       0xc8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x100059f0       0xc8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_init
-                0x10005ac0       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10005ac0                stdio_usb_init
+                0x10005ab8       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005ab8                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x10005ba8        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x10005ba8                tud_descriptor_device_cb
+                0x10005ba0        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x10005ba0                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x10005bb0        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x10005bb0                tud_descriptor_configuration_cb
+                0x10005ba8        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x10005ba8                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x10005bb8       0x78 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x10005bb8                tud_descriptor_string_cb
+                0x10005bb0       0x78 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x10005bb0                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x10005c30       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x10005c28       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.pico_get_unique_board_id_string
-                0x10005c40      0x1a8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-                0x10005c40                pico_get_unique_board_id_string
+                0x10005c38      0x1a8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x10005c38                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x10005de8       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x10005de8                flash_get_unique_id
+                0x10005de0       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x10005de0                flash_get_unique_id
  .text.dcd_init
-                0x10005e24       0x90 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005e24                dcd_init
+                0x10005e1c       0x90 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005e1c                dcd_init
  .text.dcd_int_enable
-                0x10005eb4        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005eb4                dcd_int_enable
+                0x10005eac        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005eac                dcd_int_enable
  .text.dcd_set_address
-                0x10005ec0       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005ec0                dcd_set_address
+                0x10005eb8       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005eb8                dcd_set_address
  .text.dcd_sof_enable
-                0x10005ed4       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005ed4                dcd_sof_enable
+                0x10005ecc       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005ecc                dcd_sof_enable
  .text.dcd_edpt0_status_complete
-                0x10005ef0       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005ef0                dcd_edpt0_status_complete
+                0x10005ee8       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005ee8                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x10005f0c      0x114 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005f0c                dcd_edpt_open
+                0x10005f04      0x114 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005f04                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x10006020        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10006020                dcd_edpt_close_all
+                0x10006018        0x8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10006018                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x10006028       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10006028                dcd_edpt_xfer
+                0x10006020       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10006020                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x1000604c       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x1000604c                dcd_edpt_stall
+                0x10006044       0x3c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10006044                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x10006088       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10006088                dcd_edpt_clear_stall
+                0x10006080       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10006080                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x100060b8       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x100060b8                rp2040_usb_init
+                0x100060b0       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x100060b0                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x100060f8       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x100060f8                hw_endpoint_xfer_start
+                0x100060f0       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x100060f0                hw_endpoint_xfer_start
  .text.tud_event_hook_cb
-                0x10006138        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006138                tud_event_hook_cb
+                0x10006130        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006130                tud_event_hook_cb
  .text.tud_sof_cb
-                0x1000613c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000613c                tud_sof_cb
+                0x10006134        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006134                tud_sof_cb
  .text.tud_descriptor_device_qualifier_cb
-                0x10006140        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006140                tud_descriptor_device_qualifier_cb
+                0x10006138        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006138                tud_descriptor_device_qualifier_cb
  .text.tud_descriptor_other_speed_configuration_cb
-                0x10006144        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006144                tud_descriptor_other_speed_configuration_cb
+                0x1000613c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000613c                tud_descriptor_other_speed_configuration_cb
  .text.tud_mount_cb
-                0x10006148        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006148                tud_mount_cb
+                0x10006140        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006140                tud_mount_cb
  .text.tud_umount_cb
-                0x1000614c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000614c                tud_umount_cb
+                0x10006144        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006144                tud_umount_cb
  .text.tud_suspend_cb
-                0x10006150        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006150                tud_suspend_cb
+                0x10006148        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006148                tud_suspend_cb
  .text.tud_resume_cb
-                0x10006154        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006154                tud_resume_cb
+                0x1000614c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000614c                tud_resume_cb
  .text.tud_mounted
-                0x10006158       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006158                tud_mounted
+                0x10006150       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006150                tud_mounted
  .text.tud_suspended
-                0x10006168       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006168                tud_suspended
+                0x10006160       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006160                tud_suspended
  .text.tud_rhport_init
-                0x10006178       0xf4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006178                tud_rhport_init
+                0x10006170       0xf4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006170                tud_rhport_init
  .text.tud_task_ext
-                0x1000626c      0x800 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000626c                tud_task_ext
+                0x10006264      0x800 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006264                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10006a6c       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006a6c                usbd_open_edpt_pair
+                0x10006a64       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006a64                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x10006b08       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006b08                usbd_edpt_open
+                0x10006b00       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006b00                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x10006b3c       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006b3c                usbd_edpt_claim
+                0x10006b34       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006b34                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x10006b64       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006b64                usbd_edpt_release
+                0x10006b5c       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006b5c                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x10006b8c       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006b8c                usbd_edpt_xfer
+                0x10006b84       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006b84                usbd_edpt_xfer
  .text.tud_control_status
-                0x10006bd8       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006bd8                tud_control_status
+                0x10006bd0       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006bd0                tud_control_status
  .text.tud_control_xfer
-                0x10006c04       0xa8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006c04                tud_control_xfer
+                0x10006bfc       0xa8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006bfc                tud_control_xfer
  .text.usbd_control_reset
-                0x10006cac       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006cac                usbd_control_reset
+                0x10006ca4       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006ca4                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10006cc0        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006cc0                usbd_control_set_complete_callback
+                0x10006cb8        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006cb8                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10006ccc       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006ccc                usbd_control_set_request
+                0x10006cc4       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006cc4                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x10006ce8       0xec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006ce8                usbd_control_xfer_cb
+                0x10006ce0       0xec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006ce0                usbd_control_xfer_cb
  .text._prep_out_transaction.isra.0
-                0x10006dd4       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006dcc       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .text.tud_cdc_n_connected
-                0x10006e40       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006e40                tud_cdc_n_connected
+                0x10006e38       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006e38                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x10006e6c       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006e6c                tud_cdc_n_available
+                0x10006e64       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006e64                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x10006e80       0x88 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006e80                tud_cdc_n_read
+                0x10006e78       0x88 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006e78                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x10006f08       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006f08                tud_cdc_n_write_flush
+                0x10006f00       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006f00                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x10006f7c       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006f7c                tud_cdc_n_write
+                0x10006f74       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006f74                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x10006fbc       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006fbc                tud_cdc_n_write_available
+                0x10006fb4       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006fb4                tud_cdc_n_write_available
  .text.cdcd_init
-                0x10006fd0       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006fd0                cdcd_init
+                0x10006fc8       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006fc8                cdcd_init
  .text.cdcd_deinit
-                0x10007040       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10007040                cdcd_deinit
+                0x10007038       0x30 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10007038                cdcd_deinit
  .text.cdcd_reset
-                0x10007070       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10007070                cdcd_reset
+                0x10007068       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10007068                cdcd_reset
  .text.cdcd_open
-                0x100070bc       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100070bc                cdcd_open
+                0x100070b4       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100070b4                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x10007160       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10007160                cdcd_control_xfer_cb
+                0x10007158       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10007158                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x10007248      0x100 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10007248                cdcd_xfer_cb
+                0x10007240      0x100 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10007240                cdcd_xfer_cb
  .text.vendord_init
-                0x10007348       0x5c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10007348                vendord_init
+                0x10007340       0x5c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10007340                vendord_init
  .text.vendord_deinit
-                0x100073a4       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x100073a4                vendord_deinit
+                0x1000739c       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x1000739c                vendord_deinit
  .text.vendord_reset
-                0x100073c0       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x100073c0                vendord_reset
+                0x100073b8       0x28 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x100073b8                vendord_reset
  .text.vendord_open
-                0x100073e8      0x120 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x100073e8                vendord_open
+                0x100073e0      0x120 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x100073e0                vendord_open
  .text.vendord_xfer_cb
-                0x10007508       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10007508                vendord_xfer_cb
+                0x10007500       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10007500                vendord_xfer_cb
  .text.tusb_rhport_init
-                0x100075a4       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100075a4                tusb_rhport_init
+                0x1000759c       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x1000759c                tusb_rhport_init
  .text.tu_edpt_claim
-                0x100075f0       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100075f0                tu_edpt_claim
+                0x100075e8       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x100075e8                tu_edpt_claim
  .text.tu_edpt_release
-                0x10007640       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007640                tu_edpt_release
+                0x10007638       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007638                tu_edpt_release
  .text.tu_edpt_validate
-                0x10007678       0x7c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007678                tu_edpt_validate
+                0x10007670       0x7c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007670                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x100076f4       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100076f4                tu_edpt_bind_driver
+                0x100076ec       0x34 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x100076ec                tu_edpt_bind_driver
  .text.tu_edpt_stream_init
-                0x10007728       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007728                tu_edpt_stream_init
+                0x10007720       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007720                tu_edpt_stream_init
  .text.tu_edpt_stream_deinit
-                0x10007794        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007794                tu_edpt_stream_deinit
+                0x1000778c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x1000778c                tu_edpt_stream_deinit
  .text.tu_edpt_stream_write_zlp_if_needed
-                0x10007798       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007798                tu_edpt_stream_write_zlp_if_needed
+                0x10007790       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007790                tu_edpt_stream_write_zlp_if_needed
  .text.tu_edpt_stream_write_xfer
-                0x10007800       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007800                tu_edpt_stream_write_xfer
+                0x100077f8       0x68 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x100077f8                tu_edpt_stream_write_xfer
  .text.tu_edpt_stream_read_xfer
-                0x10007868       0xd8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007868                tu_edpt_stream_read_xfer
+                0x10007860       0xd8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007860                tu_edpt_stream_read_xfer
  .text.tu_fifo_config
-                0x10007940       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007940                tu_fifo_config
+                0x10007938       0x6c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007938                tu_fifo_config
  .text.tu_fifo_count
-                0x100079ac       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100079ac                tu_fifo_count
+                0x100079a4       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100079a4                tu_fifo_count
  .text.tu_fifo_empty
-                0x100079d8       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100079d8                tu_fifo_empty
+                0x100079d0       0x10 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100079d0                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x100079e8       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100079e8                tu_fifo_remaining
+                0x100079e0       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100079e0                tu_fifo_remaining
  .text.tu_fifo_read
-                0x10007a14       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007a14                tu_fifo_read
+                0x10007a0c       0x9c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007a0c                tu_fifo_read
  .text.tu_fifo_read_n
-                0x10007ab0       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007ab0                tu_fifo_read_n
+                0x10007aa8       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007aa8                tu_fifo_read_n
  .text.tu_fifo_write
-                0x10007b98       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007b98                tu_fifo_write
+                0x10007b90       0xa4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007b90                tu_fifo_write
  .text.tu_fifo_write_n
-                0x10007c3c      0x178 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007c3c                tu_fifo_write_n
+                0x10007c34      0x178 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007c34                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x10007db4       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007db4                tu_fifo_clear
+                0x10007dac       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007dac                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x10007df4       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007df4                tu_fifo_set_overwritable
- .text          0x10007e3c       0x48 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
-                0x10007e3c                srand
-                0x10007e50                rand
- .text          0x10007e84       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x10007e84                strlen
- .text          0x10007ee0       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
-                0x10007ee0                __libc_fini_array
- .text          0x10007f08       0x10 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
-                0x10007f08                atexit
- .text          0x10007f18       0x78 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
-                0x10007f18                __register_exitproc
- .text.startup  0x10007f90       0x18 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x10007dec       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007dec                tu_fifo_set_overwritable
+ .text          0x10007e34       0x48 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
+                0x10007e34                srand
+                0x10007e48                rand
+ .text          0x10007e7c       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x10007e7c                strlen
+ .text          0x10007ed8       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x10007ed8                __libc_fini_array
+ .text          0x10007f00       0x10 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x10007f00                atexit
+ .text          0x10007f10       0x78 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x10007f10                __register_exitproc
+ .text.startup  0x10007f88       0x18 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  *(.fini)
- .fini          0x10007fa8        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
-                0x10007fa8                _fini
- *fill*         0x10007fac        0x4 
- .fini.__stub   0x10007fb0       0xc0 linker stubs
+ .fini          0x10007fa0        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
+                0x10007fa0                _fini
+ *fill*         0x10007fa4        0x4 
+ .fini.__stub   0x10007fa8       0xc0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3511,214 +3511,214 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10008070                        . = ALIGN (0x4)
-                0x10008070                        PROVIDE (__preinit_array_start = .)
+                0x10008068                        . = ALIGN (0x4)
+                0x10008068                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10008070        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008070                __pre_init_runtime_init_early_resets
+                0x10008068        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10008068                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10008074        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008074                __pre_init_runtime_init_usb_power_down
+                0x1000806c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000806c                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10008078        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10008070        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x1000807c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10008074        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x10008080        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10008078        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x10008084        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000807c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x10008088        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008088                __pre_init_runtime_init_clocks
+                0x10008080        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10008080                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x1000808c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000808c                __pre_init_runtime_init_post_clock_resets
+                0x10008084        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10008084                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x10008090        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008090                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x10008088        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10008088                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x10008094        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008094                __pre_init_runtime_init_spin_locks_reset
+                0x1000808c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000808c                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x10008098        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10008098                __pre_init_runtime_init_mutex
+                0x10008090        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10008090                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x1000809c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000809c                __pre_init_runtime_init_install_ram_vector_table
+                0x10008094        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10008094                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100080a0        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x100080a0                __pre_init_runtime_init_default_alarm_pool
+                0x10008098        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10008098                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100080a4        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100080a4                __pre_init_first_per_core_initializer
+                0x1000809c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000809c                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100080a8        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100080a8                __pre_init_runtime_init_per_core_irq_priorities
+                0x100080a0        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100080a0                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x100080ac                        PROVIDE (__preinit_array_end = .)
-                0x100080ac                        . = ALIGN (0x4)
-                0x100080ac                        PROVIDE (__init_array_start = .)
+                0x100080a4                        PROVIDE (__preinit_array_end = .)
+                0x100080a4                        . = ALIGN (0x4)
+                0x100080a4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x100080ac        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x100080a4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  .init_array.01000
-                0x100080b0        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100080a8        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x100080b4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x100080b8                        PROVIDE (__init_array_end = .)
-                0x100080b8                        . = ALIGN (0x4)
-                0x100080b8                        PROVIDE (__fini_array_start = .)
+ .init_array    0x100080ac        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x100080b0                        PROVIDE (__init_array_end = .)
+                0x100080b0                        . = ALIGN (0x4)
+                0x100080b0                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x100080b8                        PROVIDE (__fini_array_end = .)
+                0x100080b0                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x100080b8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x100080b8                        . = ALIGN (0x4)
+ .eh_frame      0x100080b0        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x100080b0                        . = ALIGN (0x4)
 
-.glue_7         0x100080b8        0x0
- .glue_7        0x100080b8        0x0 linker stubs
+.glue_7         0x100080b0        0x0
+ .glue_7        0x100080b0        0x0 linker stubs
 
-.glue_7t        0x100080b8        0x0
- .glue_7t       0x100080b8        0x0 linker stubs
+.glue_7t        0x100080b0        0x0
+ .glue_7t       0x100080b0        0x0 linker stubs
 
-.vfp11_veneer   0x100080b8        0x0
- .vfp11_veneer  0x100080b8        0x0 linker stubs
+.vfp11_veneer   0x100080b0        0x0
+ .vfp11_veneer  0x100080b0        0x0 linker stubs
 
-.v4_bx          0x100080b8        0x0
- .v4_bx         0x100080b8        0x0 linker stubs
+.v4_bx          0x100080b0        0x0
+ .v4_bx         0x100080b0        0x0 linker stubs
 
-.iplt           0x100080b8        0x0
- .iplt          0x100080b8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100080b0        0x0
+ .iplt          0x100080b0        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100080b8    0x43ed0
+.rodata         0x100080b0    0x43ed0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.process_retro.str1.4
-                0x100080b8      0x238 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
+                0x100080b0      0x238 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
                                  0x43 (size before relaxing)
  .rodata.process_draw.str1.4
-                0x100082f0        0xd CMakeFiles/retrosynth_coprocessor.dir/main.c.o
+                0x100082e8        0xd CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .rodata.main.str1.4
-                0x100082f0       0x47 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
+                0x100082e8       0x47 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .rodata.fc2_bias
-                0x100082f0       0xc8 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
-                0x100082f0                fc2_bias
+                0x100082e8       0xc8 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
+                0x100082e8                fc2_bias
  .rodata.fc2_weight
-                0x100083b8     0x3200 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
-                0x100083b8                fc2_weight
+                0x100083b0     0x3200 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
+                0x100083b0                fc2_weight
  .rodata.fc1_bias
-                0x1000b5b8      0x400 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
-                0x1000b5b8                fc1_bias
+                0x1000b5b0      0x400 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
+                0x1000b5b0                fc1_bias
  .rodata.fc1_weight
-                0x1000b9b8    0x40000 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
-                0x1000b9b8                fc1_weight
+                0x1000b9b0    0x40000 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
+                0x1000b9b0                fc1_weight
  .rodata.format_next_draw_command.str1.4
-                0x1004b9b8       0x1e CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
- .rodata        0x1004b9b8       0x28 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+                0x1004b9b0       0x1e CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+ .rodata        0x1004b9b0       0x28 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
  .rodata.panic.str1.4
-                0x1004b9e0       0x12 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x1004b9d8       0x12 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.spin_lock_claim_unused.str1.4
-                0x1004b9e0       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x1004b9d8       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .rodata.user_irq_claim_unused.str1.4
-                0x1004b9e0       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1004b9d8       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1004b9e0       0x22 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x1004b9d8       0x22 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x1004b9e0        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1004b9d8        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.str1.4
-                0x1004b9e0       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004b9d8       0x4c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_84
-                0x1004b9e0        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004b9d8        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x1004b9ec        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004b9e4        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x1004b9f8        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004b9f0        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x1004ba04        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004b9fc        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x1004ba10        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004ba08        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x1004ba1c        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004ba14        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x1004ba28        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004ba20        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x1004ba34       0x15 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1004ba2c       0x15 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata._vsnprintf
-                0x1004ba34      0x19c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1004ba2c      0x19c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.pow10.0
-                0x1004bbd0       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1004bbc8       0x50 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.crlf_str.0
-                0x1004bc20        0x2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- *fill*         0x1004bc22        0x2 
+                0x1004bc18        0x2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ *fill*         0x1004bc1a        0x2 
  .rodata._resetd_driver
-                0x1004bc24       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1004bc1c       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .rodata.desc_ms_os_20
-                0x1004bc44       0xa6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- *fill*         0x1004bcea        0x2 
+                0x1004bc3c       0xa6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ *fill*         0x1004bce2        0x2 
  .rodata.desc_bos
-                0x1004bcec       0x21 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x1004bcec                desc_bos
+                0x1004bce4       0x21 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1004bce4                desc_bos
  .rodata.str1.4
-                0x1004bd0d       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- *fill*         0x1004bd0d        0x3 
+                0x1004bd05       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ *fill*         0x1004bd05        0x3 
  .rodata.__bi_202.0
-                0x1004bd10        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1004bd08        0xc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .rodata.str1.4
-                0x1004bd1c       0x2a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1004bd14       0x2a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_str
-                0x1004bd1c       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1004bd14       0x18 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_cfg
-                0x1004bd34       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1004bd2c       0x54 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_device
-                0x1004bd88       0x12 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1004bd80       0x12 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.str1.4
-                0x1004bd9a       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1004bd92       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .rodata.str1.4
-                0x1004bd9a       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- *fill*         0x1004bd9a        0x2 
+                0x1004bd92       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ *fill*         0x1004bd92        0x2 
  .rodata.tud_task_ext
-                0x1004bd9c       0x8c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x1004be28       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1004bd94       0x8c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x1004be20       0x1c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata._usbd_driver
-                0x1004be44       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x1004be84      0x101 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
-                0x1004be84                _ctype_
-                0x1004bf88                        . = ALIGN (0x4)
- *fill*         0x1004bf85        0x3 
+                0x1004be3c       0x40 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x1004be7c      0x101 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+                0x1004be7c                _ctype_
+                0x1004bf80                        . = ALIGN (0x4)
+ *fill*         0x1004bf7d        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1004bf88                        . = ALIGN (0x4)
+                0x1004bf80                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1004bf88                        __exidx_start = .
+                0x1004bf80                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x1004bf88                        __exidx_end = .
-                0x1004bf88                        . = ALIGN (0x4)
-                0x1004bf88                        __binary_info_start = .
+                0x1004bf80                        __exidx_end = .
+                0x1004bf80                        . = ALIGN (0x4)
+                0x1004bf80                        __binary_info_start = .
 
-.binary_info    0x1004bf88       0x20
+.binary_info    0x1004bf80       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x1004bf88        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf80        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x1004bf8c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf84        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x1004bf90        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf88        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x1004bf94        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf8c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x1004bf98        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf90        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x1004bf9c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf94        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr26
-                0x1004bfa0        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1004bf98        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr202
-                0x1004bfa4        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x1004bfa8                        __binary_info_end = .
-                0x1004bfa8                        . = ALIGN (0x4)
+                0x1004bf9c        0x4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1004bfa0                        __binary_info_end = .
+                0x1004bfa0                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3732,7 +3732,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0     0x1138 load address 0x1004bfa8
+.data           0x200000c0     0x1138 load address 0x1004bfa0
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3844,23 +3844,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x200011f8                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x200011f8        0x0 load address 0x1004d0e0
+                0x200011f8        0x0 load address 0x1004d0d8
  .tm_clone_table
                 0x200011f8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200011f8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x200011f8        0x0 load address 0x1004d0e0
+.igot.plt       0x200011f8        0x0 load address 0x1004d0d8
  .igot.plt      0x200011f8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x200011f8        0x0 load address 0x1004d0e0
+.tdata          0x200011f8        0x0 load address 0x1004d0d8
                 0x200011f8                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x200011f8                        __tdata_end = .
                 0x200011f8                        PROVIDE (__data_end__ = .)
-                0x1004bfa8                        __etext = LOADADDR (.data)
+                0x1004bfa0                        __etext = LOADADDR (.data)
 
-.tbss           0x200011f8        0x0 load address 0x1004d0e0
+.tbss           0x200011f8        0x0 load address 0x1004d0d8
                 0x200011f8                        . = ALIGN (0x4)
                 0x200011f8                        __bss_start__ = .
                 0x200011f8                        __tls_base = .
@@ -3868,7 +3868,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.tcommon)
                 0x200011f8                        __tls_end = .
 
-.bss            0x200011f8    0x1f420 load address 0x1004d0e0
+.bss            0x200011f8    0x1f420 load address 0x1004d0d8
                 0x200011f8                        . = ALIGN (0x4)
                 0x200011f8                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3994,26 +3994,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *fill*         0x20020616        0x2 
                 0x20020618                        __bss_end__ = .
 
-.heap           0x20020618      0x800 load address 0x1004d0e0
+.heap           0x20020618      0x800 load address 0x1004d0d8
                 0x20020618                        __end__ = .
                 0x20020618                        end = __end__
  *(.heap*)
  .heap          0x20020618      0x800 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x1004d0e0
+.scratch_x      0x20040000        0x0 load address 0x1004d0d8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x1004d0e0                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1004d0d8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x1004d0e0
+.scratch_y      0x20041000        0x0 load address 0x1004d0d8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x1004d0e0                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1004d0d8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -4025,9 +4025,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x1004d0e0        0x0
+.flash_end      0x1004d0d8        0x0
  *(.embedded_end_block*)
-                0x1004d0e0                        PROVIDE (__flash_binary_end = .)
+                0x1004d0d8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4350,72 +4350,72 @@ LOAD linker stubs
  .comment       0x0000004c       0x27 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  .comment       0x0000004c       0x27 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.debug_info     0x00000000    0x366ff
+.debug_info     0x00000000    0x366cf
  .debug_info    0x00000000      0xf43 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .debug_info    0x00000f43      0x1e8 CMakeFiles/retrosynth_coprocessor.dir/smiles_hash.c.o
  .debug_info    0x0000112b      0x316 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
  .debug_info    0x00001441      0x9f0 CMakeFiles/retrosynth_coprocessor.dir/mcts.c.o
- .debug_info    0x00001e31      0xc34 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
- .debug_info    0x00002a65     0x23f1 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_info    0x00004e56      0x111 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
- .debug_info    0x00004f67      0x1bf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_info    0x00005126      0x989 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_info    0x00005aaf      0x444 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_info    0x00005ef3      0x239 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_info    0x0000612c     0x21eb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_info    0x00008317      0x153 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_info    0x0000846a     0x27cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_info    0x0000ac37      0x2fc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
- .debug_info    0x0000af33     0x5005 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
- .debug_info    0x0000ff38     0x2afb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_info    0x00012a33     0x195f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_info    0x00014392     0x29c9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_info    0x00016d5b      0x4cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_info    0x00017228      0x8c8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
- .debug_info    0x00017af0      0x230 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_info    0x00017d20      0x654 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_info    0x00018374      0x1b8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_info    0x0001852c      0x20e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_info    0x0001873a      0x7d2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_info    0x00018f0c      0x769 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_info    0x00019675       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_info    0x00019698       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_info    0x000196bb       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_info    0x000196de      0x25a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_info    0x00019938       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_info    0x0001995b       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_info    0x0001997f       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_info    0x000199a2      0x25a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_info    0x00019bfc       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_info    0x00019c1f       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_info    0x00019c42      0x288 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_info    0x00019eca     0x22da CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_info    0x0001c1a4       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_info    0x0001c1c7      0xbbe CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_info    0x0001cd85     0x1c3a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_info    0x0001e9bf      0xa63 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- .debug_info    0x0001f422     0x1ed6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_info    0x000212f8      0x692 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
- .debug_info    0x0002198a      0x1f5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_info    0x00021b7f     0x1743 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_info    0x000232c2     0x2aec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_info    0x00025dae     0x114c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_info    0x00026efa     0x4990 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_info    0x0002b88a      0xb42 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_info    0x0002c3cc     0x1fa2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_info    0x0002e36e     0x16fb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
- .debug_info    0x0002fa69     0x1e80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_info    0x000318e9     0x280d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_info    0x000340f6       0x3c /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00034132      0x787 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
- .debug_info    0x000348b9       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_info    0x000349a4      0x746 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
- .debug_info    0x000350ea       0xf7 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_info    0x000351e1      0xec6 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
- .debug_info    0x000360a7       0xb9 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
- .debug_info    0x00036160      0x11e /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_info    0x0003627e      0x1fd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_info    0x0003647b      0x284 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_info    0x00001e31      0xc04 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+ .debug_info    0x00002a35     0x23f1 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_info    0x00004e26      0x111 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
+ .debug_info    0x00004f37      0x1bf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_info    0x000050f6      0x989 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_info    0x00005a7f      0x444 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_info    0x00005ec3      0x239 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_info    0x000060fc     0x21eb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_info    0x000082e7      0x153 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_info    0x0000843a     0x27cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_info    0x0000ac07      0x2fc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+ .debug_info    0x0000af03     0x5005 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_info    0x0000ff08     0x2afb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_info    0x00012a03     0x195f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_info    0x00014362     0x29c9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_info    0x00016d2b      0x4cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_info    0x000171f8      0x8c8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+ .debug_info    0x00017ac0      0x230 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_info    0x00017cf0      0x654 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_info    0x00018344      0x1b8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_info    0x000184fc      0x20e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_info    0x0001870a      0x7d2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_info    0x00018edc      0x769 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_info    0x00019645       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_info    0x00019668       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_info    0x0001968b       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_info    0x000196ae      0x25a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_info    0x00019908       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_info    0x0001992b       0x24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_info    0x0001994f       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_info    0x00019972      0x25a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_info    0x00019bcc       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_info    0x00019bef       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_info    0x00019c12      0x288 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_info    0x00019e9a     0x22da CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_info    0x0001c174       0x23 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_info    0x0001c197      0xbbe CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_info    0x0001cd55     0x1c3a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_info    0x0001e98f      0xa63 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ .debug_info    0x0001f3f2     0x1ed6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_info    0x000212c8      0x692 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+ .debug_info    0x0002195a      0x1f5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_info    0x00021b4f     0x1743 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_info    0x00023292     0x2aec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_info    0x00025d7e     0x114c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_info    0x00026eca     0x4990 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_info    0x0002b85a      0xb42 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_info    0x0002c39c     0x1fa2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_info    0x0002e33e     0x16fb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+ .debug_info    0x0002fa39     0x1e80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_info    0x000318b9     0x280d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_info    0x000340c6       0x3c /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00034102      0x787 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
+ .debug_info    0x00034889       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_info    0x00034974      0x746 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
+ .debug_info    0x000350ba       0xf7 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_info    0x000351b1      0xec6 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+ .debug_info    0x00036077       0xb9 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+ .debug_info    0x00036130      0x11e /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_info    0x0003624e      0x1fd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_info    0x0003644b      0x284 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_abbrev   0x00000000     0xa3a8
  .debug_abbrev  0x00000000      0x406 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
@@ -4485,7 +4485,7 @@ LOAD linker stubs
  .debug_abbrev  0x0000a1ce      0x1da /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_loclists
-                0x00000000    0x1cfe9
+                0x00000000    0x1cfcc
  .debug_loclists
                 0x00000000      0x315 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .debug_loclists
@@ -4495,99 +4495,99 @@ LOAD linker stubs
  .debug_loclists
                 0x000005b2      0x5aa CMakeFiles/retrosynth_coprocessor.dir/mcts.c.o
  .debug_loclists
-                0x00000b5c      0x975 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+                0x00000b5c      0x958 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
  .debug_loclists
-                0x000014d1     0x1a7f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000014b4     0x1a7f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00002f50       0x53 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x00002f33       0x53 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
  .debug_loclists
-                0x00002fa3      0x349 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00002f86      0x349 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x000032ec      0x108 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x000032cf      0x108 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x000033f4       0x7d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x000033d7       0x7d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x00003471     0x11e4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00003454     0x11e4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x00004655       0x41 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00004638       0x41 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x00004696      0xaec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00004679      0xaec CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x00005182       0xb6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x00005165       0xb6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
  .debug_loclists
-                0x00005238     0x27bf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x0000521b     0x27bf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x000079f7     0x19eb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x000079da     0x19eb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x000093e2      0xc90 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x000093c5      0xc90 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_loclists
-                0x0000a072     0x2b7c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x0000a055     0x2b7c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x0000cbee      0x1e0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x0000cbd1      0x1e0 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x0000cdce      0x532 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+                0x0000cdb1      0x532 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
  .debug_loclists
-                0x0000d300       0x47 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000d2e3       0x47 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x0000d347      0x351 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000d32a      0x351 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x0000d698       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000d67b       0x48 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x0000d6e0       0x7e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000d6c3       0x7e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x0000d75e      0x139 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000d741      0x139 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x0000d897       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x0000d87a       0x74 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x0000d90b       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000d8ee       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000d948       0x59 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000d92b       0x59 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000d9a1     0x355f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000d984     0x355f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x00010f00      0x44e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00010ee3      0x44e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x0001134e      0xf4f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00011331      0xf4f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x0001229d      0x266 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x00012280      0x266 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .debug_loclists
-                0x00012503      0x7cb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x000124e6      0x7cb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .debug_loclists
-                0x00012cce       0xed CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x00012cb1       0xed CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .debug_loclists
-                0x00012dbb      0x3d5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x00012d9e      0x3d5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_loclists
-                0x00013190      0xb24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x00013173      0xb24 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_loclists
-                0x00013cb4     0x1bd5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x00013c97     0x1bd5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_loclists
-                0x00015889      0x719 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x0001586c      0x719 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_loclists
-                0x00015fa2     0x21ed CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x00015f85     0x21ed CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_loclists
-                0x0001818f      0x45e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x00018172      0x45e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_loclists
-                0x000185ed      0xdc9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x000185d0      0xdc9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .debug_loclists
-                0x000193b6      0x7e5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x00019399      0x7e5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
  .debug_loclists
-                0x00019b9b      0xf80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x00019b7e      0xf80 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_loclists
-                0x0001ab1b     0x1fdb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x0001aafe     0x1fdb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_loclists
-                0x0001caf6       0x36 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
+                0x0001cad9       0x36 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
  .debug_loclists
-                0x0001cb2c       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x0001cb0f       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
  .debug_loclists
-                0x0001cb83       0x2c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x0001cb66       0x2c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
  .debug_loclists
-                0x0001cbaf      0x1dd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+                0x0001cb92      0x1dd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
  .debug_loclists
-                0x0001cd8c       0x2b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x0001cd6f       0x2b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
  .debug_loclists
-                0x0001cdb7       0xff /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x0001cd9a       0xff /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
  .debug_loclists
-                0x0001ceb6      0x133 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x0001ce99      0x133 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_aranges  0x00000000     0x18b8
  .debug_aranges
@@ -4722,7 +4722,7 @@ LOAD linker stubs
                 0x00001890       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_rnglists
-                0x00000000     0x4c06
+                0x00000000     0x4c18
  .debug_rnglists
                 0x00000000      0x103 CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .debug_rnglists
@@ -4732,174 +4732,174 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000017b      0x125 CMakeFiles/retrosynth_coprocessor.dir/mcts.c.o
  .debug_rnglists
-                0x000002a0      0x118 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+                0x000002a0      0x12a CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
  .debug_rnglists
-                0x000003b8      0x5ca CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000003ca      0x5ca CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_rnglists
-                0x00000982       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x00000994       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
  .debug_rnglists
-                0x00000995       0x19 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x000009a7       0x19 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .debug_rnglists
-                0x000009ae       0xb6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x000009c0       0xb6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_rnglists
-                0x00000a64       0x58 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x00000a76       0x58 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_rnglists
-                0x00000abc       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x00000ace       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_rnglists
-                0x00000af9      0x37d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00000b0b      0x37d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_rnglists
-                0x00000e76       0x1f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00000e88       0x1f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_rnglists
-                0x00000e95      0x325 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00000ea7      0x325 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_rnglists
-                0x000011ba       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x000011cc       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
  .debug_rnglists
-                0x000011e5      0x7dc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x000011f7      0x7dc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
  .debug_rnglists
-                0x000019c1      0x2c6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x000019d3      0x2c6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_rnglists
-                0x00001c87      0x259 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x00001c99      0x259 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_rnglists
-                0x00001ee0      0x5be CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x00001ef2      0x5be CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_rnglists
-                0x0000249e       0x5c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x000024b0       0x5c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_rnglists
-                0x000024fa       0xe5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+                0x0000250c       0xe5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
  .debug_rnglists
-                0x000025df       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x000025f1       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_rnglists
-                0x0000260a      0x112 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000261c      0x112 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_rnglists
-                0x0000271c       0x1f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000272e       0x1f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_rnglists
-                0x0000273b       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000274d       0x3d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_rnglists
-                0x00002778       0x4a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000278a       0x4a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_rnglists
-                0x000027c2       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x000027d4       0x20 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_rnglists
-                0x000027e2       0x43 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x000027f4       0x43 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .debug_rnglists
-                0x00002825       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x00002837       0x2c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
  .debug_rnglists
-                0x00002851       0xf9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x00002863       0xf9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .debug_rnglists
-                0x0000294a       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000295c       0x14 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_rnglists
-                0x0000295e       0x99 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x00002970       0x99 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x000029f7       0xe5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x00002a09       0xe5 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .debug_rnglists
-                0x00002adc       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x00002aee       0x13 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_rnglists
-                0x00002aef       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x00002b01       0x38 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x00002b27       0x25 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x00002b39       0x25 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .debug_rnglists
-                0x00002b4c      0x2a2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x00002b5e      0x2a2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_rnglists
-                0x00002dee       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+                0x00002e00       0x1b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
  .debug_rnglists
-                0x00002e09       0x85 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00002e1b       0x85 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_rnglists
-                0x00002e8e      0x2bb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00002ea0      0x2bb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_rnglists
-                0x00003149       0x43 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x0000315b       0x43 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .debug_rnglists
-                0x0000318c      0x14f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x0000319e      0x14f CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .debug_rnglists
-                0x000032db       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x000032ed       0x2b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .debug_rnglists
-                0x00003306       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x00003318       0x70 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_rnglists
-                0x00003376      0x368 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x00003388      0x368 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_rnglists
-                0x000036de      0x425 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x000036f0      0x425 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_rnglists
-                0x00003b03       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x00003b15       0xe8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_rnglists
-                0x00003beb      0x601 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x00003bfd      0x601 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_rnglists
-                0x000041ec       0x8e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x000041fe       0x8e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_rnglists
-                0x0000427a      0x1ee CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x0000428c      0x1ee CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .debug_rnglists
-                0x00004468      0x11e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x0000447a      0x11e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
  .debug_rnglists
-                0x00004586      0x210 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x00004598      0x210 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_rnglists
-                0x00004796      0x3d3 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x000047a8      0x3d3 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_rnglists
-                0x00004b69       0x6d /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+                0x00004b7b       0x6d /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
  .debug_rnglists
-                0x00004bd6       0x30 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x00004be8       0x30 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000    0x274dc
+.debug_line     0x00000000    0x274e3
  .debug_line    0x00000000      0x9cf CMakeFiles/retrosynth_coprocessor.dir/main.c.o
  .debug_line    0x000009cf      0x1b1 CMakeFiles/retrosynth_coprocessor.dir/smiles_hash.c.o
  .debug_line    0x00000b80      0x1a0 CMakeFiles/retrosynth_coprocessor.dir/nn_inference.c.o
  .debug_line    0x00000d20      0x87e CMakeFiles/retrosynth_coprocessor.dir/mcts.c.o
- .debug_line    0x0000159e      0x8e3 CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
- .debug_line    0x00001e81     0x1c93 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x00003b14      0x231 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
- .debug_line    0x00003d45      0x23d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00003f82      0x921 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x000048a3      0x4cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00004d70      0x39c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x0000510c     0x1833 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x0000693f      0x2c7 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x00006c06     0x1c00 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x00008806      0x40e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
- .debug_line    0x00008c14     0x361b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x0000c22f     0x1de8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000e017      0xffb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_line    0x0000f012     0x21be CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x000111d0      0x51c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x000116ec      0x7d3 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
- .debug_line    0x00011ebf      0x326 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x000121e5      0x409 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x000125ee      0x341 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0001292f      0x2e8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x00012c17      0x71e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x00013335      0x5bc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x000138f1      0x108 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x000139f9      0x2a9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x00013ca2      0x452 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x000140f4      0x43c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x00014530      0x66d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x00014b9d       0x61 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x00014bfe      0x3d2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x00014fd0      0x351 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x00015321      0x195 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x000154b6       0x94 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x0001554a      0x1b1 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x000156fb     0x1c53 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x0001734e       0xa2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x000173f0      0x8e2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x00017cd2     0x14ca CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0001919c      0x524 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- .debug_line    0x000196c0     0x1320 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_line    0x0001a9e0      0x3b6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
- .debug_line    0x0001ad96      0x5e4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x0001b37a      0xe84 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x0001c1fe     0x1efd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_line    0x0001e0fb      0xce6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_line    0x0001ede1     0x28dd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_line    0x000216be      0x62a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_line    0x00021ce8     0x10ae CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_line    0x00022d96      0xabf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
- .debug_line    0x00023855     0x123c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_line    0x00024a91     0x1a1a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_line    0x000264ab       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x000264f5      0x199 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
- .debug_line    0x0002668e      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_line    0x0002683c       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
- .debug_line    0x00026927       0xd1 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_line    0x000269f8      0x592 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
- .debug_line    0x00026f8a       0x9b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
- .debug_line    0x00027025       0xca /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_line    0x000270ef      0x167 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_line    0x00027256      0x286 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_line    0x0000159e      0x8ea CMakeFiles/retrosynth_coprocessor.dir/smiles_draw.c.o
+ .debug_line    0x00001e88     0x1c93 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00003b1b      0x231 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2040/pico_platform/platform.c.o
+ .debug_line    0x00003d4c      0x23d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00003f89      0x921 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x000048aa      0x4cd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00004d77      0x39c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00005113     0x1833 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00006946      0x2c7 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00006c0d     0x1c00 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x0000880d      0x40e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_sync/critical_section.c.o
+ .debug_line    0x00008c1b     0x361b CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x0000c236     0x1de8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000e01e      0xffb CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_line    0x0000f019     0x21be CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x000111d7      0x51c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x000116f3      0x7d3 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+ .debug_line    0x00011ec6      0x326 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x000121ec      0x409 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x000125f5      0x341 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x00012936      0x2e8 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x00012c1e      0x71e CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x0001333c      0x5bc CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x000138f8      0x108 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x00013a00      0x2a9 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x00013ca9      0x452 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x000140fb      0x43c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x00014537      0x66d CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00014ba4       0x61 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x00014c05      0x3d2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x00014fd7      0x351 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x00015328      0x195 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x000154bd       0x94 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x00015551      0x1b1 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x00015702     0x1c53 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x00017355       0xa2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x000173f7      0x8e2 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x00017cd9     0x14ca CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x000191a3      0x524 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ .debug_line    0x000196c7     0x1320 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_line    0x0001a9e7      0x3b6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+ .debug_line    0x0001ad9d      0x5e4 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x0001b381      0xe84 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x0001c205     0x1efd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_line    0x0001e102      0xce6 CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_line    0x0001ede8     0x28dd CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_line    0x000216c5      0x62a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_line    0x00021cef     0x10ae CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_line    0x00022d9d      0xabf CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+ .debug_line    0x0002385c     0x123c CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_line    0x00024a98     0x1a1a CMakeFiles/retrosynth_coprocessor.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_line    0x000264b2       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x000264fc      0x199 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-rand.o)
+ .debug_line    0x00026695      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_line    0x00026843       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
+ .debug_line    0x0002692e       0xd1 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_line    0x000269ff      0x592 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+ .debug_line    0x00026f91       0x9b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+ .debug_line    0x0002702c       0xca /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_line    0x000270f6      0x167 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_line    0x0002725d      0x286 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_str      0x00000000     0x9cc1
  .debug_str     0x00000000     0x9cc1 CMakeFiles/retrosynth_coprocessor.dir/main.c.o

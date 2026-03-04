@@ -1,0 +1,464 @@
+
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (c176524f built on 25-01-2026)
+
+>: 
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (c176524f built on 25-01-2026)
+
+>: logs
+[31mcould not find command `logs`, did you mean `log`? Use `help` to list all available commands
+[0m>: ?
+Available commands:
+[32mbt                            loader                        crypto                        
+js                            nfc                           exit                          
+input                         buzzer                        neofetch                      
+log                           echo                          onewire                       
+clear                         device_info                   free_blocks                   
+top                           factory_reset                 uptime                        
+src                           ?                             vibro                         
+storage                       ikey                          !                             
+start_rpc_session             power                         subshell_demo                 
+i2c                           subghz                        ir                            
+update                        reload_ext_cmds               hello_world                   
+rfid                          sleep                         help                          
+sysctl                        info                          gpio                          
+date                          led                           free                          
+
+[0mIf you added a new external command and can't see it above, run `reload_ext_cmds`
+Find out more: https://docs.flipper.net/development/cli
+>: log
+Current log level: debug
+Use <log ?> to list available log levels
+Press CTRL+C to stop...
+
+>: log ?
+<log> — start logging using the current level from the system settings
+<log error> — only critical errors and other important messages
+<log warn> — non-critical errors and warnings including <log error>
+<log info> — non-critical information including <log warn>
+<log default> — the default system log level (equivalent to <log info>)
+<log debug> — debug information including <log info> (may impact system performance)
+<log trace> — system traces including <log debug> (may impact system performance)
+
+>: log debug
+Current log level: debug
+Use <log ?> to list available log levels
+Press CTRL+C to stop...
+14208749 [34m[D][BleGap] [0mStart: 4
+14208750 [34m[D][BleGap] [0mset_non_discoverable success
+14208751 [34m[D][BtSrv] [0mcall 0, lock 0x00000000, result 0x00000000
+14208913 [34m[D][BtSrv] [0mcall 1, lock 0x00000000, result 0x00000000
+14208915 [34m[D][GattChar] [0mUpdating Battery Level char
+14210352 [34m[D][ViewDispatcher] [0mView changed while key press 2000FF80 -> 20006888. Sending key: Up, type: Release, sequence: 0000003C to previous view
+14212760 [34m[D][ViewDispatcher] [0mView changed while key press 20006888 -> 2000FEA0. Sending key: OK, type: Release, sequence: 00000054 to previous view
+14213719 [34m[D][RpcGui] [0mVirtualDisplay: SendInputEvent
+14213827 [34m[D][RpcGui] [0mVirtualDisplay: SendInputEvent
+14213829 [34m[D][RpcGui] [0mVirtualDisplay: SendInputEvent
+14213832 [34m[D][RpcGui] [0mStopVirtualDisplay
+14213874 [34m[D][RpcGui] [0mStartScreenStream
+14215360 [34m[D][BrowserWorker] [0mStart
+14215386 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+14215386 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14217280 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO items: 61 idx: -1
+14217280 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14217407 [34m[D][RpcSrv] [0mSession terminated
+14217409 [34m[D][ExpansionSrv] [0mWorker stopped
+14217569 [34m[D][ExpansionSrv] [0mWorker started
+14217591 [34m[D][ExpansionSrv] [0mWorker stopped
+14217610 [31m[E][ExpansionSrvWorker] [0mStack watermark is too low 204 < THREAD_STACK_WATERMARK_MIN. Increase stack size.
+14217824 [34m[D][ExpansionSrv] [0mWorker started
+14217845 [34m[D][ExpansionSrv] [0mProposed baud rate: 921600
+14217989 [34m[D][RpcSrv] [0mSession started
+14218012 [34m[D][RpcGui] [0mStartScreenStream
+14219986 [33m[W][ViewPort] [0mViewPort lockup: see applications/services/gui/view_port.c:196
+14223130 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO/VGM items: 2 idx: -1
+14223134 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14224080 [34m[D][BrowserWorker] [0mEnd
+14224112 [34m[D][DolphinState] [0micounter 10823, butthurt 0
+14224143 [32m[I][AnimationManager] [0mUnload animation 'L1_Read_books_128x64'
+14224153 [32m[I][Loader] [0mLoading /ext/apps/GPIO/VGM/video_game_module_tool.fap
+14224233 [32m[I][Loader] [0mMapping
+14224235 [32m[I][Elf] [0mTotal size of loaded sections: 9068
+14224236 [32m[I][Loader] [0mLoaded in 83ms
+14224236 [32m[I][Loader] [0mStarting app
+14224238 [34m[D][RpcSrv] [0mSession terminated
+14224238 [34m[D][ExpansionSrv] [0mWorker stopped
+14224239 [31m[E][ExpansionSrvWorker] [0mStack watermark is too low 212 < THREAD_STACK_WATERMARK_MIN. Increase stack size.
+14224243 [34m[D][ExpansionSrv] [0mDetection disabled
+14224252 [34m[D][VgmFlasher] [0mAttaching the target
+14224263 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+14226023 [34m[D][BrowserWorker] [0mStart
+14226040 [34m[D][BrowserWorker] [0mEnter folder: /ext items: 24 idx: -1
+14226041 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14226939 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+14226941 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14228616 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 1 idx: -1
+14228617 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14229537 [34m[D][BrowserWorker] [0mEnd
+14229545 [34m[D][ViewDispatcher] [0mView changed while key press 2000A000 -> 20009F50. Sending key: OK, type: Release, sequence: 000000B4 to previous view
+14230136 [34m[D][VgmFlasher] [0mFlashing firmware from file: /ext/apps/In-Development/retrosynth_coprocessor.uf2
+14230140 [34m[D][VgmFlasher] [0mAttaching the target
+14230177 [34m[D][VgmFlasher] [0mVerifying file: 0%
+14230192 [34m[D][VgmFlasher] [0mVerifying file: 1%
+14230206 [34m[D][VgmFlasher] [0mVerifying file: 2%
+14230220 [34m[D][VgmFlasher] [0mVerifying file: 3%
+14230235 [34m[D][VgmFlasher] [0mVerifying file: 4%
+14230249 [34m[D][VgmFlasher] [0mVerifying file: 5%
+14230263 [34m[D][VgmFlasher] [0mVerifying file: 6%
+14230290 [34m[D][VgmFlasher] [0mVerifying file: 7%
+14230304 [34m[D][VgmFlasher] [0mVerifying file: 8%
+14230318 [34m[D][VgmFlasher] [0mVerifying file: 9%
+14230333 [34m[D][VgmFlasher] [0mVerifying file: 10%
+14230359 [34m[D][VgmFlasher] [0mVerifying file: 11%
+14230373 [34m[D][VgmFlasher] [0mVerifying file: 12%
+14230388 [34m[D][VgmFlasher] [0mVerifying file: 13%
+14230402 [34m[D][VgmFlasher] [0mVerifying file: 14%
+14230416 [34m[D][VgmFlasher] [0mVerifying file: 15%
+14230431 [34m[D][VgmFlasher] [0mVerifying file: 16%
+14230445 [34m[D][VgmFlasher] [0mVerifying file: 17%
+14230459 [34m[D][VgmFlasher] [0mVerifying file: 18%
+14230486 [34m[D][VgmFlasher] [0mVerifying file: 19%
+14230500 [34m[D][VgmFlasher] [0mVerifying file: 20%
+14230514 [34m[D][VgmFlasher] [0mVerifying file: 21%
+14230529 [34m[D][VgmFlasher] [0mVerifying file: 22%
+14230555 [34m[D][VgmFlasher] [0mVerifying file: 23%
+14230569 [34m[D][VgmFlasher] [0mVerifying file: 24%
+14230584 [34m[D][VgmFlasher] [0mVerifying file: 25%
+14230610 [34m[D][VgmFlasher] [0mVerifying file: 26%
+14230624 [34m[D][VgmFlasher] [0mVerifying file: 27%
+14230639 [34m[D][VgmFlasher] [0mVerifying file: 28%
+14230653 [34m[D][VgmFlasher] [0mVerifying file: 29%
+14230667 [34m[D][VgmFlasher] [0mVerifying file: 30%
+14230694 [34m[D][VgmFlasher] [0mVerifying file: 31%
+14230708 [34m[D][VgmFlasher] [0mVerifying file: 32%
+14230722 [34m[D][VgmFlasher] [0mVerifying file: 33%
+14230737 [34m[D][VgmFlasher] [0mVerifying file: 34%
+14230763 [34m[D][VgmFlasher] [0mVerifying file: 35%
+14230777 [34m[D][VgmFlasher] [0mVerifying file: 36%
+14230792 [34m[D][VgmFlasher] [0mVerifying file: 37%
+14230806 [34m[D][VgmFlasher] [0mVerifying file: 38%
+14230820 [34m[D][VgmFlasher] [0mVerifying file: 39%
+14230835 [34m[D][VgmFlasher] [0mVerifying file: 40%
+14230849 [34m[D][VgmFlasher] [0mVerifying file: 41%
+14230863 [34m[D][VgmFlasher] [0mVerifying file: 42%
+14230890 [34m[D][VgmFlasher] [0mVerifying file: 43%
+14230916 [34m[D][VgmFlasher] [0mVerifying file: 44%
+14230930 [34m[D][VgmFlasher] [0mVerifying file: 45%
+14230957 [34m[D][VgmFlasher] [0mVerifying file: 46%
+14230971 [34m[D][VgmFlasher] [0mVerifying file: 47%
+14230985 [34m[D][VgmFlasher] [0mVerifying file: 48%
+14231000 [34m[D][VgmFlasher] [0mVerifying file: 49%
+14231014 [34m[D][VgmFlasher] [0mVerifying file: 50%
+14231040 [34m[D][VgmFlasher] [0mVerifying file: 51%
+14231055 [34m[D][VgmFlasher] [0mVerifying file: 52%
+14231069 [34m[D][VgmFlasher] [0mVerifying file: 53%
+14231095 [34m[D][VgmFlasher] [0mVerifying file: 54%
+14231110 [34m[D][VgmFlasher] [0mVerifying file: 55%
+14231124 [34m[D][VgmFlasher] [0mVerifying file: 56%
+14231138 [34m[D][VgmFlasher] [0mVerifying file: 57%
+14231165 [34m[D][VgmFlasher] [0mVerifying file: 58%
+14231179 [34m[D][VgmFlasher] [0mVerifying file: 59%
+14231193 [34m[D][VgmFlasher] [0mVerifying file: 60%
+14231208 [34m[D][VgmFlasher] [0mVerifying file: 61%
+14231222 [34m[D][VgmFlasher] [0mVerifying file: 62%
+14231236 [34m[D][VgmFlasher] [0mVerifying file: 63%
+14231251 [34m[D][VgmFlasher] [0mVerifying file: 64%
+14231265 [34m[D][VgmFlasher] [0mVerifying file: 65%
+14231291 [34m[D][VgmFlasher] [0mVerifying file: 66%
+14231306 [34m[D][VgmFlasher] [0mVerifying file: 67%
+14231320 [34m[D][VgmFlasher] [0mVerifying file: 68%
+14231334 [34m[D][VgmFlasher] [0mVerifying file: 69%
+14231361 [34m[D][VgmFlasher] [0mVerifying file: 70%
+14231375 [34m[D][VgmFlasher] [0mVerifying file: 71%
+14231389 [34m[D][VgmFlasher] [0mVerifying file: 72%
+14231404 [34m[D][VgmFlasher] [0mVerifying file: 73%
+14231418 [34m[D][VgmFlasher] [0mVerifying file: 74%
+14231432 [34m[D][VgmFlasher] [0mVerifying file: 75%
+14231459 [34m[D][VgmFlasher] [0mVerifying file: 76%
+14231483 [34m[D][VgmFlasher] [0mVerifying file: 77%
+14231499 [34m[D][VgmFlasher] [0mVerifying file: 78%
+14231514 [34m[D][VgmFlasher] [0mVerifying file: 79%
+14231528 [34m[D][VgmFlasher] [0mVerifying file: 80%
+14231554 [34m[D][VgmFlasher] [0mVerifying file: 81%
+14231569 [34m[D][VgmFlasher] [0mVerifying file: 82%
+14231583 [34m[D][VgmFlasher] [0mVerifying file: 83%
+14231597 [34m[D][VgmFlasher] [0mVerifying file: 84%
+14231612 [34m[D][VgmFlasher] [0mVerifying file: 85%
+14231626 [34m[D][VgmFlasher] [0mVerifying file: 86%
+14231640 [34m[D][VgmFlasher] [0mVerifying file: 87%
+14231655 [34m[D][VgmFlasher] [0mVerifying file: 88%
+14231669 [34m[D][VgmFlasher] [0mVerifying file: 89%
+14231695 [34m[D][VgmFlasher] [0mVerifying file: 90%
+14231710 [34m[D][VgmFlasher] [0mVerifying file: 91%
+14231724 [34m[D][VgmFlasher] [0mVerifying file: 92%
+14231738 [34m[D][VgmFlasher] [0mVerifying file: 93%
+14231765 [34m[D][VgmFlasher] [0mVerifying file: 94%
+14231779 [34m[D][VgmFlasher] [0mVerifying file: 95%
+14231793 [34m[D][VgmFlasher] [0mVerifying file: 96%
+14231808 [34m[D][VgmFlasher] [0mVerifying file: 97%
+14231822 [34m[D][VgmFlasher] [0mVerifying file: 98%
+14231836 [34m[D][VgmFlasher] [0mVerifying file: 99%
+14231899 [34m[D][VgmFlasher] [0mErasing flash: 1%
+14231954 [34m[D][VgmFlasher] [0mErasing flash: 2%
+14232007 [34m[D][VgmFlasher] [0mErasing flash: 3%
+14232058 [34m[D][VgmFlasher] [0mErasing flash: 5%
+14232108 [34m[D][VgmFlasher] [0mErasing flash: 6%
+14232156 [34m[D][VgmFlasher] [0mErasing flash: 7%
+14232206 [34m[D][VgmFlasher] [0mErasing flash: 9%
+14232255 [34m[D][VgmFlasher] [0mErasing flash: 10%
+14232307 [34m[D][VgmFlasher] [0mErasing flash: 11%
+14232356 [34m[D][VgmFlasher] [0mErasing flash: 12%
+14232406 [34m[D][VgmFlasher] [0mErasing flash: 14%
+14232456 [34m[D][VgmFlasher] [0mErasing flash: 15%
+14232506 [34m[D][VgmFlasher] [0mErasing flash: 16%
+14232554 [34m[D][VgmFlasher] [0mErasing flash: 18%
+14232611 [34m[D][VgmFlasher] [0mErasing flash: 19%
+14232664 [34m[D][VgmFlasher] [0mErasing flash: 20%
+14232714 [34m[D][VgmFlasher] [0mErasing flash: 22%
+14232767 [34m[D][VgmFlasher] [0mErasing flash: 23%
+14232818 [34m[D][VgmFlasher] [0mErasing flash: 24%
+14232866 [34m[D][VgmFlasher] [0mErasing flash: 25%
+14232920 [34m[D][VgmFlasher] [0mErasing flash: 27%
+14232969 [34m[D][VgmFlasher] [0mErasing flash: 28%
+14233022 [34m[D][VgmFlasher] [0mErasing flash: 29%
+14233071 [34m[D][VgmFlasher] [0mErasing flash: 31%
+14233118 [34m[D][VgmFlasher] [0mErasing flash: 32%
+14233168 [34m[D][VgmFlasher] [0mErasing flash: 33%
+14233219 [34m[D][VgmFlasher] [0mErasing flash: 35%
+14233274 [34m[D][VgmFlasher] [0mErasing flash: 36%
+14233325 [34m[D][VgmFlasher] [0mErasing flash: 37%
+14233373 [34m[D][VgmFlasher] [0mErasing flash: 38%
+14233426 [34m[D][VgmFlasher] [0mErasing flash: 40%
+14233475 [34m[D][VgmFlasher] [0mErasing flash: 41%
+14233525 [34m[D][VgmFlasher] [0mErasing flash: 42%
+14233575 [34m[D][VgmFlasher] [0mErasing flash: 44%
+14233626 [34m[D][VgmFlasher] [0mErasing flash: 45%
+14233675 [34m[D][VgmFlasher] [0mErasing flash: 46%
+14233724 [34m[D][VgmFlasher] [0mErasing flash: 48%
+14233774 [34m[D][VgmFlasher] [0mErasing flash: 49%
+14233823 [34m[D][VgmFlasher] [0mErasing flash: 50%
+14233878 [34m[D][VgmFlasher] [0mErasing flash: 51%
+14233926 [34m[D][VgmFlasher] [0mErasing flash: 53%
+14233976 [34m[D][VgmFlasher] [0mErasing flash: 54%
+14234026 [34m[D][VgmFlasher] [0mErasing flash: 55%
+14234075 [34m[D][VgmFlasher] [0mErasing flash: 57%
+14234124 [34m[D][VgmFlasher] [0mErasing flash: 58%
+14234171 [34m[D][VgmFlasher] [0mErasing flash: 59%
+14234222 [34m[D][VgmFlasher] [0mErasing flash: 60%
+14234271 [34m[D][VgmFlasher] [0mErasing flash: 62%
+14234319 [34m[D][VgmFlasher] [0mErasing flash: 63%
+14234369 [34m[D][VgmFlasher] [0mErasing flash: 64%
+14234417 [34m[D][VgmFlasher] [0mErasing flash: 66%
+14234465 [34m[D][VgmFlasher] [0mErasing flash: 67%
+14234517 [34m[D][VgmFlasher] [0mErasing flash: 68%
+14234566 [34m[D][VgmFlasher] [0mErasing flash: 70%
+14234615 [34m[D][VgmFlasher] [0mErasing flash: 71%
+14234663 [34m[D][VgmFlasher] [0mErasing flash: 72%
+14234713 [34m[D][VgmFlasher] [0mErasing flash: 73%
+14234763 [34m[D][VgmFlasher] [0mErasing flash: 75%
+14234811 [34m[D][VgmFlasher] [0mErasing flash: 76%
+14234859 [34m[D][VgmFlasher] [0mErasing flash: 77%
+14234908 [34m[D][VgmFlasher] [0mErasing flash: 79%
+14234963 [34m[D][VgmFlasher] [0mErasing flash: 80%
+14235014 [34m[D][VgmFlasher] [0mErasing flash: 81%
+14235063 [34m[D][VgmFlasher] [0mErasing flash: 83%
+14235111 [34m[D][VgmFlasher] [0mErasing flash: 84%
+14235163 [34m[D][VgmFlasher] [0mErasing flash: 85%
+14235211 [34m[D][VgmFlasher] [0mErasing flash: 86%
+14235259 [34m[D][VgmFlasher] [0mErasing flash: 88%
+14235309 [34m[D][VgmFlasher] [0mErasing flash: 89%
+14235358 [34m[D][VgmFlasher] [0mErasing flash: 90%
+14235407 [34m[D][VgmFlasher] [0mErasing flash: 92%
+14235457 [34m[D][VgmFlasher] [0mErasing flash: 93%
+14235507 [34m[D][VgmFlasher] [0mErasing flash: 94%
+14235555 [34m[D][VgmFlasher] [0mErasing flash: 96%
+14235605 [34m[D][VgmFlasher] [0mErasing flash: 97%
+14235657 [34m[D][VgmFlasher] [0mErasing flash: 98%
+14235710 [34m[D][VgmFlasher] [0mErasing flash: 99%
+14235758 [34m[D][VgmFlasher] [0mErasing flash: 100%
+14235801 [34m[D][VgmFlasher] [0mProgramming flash: 0%
+14236320 [34m[D][VgmFlasher] [0mProgramming flash: 1%
+14236829 [34m[D][VgmFlasher] [0mProgramming flash: 2%
+14237347 [34m[D][VgmFlasher] [0mProgramming flash: 3%
+14237861 [34m[D][VgmFlasher] [0mProgramming flash: 4%
+14238356 [34m[D][VgmFlasher] [0mProgramming flash: 5%
+14238864 [34m[D][VgmFlasher] [0mProgramming flash: 6%
+14239388 [34m[D][VgmFlasher] [0mProgramming flash: 7%
+14239848 [34m[D][VgmFlasher] [0mProgramming flash: 8%
+14240284 [34m[D][VgmFlasher] [0mProgramming flash: 9%
+14240751 [34m[D][VgmFlasher] [0mProgramming flash: 10%
+14241199 [34m[D][VgmFlasher] [0mProgramming flash: 11%
+14241612 [34m[D][VgmFlasher] [0mProgramming flash: 12%
+14242079 [34m[D][VgmFlasher] [0mProgramming flash: 13%
+14242515 [34m[D][VgmFlasher] [0mProgramming flash: 14%
+14242951 [34m[D][VgmFlasher] [0mProgramming flash: 15%
+14243418 [34m[D][VgmFlasher] [0mProgramming flash: 16%
+14243855 [34m[D][VgmFlasher] [0mProgramming flash: 17%
+14244292 [34m[D][VgmFlasher] [0mProgramming flash: 18%
+14244758 [34m[D][VgmFlasher] [0mProgramming flash: 19%
+14245207 [34m[D][VgmFlasher] [0mProgramming flash: 20%
+14245630 [34m[D][VgmFlasher] [0mProgramming flash: 21%
+14246085 [34m[D][VgmFlasher] [0mProgramming flash: 22%
+14246522 [34m[D][VgmFlasher] [0mProgramming flash: 23%
+14246958 [34m[D][VgmFlasher] [0mProgramming flash: 24%
+14247425 [34m[D][VgmFlasher] [0mProgramming flash: 25%
+14247850 [34m[D][VgmFlasher] [0mProgramming flash: 26%
+14248286 [34m[D][VgmFlasher] [0mProgramming flash: 27%
+14248753 [34m[D][VgmFlasher] [0mProgramming flash: 28%
+14249201 [34m[D][VgmFlasher] [0mProgramming flash: 29%
+14249626 [34m[D][VgmFlasher] [0mProgramming flash: 30%
+14250092 [34m[D][VgmFlasher] [0mProgramming flash: 31%
+14250518 [34m[D][VgmFlasher] [0mProgramming flash: 32%
+14250942 [34m[D][VgmFlasher] [0mProgramming flash: 33%
+14251421 [34m[D][VgmFlasher] [0mProgramming flash: 34%
+14251846 [34m[D][VgmFlasher] [0mProgramming flash: 35%
+14251972 [31m[E][Gauge] [0mbq27220_read_word failed
+14252320 [34m[D][VgmFlasher] [0mProgramming flash: 36%
+14252788 [34m[D][VgmFlasher] [0mProgramming flash: 37%
+14253224 [34m[D][VgmFlasher] [0mProgramming flash: 38%
+14253649 [34m[D][VgmFlasher] [0mProgramming flash: 39%
+14254112 [32m[I][Dolphin] [0mFlush stats
+14254112 [32m[I][SavedStruct] [0mSaving "/int/.dolphin.state"
+14254137 [32m[I][DolphinState] [0mState saved
+14254139 [34m[D][VgmFlasher] [0mProgramming flash: 40%
+14254564 [34m[D][VgmFlasher] [0mProgramming flash: 41%
+14255001 [34m[D][VgmFlasher] [0mProgramming flash: 42%
+14255456 [34m[D][VgmFlasher] [0mProgramming flash: 43%
+14255881 [34m[D][VgmFlasher] [0mProgramming flash: 44%
+14256329 [34m[D][VgmFlasher] [0mProgramming flash: 45%
+14256797 [34m[D][VgmFlasher] [0mProgramming flash: 46%
+14257232 [34m[D][VgmFlasher] [0mProgramming flash: 47%
+14257657 [34m[D][VgmFlasher] [0mProgramming flash: 48%
+14258136 [34m[D][VgmFlasher] [0mProgramming flash: 49%
+14258561 [34m[D][VgmFlasher] [0mProgramming flash: 50%
+14259008 [34m[D][VgmFlasher] [0mProgramming flash: 51%
+14259453 [34m[D][VgmFlasher] [0mProgramming flash: 52%
+14259878 [34m[D][VgmFlasher] [0mProgramming flash: 53%
+14260326 [34m[D][VgmFlasher] [0mProgramming flash: 54%
+14260793 [34m[D][VgmFlasher] [0mProgramming flash: 55%
+14261230 [34m[D][VgmFlasher] [0mProgramming flash: 56%
+14261655 [34m[D][VgmFlasher] [0mProgramming flash: 57%
+14262133 [34m[D][VgmFlasher] [0mProgramming flash: 58%
+14262558 [34m[D][VgmFlasher] [0mProgramming flash: 59%
+14263006 [34m[D][VgmFlasher] [0mProgramming flash: 60%
+14263462 [34m[D][VgmFlasher] [0mProgramming flash: 61%
+14263876 [34m[D][VgmFlasher] [0mProgramming flash: 62%
+14264324 [34m[D][VgmFlasher] [0mProgramming flash: 63%
+14264792 [34m[D][VgmFlasher] [0mProgramming flash: 64%
+14265228 [34m[D][VgmFlasher] [0mProgramming flash: 65%
+14265653 [34m[D][VgmFlasher] [0mProgramming flash: 66%
+14266132 [34m[D][VgmFlasher] [0mProgramming flash: 67%
+14266557 [34m[D][VgmFlasher] [0mProgramming flash: 68%
+14267005 [34m[D][VgmFlasher] [0mProgramming flash: 69%
+14267460 [34m[D][VgmFlasher] [0mProgramming flash: 70%
+14267885 [34m[D][VgmFlasher] [0mProgramming flash: 71%
+14268322 [34m[D][VgmFlasher] [0mProgramming flash: 72%
+14268790 [34m[D][VgmFlasher] [0mProgramming flash: 73%
+14268834 [34m[D][BleGap] [0mStart: 4
+14268835 [34m[D][BleGap] [0mset_non_discoverable success
+14268839 [34m[D][BtSrv] [0mcall 0, lock 0x00000000, result 0x00000000
+14269229 [34m[D][VgmFlasher] [0mProgramming flash: 74%
+14269654 [34m[D][VgmFlasher] [0mProgramming flash: 75%
+14270133 [34m[D][VgmFlasher] [0mProgramming flash: 76%
+14270558 [34m[D][VgmFlasher] [0mProgramming flash: 77%
+14271006 [34m[D][VgmFlasher] [0mProgramming flash: 78%
+14271462 [34m[D][VgmFlasher] [0mProgramming flash: 79%
+14271887 [34m[D][VgmFlasher] [0mProgramming flash: 80%
+14271926 [34m[D][BtSrv] [0mcall 1, lock 0x00000000, result 0x00000000
+14271926 [34m[D][GattChar] [0mUpdating Battery Level char
+14272349 [34m[D][VgmFlasher] [0mProgramming flash: 81%
+14272806 [34m[D][VgmFlasher] [0mProgramming flash: 82%
+14273242 [34m[D][VgmFlasher] [0mProgramming flash: 83%
+14273668 [34m[D][VgmFlasher] [0mProgramming flash: 84%
+14274146 [34m[D][VgmFlasher] [0mProgramming flash: 85%
+14274583 [34m[D][VgmFlasher] [0mProgramming flash: 86%
+14275020 [34m[D][VgmFlasher] [0mProgramming flash: 87%
+14275475 [34m[D][VgmFlasher] [0mProgramming flash: 88%
+14275902 [34m[D][VgmFlasher] [0mProgramming flash: 89%
+14276349 [34m[D][VgmFlasher] [0mProgramming flash: 90%
+14276816 [34m[D][VgmFlasher] [0mProgramming flash: 91%
+14277241 [34m[D][VgmFlasher] [0mProgramming flash: 92%
+14277667 [34m[D][VgmFlasher] [0mProgramming flash: 93%
+14278146 [34m[D][VgmFlasher] [0mProgramming flash: 94%
+14278583 [34m[D][VgmFlasher] [0mProgramming flash: 95%
+14279021 [34m[D][VgmFlasher] [0mProgramming flash: 96%
+14279475 [34m[D][VgmFlasher] [0mProgramming flash: 97%
+14279903 [34m[D][VgmFlasher] [0mProgramming flash: 98%
+14280349 [34m[D][VgmFlasher] [0mProgramming flash: 99%
+14280786 [34m[D][VgmFlasher] [0mProgramming flash: 100%
+14282189 [34m[D][VgmFlasher] [0mAttaching the target
+14282204 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+14282218 [34m[D][ViewDispatcher] [0mView changed while key press 20009F50 -> 2000A000. Sending key: OK, type: Release, sequence: 000000E0 to previous view
+14283538 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+14283559 [34m[D][FuriEventLoop] [0mSome events were not processed: 0x2
+14283562 [32m[I][SavedStruct] [0mLoading "/int/.expansion.settings"
+14283576 [34m[D][ExpansionSrv] [0mDetection enabled on USART
+14283577 [32m[I][Loader] [0mApp returned: 0
+14283579 [32m[I][Loader] [0mApplication stopped. Free heap: 141080
+14283580 [32m[I][Loader] [0mLaunch queue empty
+14283591 [32m[I][AnimationStorage] [0mBase manifest selected
+14283594 [34m[D][BrowserWorker] [0mStart
+14283651 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO/VGM items: 2 idx: 1
+14283652 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14283954 [32m[I][AnimationManager] [0mSelect 'L1_Read_books_128x64' animation
+14283956 [32m[I][AnimationManager] [0mLoad animation 'L1_Read_books_128x64'
+14284507 [34m[D][BrowserWorker] [0mExit to: /ext/apps/GPIO items: 61 idx: 17
+14284508 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14287798 [34m[D][BrowserWorker] [0mExit to: /ext/apps items: 13 idx: 3
+14287803 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14290315 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 2 idx: -1
+14290316 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14292649 [34m[D][BrowserWorker] [0mEnd
+14292662 [34m[D][DolphinState] [0micounter 10825, butthurt 0
+14292688 [32m[I][AnimationManager] [0mUnload animation 'L1_Read_books_128x64'
+14292702 [32m[I][Loader] [0mLoading /ext/apps/In-Development/molecule_retrosynth.fap
+14292745 [32m[I][Loader] [0mMapping
+14292747 [32m[I][Elf] [0mTotal size of loaded sections: 2285
+14292748 [32m[I][Loader] [0mLoaded in 46ms
+14292749 [32m[I][Loader] [0mStarting app
+14292761 [34m[D][ExpansionSrv] [0mDetection disabled
+14294490 [34m[D][BrowserWorker] [0mStart
+14294514 [34m[D][BrowserWorker] [0mEnter folder: /ext items: 26 idx: -1
+14294515 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14295557 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+14295558 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14297201 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 1 idx: -1
+14297201 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+14298047 [34m[D][BrowserWorker] [0mEnd

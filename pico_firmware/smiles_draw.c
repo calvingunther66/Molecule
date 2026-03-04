@@ -240,9 +240,10 @@ bool format_next_draw_command(MolGraph *graph, char *out_buf, size_t buf_size) {
   } else if (edge == graph->num_edges) {
     // Done
     snprintf(out_buf, buf_size, "DONE\n");
-    current_edge_idx = 0; // Reset for next time
-    return false;
+    current_edge_idx++; // Increment to hit false on next loop
+    return true;
   }
 
+  current_edge_idx = 0; // Reset for next time
   return false;
 }

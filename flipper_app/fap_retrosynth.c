@@ -59,6 +59,23 @@ typedef struct {
   bool is_analyzing;
 } MolRetroApp;
 
+// Helper to prevent Flipper `tx_stream` deadlocks on strings longer than 128
+// bytes
+static void furi_hal_serial_tx_chunked(FuriHalSerialHandle *handle,
+                                       const uint8_t *buffer,
+                                       size_t buffer_size) {
+  size_t sent = 0;
+  while (sent < buffer_size) {
+    size_t chunk = buffer_size - sent;
+    if (chunk > 32) {
+      chunk = 32;
+    }
+    furi_hal_serial_tx(handle, buffer + sent, chunk);
+    sent += chunk;
+    furi_delay_tick(1);
+  }
+}
+
 static void trigger_drawing(MolRetroApp *app) {
   app->is_drawing = true;
   app->num_lines = 0;
@@ -68,8 +85,8 @@ static void trigger_drawing(MolRetroApp *app) {
            app->smiles_buffer);
 
   if (app->serial_handle) {
-    furi_hal_serial_tx(app->serial_handle, (uint8_t *)app->cmd_buffer,
-                       strlen(app->cmd_buffer));
+    furi_hal_serial_tx_chunked(app->serial_handle, (uint8_t *)app->cmd_buffer,
+                               strlen(app->cmd_buffer));
   }
 }
 
@@ -197,8 +214,9 @@ static bool canvas_input_cb(InputEvent *event, void *context) {
                app->smiles_buffer);
 
       if (app->serial_handle) {
-        furi_hal_serial_tx(app->serial_handle, (uint8_t *)app->cmd_buffer,
-                           strlen(app->cmd_buffer));
+        furi_hal_serial_tx_chunked(app->serial_handle,
+                                   (uint8_t *)app->cmd_buffer,
+                                   strlen(app->cmd_buffer));
       }
 
       widget_reset(app->widget);
