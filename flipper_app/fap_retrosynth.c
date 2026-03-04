@@ -153,10 +153,12 @@ static void submenu_callback(void *context, uint32_t index) {
     if (res && !furi_string_empty(result_path)) {
       FURI_LOG_I("MolRetroApp", "1. Opening Storage");
       Storage *storage = furi_record_open(RECORD_STORAGE);
+      FURI_LOG_I("MolRetroApp", "1.1 Storage record opened");
       File *file = storage_file_alloc(storage);
+      FURI_LOG_I("MolRetroApp", "1.2 Storage file allocated");
 
       const char *cstr_path = furi_string_get_cstr(result_path);
-      FURI_LOG_I("MolRetroApp", "cstr_path: %s",
+      FURI_LOG_I("MolRetroApp", "1.3 cstr_path: %s",
                  cstr_path ? cstr_path : "NULL");
 
       if (cstr_path != NULL &&
