@@ -135,7 +135,9 @@ static void submenu_callback(void *context, uint32_t index) {
   if (index == MolRetroEventSubmenuText) {
     view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewTextInput);
   } else if (index == MolRetroEventSubmenuFile) {
-    FuriString *file_path = furi_string_alloc();
+    FuriString *initial_path =
+        furi_string_alloc_set_str(EXT_PATH("apps/In-Development"));
+    FuriString *result_path = furi_string_alloc();
     DialogsApp *dialogs = furi_record_open(RECORD_DIALOGS);
 
     DialogsFileBrowserOptions browser_options;
@@ -143,16 +145,19 @@ static void submenu_callback(void *context, uint32_t index) {
     dialog_file_browser_set_basic_options(&browser_options, ".txt", NULL);
     browser_options.base_path = EXT_PATH("");
 
-    bool res = dialog_file_browser_show(dialogs, file_path, file_path,
+    bool res = dialog_file_browser_show(dialogs, result_path, initial_path,
                                         &browser_options);
     furi_record_close(RECORD_DIALOGS);
+    furi_string_free(initial_path);
 
-    if (res && !furi_string_empty(file_path)) {
+    if (res && !furi_string_empty(result_path)) {
       FURI_LOG_I("MolRetroApp", "1. Opening Storage");
       Storage *storage = furi_record_open(RECORD_STORAGE);
       File *file = storage_file_alloc(storage);
 
-      const char *cstr_path = furi_string_get_cstr(file_path);
+      const char *cstr_path = furi_string_get_cstr(result_path);
+      FURI_LOG_I("MolRetroApp", "cstr_path: %s",
+                 cstr_path ? cstr_path : "NULL");
 
       if (cstr_path != NULL &&
           storage_file_open(file, cstr_path, FSAM_READ, FSOM_OPEN_EXISTING)) {
@@ -187,7 +192,7 @@ static void submenu_callback(void *context, uint32_t index) {
         FURI_LOG_I("MolRetroApp", "8. Triggering Finished");
       }
     }
-    furi_string_free(file_path);
+    furi_string_free(result_path);
   }
 }
 

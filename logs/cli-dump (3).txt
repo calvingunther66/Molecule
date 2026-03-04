@@ -1,0 +1,1010 @@
+
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (c176524f built on 25-01-2026)
+
+>: 
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (c176524f built on 25-01-2026)
+
+>: log trace
+Current log level: trace
+Use <log ?> to list available log levels
+Press CTRL+C to stop...
+6846115 [34m[D][BleGap] [0mStart: 4
+6846115 [34m[D][BleGap] [0mset_non_discoverable success
+6846117 [34m[D][BtSrv] [0mcall 0, lock 0x00000000, result 0x00000000
+6846579 [34m[D][ViewDispatcher] [0mView changed while key press 2000AA00 -> 200083C0. Sending key: Up, type: Release, sequence: 0000006C to previous view
+6848960 [34m[D][ViewDispatcher] [0mView changed while key press 200083C0 -> 2000A900. Sending key: OK, type: Release, sequence: 00000084 to previous view
+6850420 [35m[T][StorageApi] [0mFile/Dir 0000A5D8 alloc
+6850424 [35m[T][StorageApi] [0mFile 0000A5D8 - 0000A6B4 open (/int/.desktop_keybinds.txt)
+6850428 [35m[T][StorageApi] [0mFile 0000A5D8 - 0000A6B4 closed
+6850429 [35m[T][StorageApi] [0mFile/Dir 0000A5D8 free
+6850441 [34m[D][BrowserWorker] [0mStart
+6850451 [35m[T][StorageApi] [0mFile/Dir 0000E530 alloc
+6850453 [35m[T][StorageApi] [0mDir 0000E530 - 0000E60C open (/ext/apps)
+6850460 [35m[T][StorageApi] [0mDir 0000E530 - 0000E60C closed
+6850461 [35m[T][StorageApi] [0mFile/Dir 0000E530 free
+6850462 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+6850463 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6850464 [35m[T][StorageApi] [0mFile/Dir 0000E530 alloc
+6850466 [35m[T][StorageApi] [0mDir 0000E530 - 0000E60C open (/ext/apps)
+6850551 [35m[T][StorageApi] [0mDir 0000E530 - 0000E60C closed
+6850551 [35m[T][StorageApi] [0mFile/Dir 0000E530 free
+6852439 [35m[T][StorageApi] [0mFile/Dir 0000E530 alloc
+6852442 [35m[T][StorageApi] [0mDir 0000E530 - 0000E65C open (/ext/apps/GPIO)
+6852483 [35m[T][StorageApi] [0mDir 0000E530 - 0000E65C closed
+6852484 [35m[T][StorageApi] [0mFile/Dir 0000E530 free
+6852485 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO items: 61 idx: -1
+6852487 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6852487 [35m[T][StorageApi] [0mFile/Dir 0000E530 alloc
+6852493 [35m[T][StorageApi] [0mDir 0000E530 - 0000E614 open (/ext/apps/GPIO)
+6852529 [35m[T][StorageApi] [0mFile/Dir 0000E940 alloc
+6852534 [35m[T][StorageApi] [0mFile 0000E940 - 0000ECC4 open (/ext/apps/GPIO/flip_rpi.fap)
+6852554 [35m[T][StorageApi] [0mFile 0000E940 - 0000ECC4 closed
+6852554 [35m[T][StorageApi] [0mFile/Dir 0000E940 free
+6852563 [35m[T][StorageApi] [0mFile/Dir 0000ECA8 alloc
+6852574 [35m[T][StorageApi] [0mFile 0000ECA8 - 0000EE1C open (/ext/apps/GPIO/gemini_ia.fap)
+6852586 [35m[T][StorageApi] [0mFile 0000ECA8 - 0000EE1C closed
+6852587 [35m[T][StorageApi] [0mFile/Dir 0000ECA8 free
+6852607 [35m[T][StorageApi] [0mFile/Dir 0000ECF8 alloc
+6852620 [35m[T][StorageApi] [0mFile 0000ECF8 - 0000F014 open (/ext/apps/GPIO/spi_mem_manager.fap)
+6852630 [35m[T][StorageApi] [0mFile 0000ECF8 - 0000F014 closed
+6852631 [35m[T][StorageApi] [0mFile/Dir 0000ECF8 free
+6852634 [35m[T][StorageApi] [0mFile/Dir 0000EF90 alloc
+6852646 [35m[T][StorageApi] [0mFile 0000EF90 - 0000F19C open (/ext/apps/GPIO/nearby_files.fap)
+6852662 [35m[T][StorageApi] [0mFile 0000EF90 - 0000F19C closed
+6852663 [35m[T][StorageApi] [0mFile/Dir 0000EF90 free
+6852666 [35m[T][StorageApi] [0mFile/Dir 0000ED98 alloc
+6852678 [35m[T][StorageApi] [0mFile 0000ED98 - 0000F254 open (/ext/apps/GPIO/flipboard_keyboard.fap)
+6852693 [35m[T][StorageApi] [0mFile 0000ED98 - 0000F254 closed
+6852694 [35m[T][StorageApi] [0mFile/Dir 0000ED98 free
+6852699 [35m[T][StorageApi] [0mFile/Dir 0000EDB0 alloc
+6852710 [35m[T][StorageApi] [0mFile 0000EDB0 - 0000F304 open (/ext/apps/GPIO/radar_scanner.fap)
+6852721 [35m[T][StorageApi] [0mFile 0000EDB0 - 0000F304 closed
+6852722 [35m[T][StorageApi] [0mFile/Dir 0000EDB0 free
+6852726 [35m[T][StorageApi] [0mFile/Dir 0000EFF0 alloc
+6852738 [35m[T][StorageApi] [0mFile 0000EFF0 - 0000F3CC open (/ext/apps/GPIO/flipboard_signal.fap)
+6852752 [35m[T][StorageApi] [0mFile 0000EFF0 - 0000F3CC closed
+6852753 [35m[T][StorageApi] [0mFile/Dir 0000EFF0 free
+6852756 [35m[T][StorageApi] [0mFile/Dir 0000ECC8 alloc
+6852776 [35m[T][StorageApi] [0mFile 0000ECC8 - 0000F59C open (/ext/apps/GPIO/zeitraffer.fap)
+6852796 [35m[T][StorageApi] [0mFile 0000ECC8 - 0000F59C closed
+6852797 [35m[T][StorageApi] [0mFile/Dir 0000ECC8 free
+6852807 [35m[T][StorageApi] [0mFile/Dir 0000F520 alloc
+6852820 [35m[T][StorageApi] [0mFile 0000F520 - 0000F68C open (/ext/apps/GPIO/ublox.fap)
+6852831 [35m[T][StorageApi] [0mFile 0000F520 - 0000F68C closed
+6852831 [35m[T][StorageApi] [0mFile/Dir 0000F520 free
+6852834 [35m[T][StorageApi] [0mFile/Dir 0000F5D0 alloc
+6852850 [35m[T][StorageApi] [0mFile 0000F5D0 - 0000F744 open (/ext/apps/GPIO/ghost_esp.fap)
+6852865 [35m[T][StorageApi] [0mFile 0000F5D0 - 0000F744 closed
+6852866 [35m[T][StorageApi] [0mFile/Dir 0000F5D0 free
+6852869 [35m[T][StorageApi] [0mFile/Dir 0000F490 alloc
+6852882 [35m[T][StorageApi] [0mFile 0000F490 - 0000F7EC open (/ext/apps/GPIO/air_mouse.fap)
+6853055 [35m[T][StorageApi] [0mFile 0000F490 - 0000F7EC closed
+6853056 [35m[T][StorageApi] [0mFile/Dir 0000F490 free
+6853059 [35m[T][StorageApi] [0mFile/Dir 0000F740 alloc
+6853072 [35m[T][StorageApi] [0mFile 0000F740 - 0000F8B4 open (/ext/apps/GPIO/blackhat.fap)
+6853088 [35m[T][StorageApi] [0mFile 0000F740 - 0000F8B4 closed
+6853089 [35m[T][StorageApi] [0mFile/Dir 0000F740 free
+6853093 [35m[T][StorageApi] [0mFile/Dir 0000F800 alloc
+6853106 [35m[T][StorageApi] [0mFile 0000F800 - 0000F96C open (/ext/apps/GPIO/coleco.fap)
+6853122 [35m[T][StorageApi] [0mFile 0000F800 - 0000F96C closed
+6853123 [35m[T][StorageApi] [0mFile/Dir 0000F800 free
+6853127 [35m[T][StorageApi] [0mFile/Dir 0000F558 alloc
+6853141 [35m[T][StorageApi] [0mFile 0000F558 - 0000FA34 open (/ext/apps/GPIO/flip_map.fap)
+6853193 [35m[T][StorageApi] [0mFile 0000F558 - 0000FA34 closed
+6853194 [35m[T][StorageApi] [0mFile/Dir 0000F558 free
+6853198 [35m[T][StorageApi] [0mFile/Dir 0000F968 alloc
+6853211 [35m[T][StorageApi] [0mFile 0000F968 - 0000FADC open (/ext/apps/GPIO/gps_nmea.fap)
+6853221 [35m[T][StorageApi] [0mFile 0000F968 - 0000FADC closed
+6853222 [35m[T][StorageApi] [0mFile/Dir 0000F968 free
+6853225 [35m[T][StorageApi] [0mFile/Dir 0000FA10 alloc
+6853239 [35m[T][StorageApi] [0mFile 0000FA10 - 0000FB84 open (/ext/apps/GPIO/flashlight.fap)
+6853255 [35m[T][StorageApi] [0mFile 0000FA10 - 0000FB84 closed
+6853255 [35m[T][StorageApi] [0mFile/Dir 0000FA10 free
+6853259 [35m[T][StorageApi] [0mFile/Dir 0000FAF8 alloc
+6853273 [35m[T][StorageApi] [0mFile 0000FAF8 - 0000FC7C open (/ext/apps/GPIO/flipper_spi_terminal.fap)
+6853287 [35m[T][StorageApi] [0mFile 0000FAF8 - 0000FC7C closed
+6853288 [35m[T][StorageApi] [0mFile/Dir 0000FAF8 free
+6853291 [35m[T][StorageApi] [0mFile/Dir 0000F9C0 alloc
+6853305 [35m[T][StorageApi] [0mFile 0000F9C0 - 0000FD14 open (/ext/apps/GPIO/flipperscope.fap)
+6853318 [35m[T][StorageApi] [0mFile 0000F9C0 - 0000FD14 closed
+6853319 [35m[T][StorageApi] [0mFile/Dir 0000F9C0 free
+6853324 [35m[T][StorageApi] [0mFile/Dir 0000F998 alloc
+6853338 [35m[T][StorageApi] [0mFile 0000F998 - 0000FDB4 open (/ext/apps/GPIO/fm_radio.fap)
+6853352 [35m[T][StorageApi] [0mFile 0000F998 - 0000FDB4 closed
+6853353 [35m[T][StorageApi] [0mFile/Dir 0000F998 free
+6853356 [35m[T][StorageApi] [0mFile/Dir 0000F7A0 alloc
+6853372 [35m[T][StorageApi] [0mFile 0000F7A0 - 0000FEC4 open (/ext/apps/GPIO/flipper_geiger.fap)
+6853381 [35m[T][StorageApi] [0mFile 0000F7A0 - 0000FEC4 closed
+6853382 [35m[T][StorageApi] [0mFile/Dir 0000F7A0 free
+6853385 [35m[T][StorageApi] [0mFile/Dir 0000FE20 alloc
+6853400 [35m[T][StorageApi] [0mFile 0000FE20 - 0000FFA4 open (/ext/apps/GPIO/ws2812b_tester_app.fap)
+6853412 [35m[T][StorageApi] [0mFile 0000FE20 - 0000FFA4 closed
+6853413 [35m[T][StorageApi] [0mFile/Dir 0000FE20 free
+6853417 [35m[T][StorageApi] [0mFile/Dir 0000FC30 alloc
+6853431 [35m[T][StorageApi] [0mFile 0000FC30 - 0001002C open (/ext/apps/GPIO/fmtx_app.fap)
+6853442 [35m[T][StorageApi] [0mFile 0000FC30 - 0001002C closed
+6853442 [35m[T][StorageApi] [0mFile/Dir 0000FC30 free
+6853448 [35m[T][StorageApi] [0mFile/Dir 0000F318 alloc
+6853470 [35m[T][StorageApi] [0mFile 0000F318 - 0000FF04 open (/ext/apps/GPIO/flipboard_blinky.fap)
+6853486 [35m[T][StorageApi] [0mFile 0000F318 - 0000FF04 closed
+6853487 [35m[T][StorageApi] [0mFile/Dir 0000F318 free
+6853490 [35m[T][StorageApi] [0mFile/Dir 0000F270 alloc
+6853506 [35m[T][StorageApi] [0mFile 0000F270 - 0000FCE4 open (/ext/apps/GPIO/gpio.fap)
+6853520 [35m[T][StorageApi] [0mFile 0000F270 - 0000FCE4 closed
+6853521 [35m[T][StorageApi] [0mFile/Dir 0000F270 free
+6853524 [35m[T][StorageApi] [0mFile/Dir 0000F258 alloc
+6853545 [35m[T][StorageApi] [0mFile 0000F258 - 00010464 open (/ext/apps/GPIO/gpio_badge.fap)
+6853558 [35m[T][StorageApi] [0mFile 0000F258 - 00010464 closed
+6853559 [35m[T][StorageApi] [0mFile/Dir 0000F258 free
+6853562 [35m[T][StorageApi] [0mFile/Dir 0000FCE0 alloc
+6853578 [35m[T][StorageApi] [0mFile 0000FCE0 - 0001050C open (/ext/apps/GPIO/flip_world.fap)
+6853719 [35m[T][StorageApi] [0mFile 0000FCE0 - 0001050C closed
+6853720 [35m[T][StorageApi] [0mFile/Dir 0000FCE0 free
+6853723 [35m[T][StorageApi] [0mFile/Dir 0000FF60 alloc
+6853739 [35m[T][StorageApi] [0mFile 0000FF60 - 000105FC open (/ext/apps/GPIO/gpio_controller.fap)
+6853754 [35m[T][StorageApi] [0mFile 0000FF60 - 000105FC closed
+6853755 [35m[T][StorageApi] [0mFile/Dir 0000FF60 free
+6853761 [35m[T][StorageApi] [0mFile/Dir 0000FF20 alloc
+6853783 [35m[T][StorageApi] [0mFile 0000FF20 - 0000FF7C open (/ext/apps/GPIO/simultaneous_rfid_reader.fap)
+6853799 [35m[T][StorageApi] [0mFile 0000FF20 - 0000FF7C closed
+6853800 [35m[T][StorageApi] [0mFile/Dir 0000FF20 free
+6853803 [35m[T][StorageApi] [0mFile/Dir 0000FE70 alloc
+6853820 [35m[T][StorageApi] [0mFile 0000FE70 - 0001076C open (/ext/apps/GPIO/lightmeter.fap)
+6853832 [35m[T][StorageApi] [0mFile 0000FE70 - 0001076C closed
+6853833 [35m[T][StorageApi] [0mFile/Dir 0000FE70 free
+6853836 [35m[T][StorageApi] [0mFile/Dir 00010500 alloc
+6853857 [35m[T][StorageApi] [0mFile 00010500 - 00010844 open (/ext/apps/GPIO/gpio_explorer_app.fap)
+6853870 [35m[T][StorageApi] [0mFile 00010500 - 00010844 closed
+6853871 [35m[T][StorageApi] [0mFile/Dir 00010500 free
+6853875 [35m[T][StorageApi] [0mFile/Dir 00010768 alloc
+6853891 [35m[T][StorageApi] [0mFile 00010768 - 000108C4 open (/ext/apps/GPIO/flip_weather.fap)
+6853903 [35m[T][StorageApi] [0mFile 00010768 - 000108C4 closed
+6853904 [35m[T][StorageApi] [0mFile/Dir 00010768 free
+6853908 [35m[T][StorageApi] [0mFile/Dir 00010838 alloc
+6853925 [35m[T][StorageApi] [0mFile 00010838 - 000109AC open (/ext/apps/GPIO/free_roam.fap)
+6854096 [35m[T][StorageApi] [0mFile 00010838 - 000109AC closed
+6854097 [35m[T][StorageApi] [0mFile/Dir 00010838 free
+6854100 [35m[T][StorageApi] [0mFile/Dir 000108F0 alloc
+6854122 [35m[T][StorageApi] [0mFile 000108F0 - 00010A64 open (/ext/apps/GPIO/sio2flip.fap)
+6854136 [35m[T][StorageApi] [0mFile 000108F0 - 00010A64 closed
+6854137 [35m[T][StorageApi] [0mFile/Dir 000108F0 free
+6854140 [35m[T][StorageApi] [0mFile/Dir 00010700 alloc
+6854158 [35m[T][StorageApi] [0mFile 00010700 - 00010B1C open (/ext/apps/GPIO/gpio_reader_a.fap)
+6854168 [35m[T][StorageApi] [0mFile 00010700 - 00010B1C closed
+6854169 [35m[T][StorageApi] [0mFile/Dir 00010700 free
+6854172 [35m[T][StorageApi] [0mFile/Dir 00010A90 alloc
+6854190 [35m[T][StorageApi] [0mFile 00010A90 - 00010BF4 open (/ext/apps/GPIO/logic_analyzer.fap)
+6854201 [35m[T][StorageApi] [0mFile 00010A90 - 00010BF4 closed
+6854202 [35m[T][StorageApi] [0mFile/Dir 00010A90 free
+6854205 [35m[T][StorageApi] [0mFile/Dir 00010950 alloc
+6854222 [35m[T][StorageApi] [0mFile 00010950 - 00010CBC open (/ext/apps/GPIO/gpio_reader_b.fap)
+6854234 [35m[T][StorageApi] [0mFile 00010950 - 00010CBC closed
+6854235 [35m[T][StorageApi] [0mFile/Dir 00010950 free
+6854239 [35m[T][StorageApi] [0mFile/Dir 00010C08 alloc
+6854262 [35m[T][StorageApi] [0mFile 00010C08 - 00010D84 open (/ext/apps/GPIO/gpio_sentry_safe.fap)
+6854274 [35m[T][StorageApi] [0mFile 00010C08 - 00010D84 closed
+6854274 [35m[T][StorageApi] [0mFile/Dir 00010C08 free
+6854278 [35m[T][StorageApi] [0mFile/Dir 00010CC8 alloc
+6854296 [35m[T][StorageApi] [0mFile 00010CC8 - 00010E2C open (/ext/apps/GPIO/longwave_clock.fap)
+6854311 [35m[T][StorageApi] [0mFile 00010CC8 - 00010E2C closed
+6854311 [35m[T][StorageApi] [0mFile/Dir 00010CC8 free
+6854314 [35m[T][StorageApi] [0mFile/Dir 00010AC8 alloc
+6854333 [35m[T][StorageApi] [0mFile 00010AC8 - 00010F0C open (/ext/apps/GPIO/magspoof.fap)
+6854347 [35m[T][StorageApi] [0mFile 00010AC8 - 00010F0C closed
+6854348 [35m[T][StorageApi] [0mFile/Dir 00010AC8 free
+6854351 [35m[T][StorageApi] [0mFile/Dir 00010E58 alloc
+6854370 [35m[T][StorageApi] [0mFile 00010E58 - 00010FC4 open (/ext/apps/GPIO/pokemon.fap)
+6854384 [35m[T][StorageApi] [0mFile 00010E58 - 00010FC4 closed
+6854385 [35m[T][StorageApi] [0mFile/Dir 00010E58 free
+6854390 [35m[T][StorageApi] [0mFile/Dir 00010C60 alloc
+6854408 [35m[T][StorageApi] [0mFile 00010C60 - 0001107C open (/ext/apps/GPIO/signal_generator.fap)
+6854418 [35m[T][StorageApi] [0mFile 00010C60 - 0001107C closed
+6854419 [35m[T][StorageApi] [0mFile/Dir 00010C60 free
+6854422 [35m[T][StorageApi] [0mFile/Dir 00010FF0 alloc
+6854441 [35m[T][StorageApi] [0mFile 00010FF0 - 0001114C open (/ext/apps/GPIO/timelapse.fap)
+6854465 [35m[T][StorageApi] [0mFile 00010FF0 - 0001114C closed
+6854466 [35m[T][StorageApi] [0mFile/Dir 00010FF0 free
+6854470 [35m[T][StorageApi] [0mFile/Dir 00010EA0 alloc
+6854488 [35m[T][StorageApi] [0mFile 00010EA0 - 00011204 open (/ext/apps/GPIO/uart_terminal.fap)
+6854500 [35m[T][StorageApi] [0mFile 00010EA0 - 00011204 closed
+6854501 [35m[T][StorageApi] [0mFile/Dir 00010EA0 free
+6854504 [35m[T][StorageApi] [0mFile/Dir 00011160 alloc
+6854523 [35m[T][StorageApi] [0mFile 00011160 - 000112EC open (/ext/apps/GPIO/wii_ec_anal.fap)
+6854543 [35m[T][StorageApi] [0mFile 00011160 - 000112EC closed
+6854543 [35m[T][StorageApi] [0mFile/Dir 00011160 free
+6854547 [35m[T][StorageApi] [0mFile/Dir 00011218 alloc
+6854566 [35m[T][StorageApi] [0mFile 00011218 - 00011374 open (/ext/apps/GPIO/wire_tester.fap)
+6854578 [35m[T][StorageApi] [0mFile 00011218 - 00011374 closed
+6854578 [35m[T][StorageApi] [0mFile/Dir 00011218 free
+6854583 [35m[T][StorageApi] [0mFile/Dir 000112D0 alloc
+6854602 [35m[T][StorageApi] [0mFile 000112D0 - 0001142C open (/ext/apps/GPIO/flip_gemini.fap)
+6854665 [35m[T][StorageApi] [0mFile 000112D0 - 0001142C closed
+6854666 [35m[T][StorageApi] [0mFile/Dir 000112D0 free
+6854670 [35m[T][StorageApi] [0mFile/Dir 00010E08 alloc
+6854689 [35m[T][StorageApi] [0mFile 00010E08 - 000114DC open (/ext/apps/GPIO/flip_telegram.fap)
+6854746 [35m[T][StorageApi] [0mFile 00010E08 - 000114DC closed
+6854746 [35m[T][StorageApi] [0mFile/Dir 00010E08 free
+6854750 [35m[T][StorageApi] [0mFile/Dir 00010FA0 alloc
+6854775 [35m[T][StorageApi] [0mFile 00010FA0 - 000115B4 open (/ext/apps/GPIO/bme680_flipper_zero.fap)
+6854793 [35m[T][StorageApi] [0mFile 00010FA0 - 000115B4 closed
+6854793 [35m[T][StorageApi] [0mFile/Dir 00010FA0 free
+6854796 [35m[T][StorageApi] [0mFile/Dir 000114F8 alloc
+6854817 [35m[T][StorageApi] [0mFile 000114F8 - 0001166C open (/ext/apps/GPIO/uhf_rfid.fap)
+6854832 [35m[T][StorageApi] [0mFile 000114F8 - 0001166C closed
+6854832 [35m[T][StorageApi] [0mFile/Dir 000114F8 free
+6854835 [35m[T][StorageApi] [0mFile/Dir 00011330 alloc
+6854860 [35m[T][StorageApi] [0mFile 00011330 - 00011704 open (/ext/apps/GPIO/usping.fap)
+6854871 [35m[T][StorageApi] [0mFile 00011330 - 00011704 closed
+6854872 [35m[T][StorageApi] [0mFile/Dir 00011330 free
+6854876 [35m[T][StorageApi] [0mFile/Dir 00011670 alloc
+6854897 [35m[T][StorageApi] [0mFile 00011670 - 0001131C open (/ext/apps/GPIO/flipper_http.fap)
+6855003 [35m[T][StorageApi] [0mFile 00011670 - 0001131C closed
+6855004 [35m[T][StorageApi] [0mFile/Dir 00011670 free
+6855014 [35m[T][StorageApi] [0mDir 0000E530 - 0000E614 closed
+6855014 [35m[T][StorageApi] [0mFile/Dir 0000E530 free
+6858556 [35m[T][StorageApi] [0mFile/Dir 0000DB60 alloc
+6858565 [35m[T][StorageApi] [0mDir 0000DB60 - 000113BC open (/ext/apps/GPIO/VGM)
+6858568 [35m[T][StorageApi] [0mDir 0000DB60 - 000113BC closed
+6858569 [35m[T][StorageApi] [0mFile/Dir 0000DB60 free
+6858570 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO/VGM items: 2 idx: -1
+6858574 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6858575 [35m[T][StorageApi] [0mFile/Dir 0000B788 alloc
+6858584 [35m[T][StorageApi] [0mDir 0000B788 - 0000E664 open (/ext/apps/GPIO/VGM)
+6858588 [35m[T][StorageApi] [0mFile/Dir 0000E890 alloc
+6858601 [35m[T][StorageApi] [0mFile 0000E890 - 0000E9F4 open (/ext/apps/GPIO/VGM/vgm_air_mouse.fap)
+6858614 [35m[T][StorageApi] [0mFile 0000E890 - 0000E9F4 closed
+6858615 [35m[T][StorageApi] [0mFile/Dir 0000E890 free
+6858620 [35m[T][StorageApi] [0mFile/Dir 0000E760 alloc
+6858631 [35m[T][StorageApi] [0mFile 0000E760 - 0000EACC open (/ext/apps/GPIO/VGM/video_game_module_tool.fap)
+6858644 [35m[T][StorageApi] [0mFile 0000E760 - 0000EACC closed
+6858645 [35m[T][StorageApi] [0mFile/Dir 0000E760 free
+6858652 [35m[T][StorageApi] [0mDir 0000B788 - 0000E664 closed
+6858652 [35m[T][StorageApi] [0mFile/Dir 0000B788 free
+6861177 [34m[D][BrowserWorker] [0mEnd
+6861188 [34m[D][DolphinState] [0micounter 10833, butthurt 0
+6861202 [32m[I][AnimationManager] [0mUnload animation 'L1_Happy_holidays_128x64'
+6861211 [35m[T][StorageApi] [0mFile/Dir 00002E80 alloc
+6861212 [32m[I][Loader] [0mLoading /ext/apps/GPIO/VGM/video_game_module_tool.fap
+6861222 [35m[T][StorageApi] [0mFile 00002E80 - 000033D4 open (/ext/apps/GPIO/VGM/video_game_module_tool.fap)
+6861279 [35m[T][StorageApi] [0mFile/Dir 0000A528 alloc
+6861285 [35m[T][StorageApi] [0mFile 0000A528 - 0000B9D4 open (/ext/apps_assets/video_game_module_tool/.assets.signature)
+6861288 [35m[T][StorageApi] [0mFile 0000A528 - 0000B9D4 closed
+6861289 [35m[T][StorageApi] [0mFile/Dir 0000A528 free
+6861290 [32m[I][Loader] [0mMapping
+6861292 [32m[I][Elf] [0mTotal size of loaded sections: 9068
+6861294 [35m[T][StorageApi] [0mFile 00002E80 - 000033D4 closed
+6861294 [35m[T][StorageApi] [0mFile/Dir 00002E80 free
+6861295 [32m[I][Loader] [0mLoaded in 83ms
+6861296 [32m[I][Loader] [0mStarting app
+6861298 [34m[D][ExpansionSrv] [0mDetection disabled
+6861299 [34m[D][VgmFlasher] [0mAttaching the target
+6861313 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+6863464 [34m[D][BrowserWorker] [0mStart
+6863469 [35m[T][StorageApi] [0mFile/Dir 00011B40 alloc
+6863470 [35m[T][StorageApi] [0mDir 00011B40 - 00011C04 open (/ext)
+6863483 [35m[T][StorageApi] [0mDir 00011B40 - 00011C04 closed
+6863484 [35m[T][StorageApi] [0mFile/Dir 00011B40 free
+6863485 [34m[D][BrowserWorker] [0mEnter folder: /ext items: 24 idx: -1
+6863486 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6863487 [35m[T][StorageApi] [0mFile/Dir 00011B40 alloc
+6863488 [35m[T][StorageApi] [0mDir 00011B40 - 00011C04 open (/ext)
+6863510 [35m[T][StorageApi] [0mDir 00011B40 - 00011C04 closed
+6863510 [35m[T][StorageApi] [0mFile/Dir 00011B40 free
+6864457 [35m[T][StorageApi] [0mFile/Dir 00011B70 alloc
+6864459 [35m[T][StorageApi] [0mDir 00011B70 - 00011C7C open (/ext/apps)
+6864467 [35m[T][StorageApi] [0mDir 00011B70 - 00011C7C closed
+6864468 [35m[T][StorageApi] [0mFile/Dir 00011B70 free
+6864469 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+6864470 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6864471 [35m[T][StorageApi] [0mFile/Dir 00011B88 alloc
+6864475 [35m[T][StorageApi] [0mDir 00011B88 - 00011C64 open (/ext/apps)
+6864489 [35m[T][StorageApi] [0mDir 00011B88 - 00011C64 closed
+6864489 [35m[T][StorageApi] [0mFile/Dir 00011B88 free
+6866090 [35m[T][StorageApi] [0mFile/Dir 00011B40 alloc
+6866093 [35m[T][StorageApi] [0mDir 00011B40 - 00011CF4 open (/ext/apps/In-Development)
+6866098 [35m[T][StorageApi] [0mDir 00011B40 - 00011CF4 closed
+6866098 [35m[T][StorageApi] [0mFile/Dir 00011B40 free
+6866099 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 1 idx: -1
+6866101 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6866102 [35m[T][StorageApi] [0mFile/Dir 00011B70 alloc
+6866108 [35m[T][StorageApi] [0mDir 00011B70 - 00011CC4 open (/ext/apps/In-Development)
+6866117 [35m[T][StorageApi] [0mDir 00011B70 - 00011CC4 closed
+6866117 [35m[T][StorageApi] [0mFile/Dir 00011B70 free
+6866924 [34m[D][BrowserWorker] [0mEnd
+6866931 [34m[D][ViewDispatcher] [0mView changed while key press 2000B948 -> 2000B880. Sending key: OK, type: Release, sequence: 000000DC to previous view
+6867405 [34m[D][VgmFlasher] [0mFlashing firmware from file: /ext/apps/In-Development/retrosynth_coprocessor.uf2
+6867409 [35m[T][StorageApi] [0mFile/Dir 0000E188 alloc
+6867412 [34m[D][VgmFlasher] [0mAttaching the target
+6867434 [35m[T][StorageApi] [0mFile 0000E188 - 0000E28C open (/ext/apps/In-Development/retrosynth_coprocessor.uf2)
+6867437 [34m[D][VgmFlasher] [0mVerifying file: 0%
+6867464 [34m[D][VgmFlasher] [0mVerifying file: 1%
+6867478 [34m[D][VgmFlasher] [0mVerifying file: 2%
+6867492 [34m[D][VgmFlasher] [0mVerifying file: 3%
+6867507 [34m[D][VgmFlasher] [0mVerifying file: 4%
+6867521 [34m[D][VgmFlasher] [0mVerifying file: 5%
+6867535 [34m[D][VgmFlasher] [0mVerifying file: 6%
+6867550 [34m[D][VgmFlasher] [0mVerifying file: 7%
+6867564 [34m[D][VgmFlasher] [0mVerifying file: 8%
+6867578 [34m[D][VgmFlasher] [0mVerifying file: 9%
+6867593 [34m[D][VgmFlasher] [0mVerifying file: 10%
+6867607 [34m[D][VgmFlasher] [0mVerifying file: 11%
+6867621 [34m[D][VgmFlasher] [0mVerifying file: 12%
+6867636 [34m[D][VgmFlasher] [0mVerifying file: 13%
+6867662 [34m[D][VgmFlasher] [0mVerifying file: 14%
+6867676 [34m[D][VgmFlasher] [0mVerifying file: 15%
+6867691 [34m[D][VgmFlasher] [0mVerifying file: 16%
+6867705 [34m[D][VgmFlasher] [0mVerifying file: 17%
+6867719 [34m[D][VgmFlasher] [0mVerifying file: 18%
+6867734 [34m[D][VgmFlasher] [0mVerifying file: 19%
+6867748 [34m[D][VgmFlasher] [0mVerifying file: 20%
+6867774 [34m[D][VgmFlasher] [0mVerifying file: 21%
+6867789 [34m[D][VgmFlasher] [0mVerifying file: 22%
+6867803 [34m[D][VgmFlasher] [0mVerifying file: 23%
+6867817 [34m[D][VgmFlasher] [0mVerifying file: 24%
+6867833 [34m[D][VgmFlasher] [0mVerifying file: 25%
+6867870 [34m[D][VgmFlasher] [0mVerifying file: 26%
+6867884 [34m[D][VgmFlasher] [0mVerifying file: 27%
+6867899 [34m[D][VgmFlasher] [0mVerifying file: 28%
+6867913 [34m[D][VgmFlasher] [0mVerifying file: 29%
+6867927 [34m[D][VgmFlasher] [0mVerifying file: 30%
+6867942 [34m[D][VgmFlasher] [0mVerifying file: 31%
+6867956 [34m[D][VgmFlasher] [0mVerifying file: 32%
+6867970 [34m[D][VgmFlasher] [0mVerifying file: 33%
+6867985 [34m[D][VgmFlasher] [0mVerifying file: 34%
+6867999 [34m[D][VgmFlasher] [0mVerifying file: 35%
+6868013 [34m[D][VgmFlasher] [0mVerifying file: 36%
+6868028 [34m[D][VgmFlasher] [0mVerifying file: 37%
+6868042 [34m[D][VgmFlasher] [0mVerifying file: 38%
+6868068 [34m[D][VgmFlasher] [0mVerifying file: 39%
+6868083 [34m[D][VgmFlasher] [0mVerifying file: 40%
+6868097 [34m[D][VgmFlasher] [0mVerifying file: 41%
+6868111 [34m[D][VgmFlasher] [0mVerifying file: 42%
+6868126 [34m[D][VgmFlasher] [0mVerifying file: 43%
+6868141 [34m[D][VgmFlasher] [0mVerifying file: 44%
+6868155 [34m[D][VgmFlasher] [0mVerifying file: 45%
+6868170 [34m[D][VgmFlasher] [0mVerifying file: 46%
+6868184 [34m[D][VgmFlasher] [0mVerifying file: 47%
+6868198 [34m[D][VgmFlasher] [0mVerifying file: 48%
+6868213 [34m[D][VgmFlasher] [0mVerifying file: 49%
+6868227 [34m[D][VgmFlasher] [0mVerifying file: 50%
+6868264 [34m[D][VgmFlasher] [0mVerifying file: 51%
+6868279 [34m[D][VgmFlasher] [0mVerifying file: 52%
+6868293 [34m[D][VgmFlasher] [0mVerifying file: 53%
+6868307 [34m[D][VgmFlasher] [0mVerifying file: 54%
+6868322 [34m[D][VgmFlasher] [0mVerifying file: 55%
+6868336 [34m[D][VgmFlasher] [0mVerifying file: 56%
+6868350 [34m[D][VgmFlasher] [0mVerifying file: 57%
+6868366 [34m[D][VgmFlasher] [0mVerifying file: 58%
+6868380 [34m[D][VgmFlasher] [0mVerifying file: 59%
+6868394 [34m[D][VgmFlasher] [0mVerifying file: 60%
+6868409 [34m[D][VgmFlasher] [0mVerifying file: 61%
+6868423 [34m[D][VgmFlasher] [0mVerifying file: 62%
+6868437 [34m[D][VgmFlasher] [0mVerifying file: 63%
+6868464 [34m[D][VgmFlasher] [0mVerifying file: 64%
+6868478 [34m[D][VgmFlasher] [0mVerifying file: 65%
+6868492 [34m[D][VgmFlasher] [0mVerifying file: 66%
+6868507 [34m[D][VgmFlasher] [0mVerifying file: 67%
+6868521 [34m[D][VgmFlasher] [0mVerifying file: 68%
+6868535 [34m[D][VgmFlasher] [0mVerifying file: 69%
+6868550 [34m[D][VgmFlasher] [0mVerifying file: 70%
+6868564 [34m[D][VgmFlasher] [0mVerifying file: 71%
+6868578 [34m[D][VgmFlasher] [0mVerifying file: 72%
+6868593 [34m[D][VgmFlasher] [0mVerifying file: 73%
+6868607 [34m[D][VgmFlasher] [0mVerifying file: 74%
+6868621 [34m[D][VgmFlasher] [0mVerifying file: 75%
+6868660 [34m[D][VgmFlasher] [0mVerifying file: 76%
+6868674 [34m[D][VgmFlasher] [0mVerifying file: 77%
+6868688 [34m[D][VgmFlasher] [0mVerifying file: 78%
+6868703 [34m[D][VgmFlasher] [0mVerifying file: 79%
+6868717 [34m[D][VgmFlasher] [0mVerifying file: 80%
+6868731 [34m[D][VgmFlasher] [0mVerifying file: 81%
+6868746 [34m[D][VgmFlasher] [0mVerifying file: 82%
+6868772 [34m[D][VgmFlasher] [0mVerifying file: 83%
+6868786 [34m[D][VgmFlasher] [0mVerifying file: 84%
+6868801 [34m[D][VgmFlasher] [0mVerifying file: 85%
+6868815 [34m[D][VgmFlasher] [0mVerifying file: 86%
+6868829 [34m[D][VgmFlasher] [0mVerifying file: 87%
+6868844 [34m[D][VgmFlasher] [0mVerifying file: 88%
+6868870 [34m[D][VgmFlasher] [0mVerifying file: 89%
+6868884 [34m[D][VgmFlasher] [0mVerifying file: 90%
+6868899 [34m[D][VgmFlasher] [0mVerifying file: 91%
+6868913 [34m[D][VgmFlasher] [0mVerifying file: 92%
+6868927 [34m[D][VgmFlasher] [0mVerifying file: 93%
+6868943 [34m[D][VgmFlasher] [0mVerifying file: 94%
+6868957 [34m[D][VgmFlasher] [0mVerifying file: 95%
+6868971 [34m[D][VgmFlasher] [0mVerifying file: 96%
+6868986 [34m[D][VgmFlasher] [0mVerifying file: 97%
+6869000 [34m[D][VgmFlasher] [0mVerifying file: 98%
+6869014 [34m[D][VgmFlasher] [0mVerifying file: 99%
+6869076 [34m[D][VgmFlasher] [0mErasing flash: 1%
+6869129 [34m[D][VgmFlasher] [0mErasing flash: 2%
+6869180 [34m[D][VgmFlasher] [0mErasing flash: 3%
+6869231 [34m[D][VgmFlasher] [0mErasing flash: 5%
+6869281 [34m[D][VgmFlasher] [0mErasing flash: 6%
+6869330 [34m[D][VgmFlasher] [0mErasing flash: 7%
+6869378 [34m[D][VgmFlasher] [0mErasing flash: 9%
+6869427 [34m[D][VgmFlasher] [0mErasing flash: 10%
+6869478 [34m[D][VgmFlasher] [0mErasing flash: 11%
+6869526 [34m[D][VgmFlasher] [0mErasing flash: 12%
+6869576 [34m[D][VgmFlasher] [0mErasing flash: 14%
+6869626 [34m[D][VgmFlasher] [0mErasing flash: 15%
+6869676 [34m[D][VgmFlasher] [0mErasing flash: 16%
+6869725 [34m[D][VgmFlasher] [0mErasing flash: 18%
+6869780 [34m[D][VgmFlasher] [0mErasing flash: 19%
+6869829 [34m[D][VgmFlasher] [0mErasing flash: 20%
+6869879 [34m[D][VgmFlasher] [0mErasing flash: 22%
+6869930 [34m[D][VgmFlasher] [0mErasing flash: 23%
+6869978 [34m[D][VgmFlasher] [0mErasing flash: 24%
+6870025 [34m[D][VgmFlasher] [0mErasing flash: 25%
+6870073 [34m[D][VgmFlasher] [0mErasing flash: 27%
+6870122 [34m[D][VgmFlasher] [0mErasing flash: 28%
+6870171 [34m[D][VgmFlasher] [0mErasing flash: 29%
+6870221 [34m[D][VgmFlasher] [0mErasing flash: 31%
+6870270 [34m[D][VgmFlasher] [0mErasing flash: 32%
+6870320 [34m[D][VgmFlasher] [0mErasing flash: 33%
+6870368 [34m[D][VgmFlasher] [0mErasing flash: 35%
+6870420 [34m[D][VgmFlasher] [0mErasing flash: 36%
+6870469 [34m[D][VgmFlasher] [0mErasing flash: 37%
+6870520 [34m[D][VgmFlasher] [0mErasing flash: 38%
+6870569 [34m[D][VgmFlasher] [0mErasing flash: 40%
+6870619 [34m[D][VgmFlasher] [0mErasing flash: 41%
+6870670 [34m[D][VgmFlasher] [0mErasing flash: 42%
+6870719 [34m[D][VgmFlasher] [0mErasing flash: 44%
+6870768 [34m[D][VgmFlasher] [0mErasing flash: 45%
+6870819 [34m[D][VgmFlasher] [0mErasing flash: 46%
+6870870 [34m[D][VgmFlasher] [0mErasing flash: 48%
+6870919 [34m[D][VgmFlasher] [0mErasing flash: 49%
+6870967 [34m[D][VgmFlasher] [0mErasing flash: 50%
+6871021 [34m[D][VgmFlasher] [0mErasing flash: 51%
+6871067 [34m[D][VgmFlasher] [0mErasing flash: 53%
+6871118 [34m[D][VgmFlasher] [0mErasing flash: 54%
+6871168 [34m[D][VgmFlasher] [0mErasing flash: 55%
+6871216 [34m[D][VgmFlasher] [0mErasing flash: 57%
+6871263 [34m[D][VgmFlasher] [0mErasing flash: 58%
+6871311 [34m[D][VgmFlasher] [0mErasing flash: 59%
+6871360 [34m[D][VgmFlasher] [0mErasing flash: 60%
+6871408 [34m[D][VgmFlasher] [0mErasing flash: 62%
+6871454 [34m[D][VgmFlasher] [0mErasing flash: 63%
+6871503 [34m[D][VgmFlasher] [0mErasing flash: 64%
+6871551 [34m[D][VgmFlasher] [0mErasing flash: 66%
+6871599 [34m[D][VgmFlasher] [0mErasing flash: 67%
+6871651 [34m[D][VgmFlasher] [0mErasing flash: 68%
+6871699 [34m[D][VgmFlasher] [0mErasing flash: 70%
+6871748 [34m[D][VgmFlasher] [0mErasing flash: 71%
+6871796 [34m[D][VgmFlasher] [0mErasing flash: 72%
+6871851 [34m[D][VgmFlasher] [0mErasing flash: 73%
+6871900 [34m[D][VgmFlasher] [0mErasing flash: 75%
+6871948 [34m[D][VgmFlasher] [0mErasing flash: 76%
+6871995 [34m[D][VgmFlasher] [0mErasing flash: 77%
+6872043 [34m[D][VgmFlasher] [0mErasing flash: 79%
+6872093 [34m[D][VgmFlasher] [0mErasing flash: 80%
+6872143 [34m[D][VgmFlasher] [0mErasing flash: 81%
+6872189 [34m[D][VgmFlasher] [0mErasing flash: 83%
+6872240 [34m[D][VgmFlasher] [0mErasing flash: 84%
+6872289 [34m[D][VgmFlasher] [0mErasing flash: 85%
+6872339 [34m[D][VgmFlasher] [0mErasing flash: 86%
+6872389 [34m[D][VgmFlasher] [0mErasing flash: 88%
+6872436 [34m[D][VgmFlasher] [0mErasing flash: 89%
+6872484 [34m[D][VgmFlasher] [0mErasing flash: 90%
+6872532 [34m[D][VgmFlasher] [0mErasing flash: 92%
+6872582 [34m[D][VgmFlasher] [0mErasing flash: 93%
+6872631 [34m[D][VgmFlasher] [0mErasing flash: 94%
+6872680 [34m[D][VgmFlasher] [0mErasing flash: 96%
+6872731 [34m[D][VgmFlasher] [0mErasing flash: 97%
+6872781 [34m[D][VgmFlasher] [0mErasing flash: 98%
+6872832 [34m[D][VgmFlasher] [0mErasing flash: 99%
+6872881 [34m[D][VgmFlasher] [0mErasing flash: 100%
+6872923 [34m[D][VgmFlasher] [0mProgramming flash: 0%
+6873431 [34m[D][VgmFlasher] [0mProgramming flash: 1%
+6873903 [34m[D][VgmFlasher] [0mProgramming flash: 2%
+6874362 [34m[D][VgmFlasher] [0mProgramming flash: 3%
+6874804 [34m[D][VgmFlasher] [0mProgramming flash: 4%
+6875204 [34m[D][VgmFlasher] [0mProgramming flash: 5%
+6875605 [34m[D][VgmFlasher] [0mProgramming flash: 6%
+6876047 [34m[D][VgmFlasher] [0mProgramming flash: 7%
+6876448 [34m[D][VgmFlasher] [0mProgramming flash: 8%
+6876859 [34m[D][VgmFlasher] [0mProgramming flash: 9%
+6877302 [34m[D][VgmFlasher] [0mProgramming flash: 10%
+6877702 [34m[D][VgmFlasher] [0mProgramming flash: 11%
+6878102 [34m[D][VgmFlasher] [0mProgramming flash: 12%
+6878533 [34m[D][VgmFlasher] [0mProgramming flash: 13%
+6878945 [34m[D][VgmFlasher] [0mProgramming flash: 14%
+6879346 [34m[D][VgmFlasher] [0mProgramming flash: 15%
+6879788 [34m[D][VgmFlasher] [0mProgramming flash: 16%
+6880189 [34m[D][VgmFlasher] [0mProgramming flash: 17%
+6880590 [34m[D][VgmFlasher] [0mProgramming flash: 18%
+6881032 [34m[D][VgmFlasher] [0mProgramming flash: 19%
+6881432 [34m[D][VgmFlasher] [0mProgramming flash: 20%
+6881844 [34m[D][VgmFlasher] [0mProgramming flash: 21%
+6882264 [34m[D][VgmFlasher] [0mProgramming flash: 22%
+6882665 [34m[D][VgmFlasher] [0mProgramming flash: 23%
+6883089 [34m[D][VgmFlasher] [0mProgramming flash: 24%
+6883520 [34m[D][VgmFlasher] [0mProgramming flash: 25%
+6883932 [34m[D][VgmFlasher] [0mProgramming flash: 26%
+6884332 [34m[D][VgmFlasher] [0mProgramming flash: 27%
+6884772 [34m[D][VgmFlasher] [0mProgramming flash: 28%
+6885176 [34m[D][VgmFlasher] [0mProgramming flash: 29%
+6885576 [34m[D][VgmFlasher] [0mProgramming flash: 30%
+6885780 [34m[D][BtSrv] [0mcall 1, lock 0x00000000, result 0x00000000
+6885780 [34m[D][GattChar] [0mUpdating Battery Level char
+6886033 [34m[D][VgmFlasher] [0mProgramming flash: 31%
+6886424 [34m[D][VgmFlasher] [0mProgramming flash: 32%
+6886834 [34m[D][VgmFlasher] [0mProgramming flash: 33%
+6887265 [34m[D][VgmFlasher] [0mProgramming flash: 34%
+6887666 [34m[D][VgmFlasher] [0mProgramming flash: 35%
+6888090 [34m[D][VgmFlasher] [0mProgramming flash: 36%
+6888521 [34m[D][VgmFlasher] [0mProgramming flash: 37%
+6888933 [34m[D][VgmFlasher] [0mProgramming flash: 38%
+6889334 [34m[D][VgmFlasher] [0mProgramming flash: 39%
+6889774 [34m[D][VgmFlasher] [0mProgramming flash: 40%
+6890177 [34m[D][VgmFlasher] [0mProgramming flash: 41%
+6890567 [34m[D][VgmFlasher] [0mProgramming flash: 42%
+6891009 [34m[D][VgmFlasher] [0mProgramming flash: 43%
+6891188 [32m[I][Dolphin] [0mFlush stats
+6891188 [32m[I][SavedStruct] [0mSaving "/int/.dolphin.state"
+6891189 [35m[T][StorageApi] [0mFile/Dir 0000E1D0 alloc
+6891196 [35m[T][StorageApi] [0mFile 0000E1D0 - 0000E384 open (/int/.dolphin.state)
+6891208 [35m[T][StorageApi] [0mFile 0000E1D0 - 0000E384 closed
+6891208 [35m[T][StorageApi] [0mFile/Dir 0000E1D0 free
+6891210 [32m[I][DolphinState] [0mState saved
+6891424 [34m[D][VgmFlasher] [0mProgramming flash: 44%
+6891835 [34m[D][VgmFlasher] [0mProgramming flash: 45%
+6892267 [34m[D][VgmFlasher] [0mProgramming flash: 46%
+6892667 [34m[D][VgmFlasher] [0mProgramming flash: 47%
+6893091 [34m[D][VgmFlasher] [0mProgramming flash: 48%
+6893522 [34m[D][VgmFlasher] [0mProgramming flash: 49%
+6893934 [34m[D][VgmFlasher] [0mProgramming flash: 50%
+6894335 [34m[D][VgmFlasher] [0mProgramming flash: 51%
+6894755 [34m[D][VgmFlasher] [0mProgramming flash: 52%
+6895168 [34m[D][VgmFlasher] [0mProgramming flash: 53%
+6895568 [34m[D][VgmFlasher] [0mProgramming flash: 54%
+6896011 [34m[D][VgmFlasher] [0mProgramming flash: 55%
+6896412 [34m[D][VgmFlasher] [0mProgramming flash: 56%
+6896824 [34m[D][VgmFlasher] [0mProgramming flash: 57%
+6897255 [34m[D][VgmFlasher] [0mProgramming flash: 58%
+6897656 [34m[D][VgmFlasher] [0mProgramming flash: 59%
+6898068 [34m[D][VgmFlasher] [0mProgramming flash: 60%
+6898511 [34m[D][VgmFlasher] [0mProgramming flash: 61%
+6898912 [34m[D][VgmFlasher] [0mProgramming flash: 62%
+6899313 [34m[D][VgmFlasher] [0mProgramming flash: 63%
+6899745 [34m[D][VgmFlasher] [0mProgramming flash: 64%
+6900157 [34m[D][VgmFlasher] [0mProgramming flash: 65%
+6900558 [34m[D][VgmFlasher] [0mProgramming flash: 66%
+6901000 [34m[D][VgmFlasher] [0mProgramming flash: 67%
+6901401 [34m[D][VgmFlasher] [0mProgramming flash: 68%
+6901813 [34m[D][VgmFlasher] [0mProgramming flash: 69%
+6902244 [34m[D][VgmFlasher] [0mProgramming flash: 70%
+6902645 [34m[D][VgmFlasher] [0mProgramming flash: 71%
+6903046 [34m[D][VgmFlasher] [0mProgramming flash: 72%
+6903489 [34m[D][VgmFlasher] [0mProgramming flash: 73%
+6903901 [34m[D][VgmFlasher] [0mProgramming flash: 74%
+6904302 [34m[D][VgmFlasher] [0mProgramming flash: 75%
+6904733 [34m[D][VgmFlasher] [0mProgramming flash: 76%
+6905146 [34m[D][VgmFlasher] [0mProgramming flash: 77%
+6905547 [34m[D][VgmFlasher] [0mProgramming flash: 78%
+6905989 [34m[D][VgmFlasher] [0mProgramming flash: 79%
+6906137 [34m[D][BleGap] [0mStart: 4
+6906138 [34m[D][BleGap] [0mset_non_discoverable success
+6906139 [34m[D][BtSrv] [0mcall 0, lock 0x00000000, result 0x00000000
+6906393 [34m[D][VgmFlasher] [0mProgramming flash: 80%
+6906805 [34m[D][VgmFlasher] [0mProgramming flash: 81%
+6907225 [34m[D][VgmFlasher] [0mProgramming flash: 82%
+6907626 [34m[D][VgmFlasher] [0mProgramming flash: 83%
+6908066 [34m[D][VgmFlasher] [0mProgramming flash: 84%
+6908508 [34m[D][VgmFlasher] [0mProgramming flash: 85%
+6908920 [34m[D][VgmFlasher] [0mProgramming flash: 86%
+6909321 [34m[D][VgmFlasher] [0mProgramming flash: 87%
+6909753 [34m[D][VgmFlasher] [0mProgramming flash: 88%
+6910165 [34m[D][VgmFlasher] [0mProgramming flash: 89%
+6910566 [34m[D][VgmFlasher] [0mProgramming flash: 90%
+6911008 [34m[D][VgmFlasher] [0mProgramming flash: 91%
+6911398 [34m[D][VgmFlasher] [0mProgramming flash: 92%
+6911810 [34m[D][VgmFlasher] [0mProgramming flash: 93%
+6912242 [34m[D][VgmFlasher] [0mProgramming flash: 94%
+6912643 [34m[D][VgmFlasher] [0mProgramming flash: 95%
+6913054 [34m[D][VgmFlasher] [0mProgramming flash: 96%
+6913498 [34m[D][VgmFlasher] [0mProgramming flash: 97%
+6913909 [34m[D][VgmFlasher] [0mProgramming flash: 98%
+6914310 [34m[D][VgmFlasher] [0mProgramming flash: 99%
+6914711 [34m[D][VgmFlasher] [0mProgramming flash: 100%
+6914727 [35m[T][StorageApi] [0mFile 0000E188 - 0000E28C closed
+6914727 [35m[T][StorageApi] [0mFile/Dir 0000E188 free
+6917418 [34m[D][VgmFlasher] [0mAttaching the target
+6917433 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+6917447 [34m[D][ViewDispatcher] [0mView changed while key press 2000B880 -> 2000B948. Sending key: OK, type: Release, sequence: 00000108 to previous view
+6919324 [34m[D][VgmFlasher] [0mDetaching target and restoring pins
+6919346 [34m[D][FuriEventLoop] [0mSome events were not processed: 0x2
+6919349 [32m[I][SavedStruct] [0mLoading "/int/.expansion.settings"
+6919351 [35m[T][StorageApi] [0mFile/Dir 0000AFE8 alloc
+6919360 [35m[T][StorageApi] [0mFile 0000AFE8 - 0000B4D4 open (/int/.expansion.settings)
+6919364 [35m[T][StorageApi] [0mFile 0000AFE8 - 0000B4D4 closed
+6919365 [35m[T][StorageApi] [0mFile/Dir 0000AFE8 free
+6919366 [34m[D][ExpansionSrv] [0mDetection enabled on USART
+6919367 [32m[I][Loader] [0mApp returned: 0
+6919370 [32m[I][Loader] [0mApplication stopped. Free heap: 141384
+6919371 [32m[I][Loader] [0mLaunch queue empty
+6919376 [32m[I][AnimationStorage] [0mBase manifest selected
+6919377 [35m[T][StorageApi] [0mFile/Dir 0000A1F0 alloc
+6919380 [34m[D][BrowserWorker] [0mStart
+6919408 [35m[T][StorageApi] [0mFile 0000A1F0 - 0000B69C open (/ext/dolphin/manifest.txt)
+6919426 [35m[T][StorageApi] [0mFile/Dir 0000A238 alloc
+6919436 [35m[T][StorageApi] [0mDir 0000A238 - 0000B81C open (/ext/apps/GPIO/VGM)
+6919439 [35m[T][StorageApi] [0mDir 0000A238 - 0000B81C closed
+6919440 [35m[T][StorageApi] [0mFile/Dir 0000A238 free
+6919441 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/GPIO/VGM items: 2 idx: 1
+6919442 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6919443 [35m[T][StorageApi] [0mFile/Dir 0000A220 alloc
+6919456 [35m[T][StorageApi] [0mDir 0000A220 - 0000B7EC open (/ext/apps/GPIO/VGM)
+6919462 [35m[T][StorageApi] [0mFile/Dir 0000BB20 alloc
+6919473 [35m[T][StorageApi] [0mFile 0000BB20 - 0000E31C open (/ext/apps/GPIO/VGM/vgm_air_mouse.fap)
+6919492 [35m[T][StorageApi] [0mFile 0000BB20 - 0000E31C closed
+6919492 [35m[T][StorageApi] [0mFile/Dir 0000BB20 free
+6919495 [35m[T][StorageApi] [0mFile/Dir 0000B730 alloc
+6919509 [35m[T][StorageApi] [0mFile 0000B730 - 0000E414 open (/ext/apps/GPIO/VGM/video_game_module_tool.fap)
+6919528 [35m[T][StorageApi] [0mFile 0000B730 - 0000E414 closed
+6919529 [35m[T][StorageApi] [0mFile/Dir 0000B730 free
+6919537 [35m[T][StorageApi] [0mDir 0000A220 - 0000B7EC closed
+6919537 [35m[T][StorageApi] [0mFile/Dir 0000A220 free
+6919742 [35m[T][StorageApi] [0mFile 0000A1F0 - 0000B69C closed
+6919743 [35m[T][StorageApi] [0mFile/Dir 0000A1F0 free
+6919743 [35m[T][StorageApi] [0mFile/Dir 0000A218 alloc
+6919755 [35m[T][StorageApi] [0mFile 0000A218 - 0000B844 open (/ext/dolphin/L1_Happy_holidays_128x64/meta.txt)
+6919818 [35m[T][StorageApi] [0mFile/Dir 0000B660 alloc
+6919822 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_0.bm)
+6919827 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919834 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_1.bm)
+6919838 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919843 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_2.bm)
+6919850 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919861 [35m[T][StorageApi] [0mFile 0000B660 - 0000E404 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_3.bm)
+6919866 [35m[T][StorageApi] [0mFile 0000B660 - 0000E404 closed
+6919871 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_4.bm)
+6919874 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919882 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_5.bm)
+6919886 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919891 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_6.bm)
+6919895 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919904 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_7.bm)
+6919907 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919916 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_8.bm)
+6919920 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919929 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_9.bm)
+6919933 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919940 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_10.bm)
+6919943 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919947 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_11.bm)
+6919951 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919958 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 open (/ext/dolphin/L1_Happy_holidays_128x64/frame_12.bm)
+6919962 [35m[T][StorageApi] [0mFile 0000B660 - 0000B874 closed
+6919963 [35m[T][StorageApi] [0mFile/Dir 0000B660 free
+6919986 [35m[T][StorageApi] [0mFile 0000A218 - 0000B844 closed
+6919987 [35m[T][StorageApi] [0mFile/Dir 0000A218 free
+6919988 [32m[I][AnimationManager] [0mSelect 'L1_Happy_holidays_128x64' animation
+6919990 [32m[I][AnimationManager] [0mLoad animation 'L1_Happy_holidays_128x64'
+6920672 [35m[T][StorageApi] [0mFile/Dir 0000B050 alloc
+6920675 [35m[T][StorageApi] [0mDir 0000B050 - 0000B7FC open (/ext/apps/GPIO)
+6920701 [35m[T][StorageApi] [0mDir 0000B050 - 0000B7FC closed
+6920702 [35m[T][StorageApi] [0mFile/Dir 0000B050 free
+6920702 [34m[D][BrowserWorker] [0mExit to: /ext/apps/GPIO items: 61 idx: 17
+6920704 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6920705 [35m[T][StorageApi] [0mFile/Dir 0000A218 alloc
+6920711 [35m[T][StorageApi] [0mDir 0000A218 - 0000B624 open (/ext/apps/GPIO)
+6920741 [35m[T][StorageApi] [0mFile/Dir 0000DD28 alloc
+6920746 [35m[T][StorageApi] [0mFile 0000DD28 - 0000DE9C open (/ext/apps/GPIO/flip_rpi.fap)
+6920778 [35m[T][StorageApi] [0mFile 0000DD28 - 0000DE9C closed
+6920779 [35m[T][StorageApi] [0mFile/Dir 0000DD28 free
+6920788 [35m[T][StorageApi] [0mFile/Dir 0000DBF0 alloc
+6920799 [35m[T][StorageApi] [0mFile 0000DBF0 - 0000DFEC open (/ext/apps/GPIO/gemini_ia.fap)
+6920811 [35m[T][StorageApi] [0mFile 0000DBF0 - 0000DFEC closed
+6920812 [35m[T][StorageApi] [0mFile/Dir 0000DBF0 free
+6920833 [35m[T][StorageApi] [0mFile/Dir 0000DEA0 alloc
+6920845 [35m[T][StorageApi] [0mFile 0000DEA0 - 0000E1E4 open (/ext/apps/GPIO/spi_mem_manager.fap)
+6920861 [35m[T][StorageApi] [0mFile 0000DEA0 - 0000E1E4 closed
+6920862 [35m[T][StorageApi] [0mFile/Dir 0000DEA0 free
+6920865 [35m[T][StorageApi] [0mFile/Dir 0000B858 alloc
+6920877 [35m[T][StorageApi] [0mFile 0000B858 - 0000E2EC open (/ext/apps/GPIO/nearby_files.fap)
+6920888 [35m[T][StorageApi] [0mFile 0000B858 - 0000E2EC closed
+6920888 [35m[T][StorageApi] [0mFile/Dir 0000B858 free
+6920891 [35m[T][StorageApi] [0mFile/Dir 0000DF80 alloc
+6920903 [35m[T][StorageApi] [0mFile 0000DF80 - 0000E3BC open (/ext/apps/GPIO/flipboard_keyboard.fap)
+6920918 [35m[T][StorageApi] [0mFile 0000DF80 - 0000E3BC closed
+6920919 [35m[T][StorageApi] [0mFile/Dir 0000DF80 free
+6920923 [35m[T][StorageApi] [0mFile/Dir 0000E310 alloc
+6920935 [35m[T][StorageApi] [0mFile 0000E310 - 0000E48C open (/ext/apps/GPIO/radar_scanner.fap)
+6920946 [35m[T][StorageApi] [0mFile 0000E310 - 0000E48C closed
+6920947 [35m[T][StorageApi] [0mFile/Dir 0000E310 free
+6920950 [35m[T][StorageApi] [0mFile/Dir 0000E3E8 alloc
+6920963 [35m[T][StorageApi] [0mFile 0000E3E8 - 0000E57C open (/ext/apps/GPIO/flipboard_signal.fap)
+6920977 [35m[T][StorageApi] [0mFile 0000E3E8 - 0000E57C closed
+6920978 [35m[T][StorageApi] [0mFile/Dir 0000E3E8 free
+6920981 [35m[T][StorageApi] [0mFile/Dir 0000B988 alloc
+6920994 [35m[T][StorageApi] [0mFile 0000B988 - 0000EF74 open (/ext/apps/GPIO/zeitraffer.fap)
+6921012 [35m[T][StorageApi] [0mFile 0000B988 - 0000EF74 closed
+6921012 [35m[T][StorageApi] [0mFile/Dir 0000B988 free
+6921022 [35m[T][StorageApi] [0mFile/Dir 0000E568 alloc
+6921037 [35m[T][StorageApi] [0mFile 0000E568 - 0000F0EC open (/ext/apps/GPIO/ublox.fap)
+6921052 [35m[T][StorageApi] [0mFile 0000E568 - 0000F0EC closed
+6921052 [35m[T][StorageApi] [0mFile/Dir 0000E568 free
+6921056 [35m[T][StorageApi] [0mFile/Dir 0000E580 alloc
+6921072 [35m[T][StorageApi] [0mFile 0000E580 - 0000F1CC open (/ext/apps/GPIO/ghost_esp.fap)
+6921087 [35m[T][StorageApi] [0mFile 0000E580 - 0000F1CC closed
+6921088 [35m[T][StorageApi] [0mFile/Dir 0000E580 free
+6921092 [35m[T][StorageApi] [0mFile/Dir 0000EFE8 alloc
+6921104 [35m[T][StorageApi] [0mFile 0000EFE8 - 0000F274 open (/ext/apps/GPIO/air_mouse.fap)
+6921272 [35m[T][StorageApi] [0mFile 0000EFE8 - 0000F274 closed
+6921273 [35m[T][StorageApi] [0mFile/Dir 0000EFE8 free
+6921276 [35m[T][StorageApi] [0mFile/Dir 0000F018 alloc
+6921289 [35m[T][StorageApi] [0mFile 0000F018 - 0000F2F4 open (/ext/apps/GPIO/blackhat.fap)
+6921304 [35m[T][StorageApi] [0mFile 0000F018 - 0000F2F4 closed
+6921305 [35m[T][StorageApi] [0mFile/Dir 0000F018 free
+6921308 [35m[T][StorageApi] [0mFile/Dir 0000E550 alloc
+6921322 [35m[T][StorageApi] [0mFile 0000E550 - 000121C4 open (/ext/apps/GPIO/coleco.fap)
+6921333 [35m[T][StorageApi] [0mFile 0000E550 - 000121C4 closed
+6921334 [35m[T][StorageApi] [0mFile/Dir 0000E550 free
+6921338 [35m[T][StorageApi] [0mFile/Dir 0000EEA0 alloc
+6921352 [35m[T][StorageApi] [0mFile 0000EEA0 - 0001228C open (/ext/apps/GPIO/flip_map.fap)
+6921410 [35m[T][StorageApi] [0mFile 0000EEA0 - 0001228C closed
+6921411 [35m[T][StorageApi] [0mFile/Dir 0000EEA0 free
+6921414 [35m[T][StorageApi] [0mFile/Dir 0000F2C0 alloc
+6921428 [35m[T][StorageApi] [0mFile 0000F2C0 - 00012344 open (/ext/apps/GPIO/gps_nmea.fap)
+6921438 [35m[T][StorageApi] [0mFile 0000F2C0 - 00012344 closed
+6921439 [35m[T][StorageApi] [0mFile/Dir 0000F2C0 free
+6921442 [35m[T][StorageApi] [0mFile/Dir 00012270 alloc
+6921461 [35m[T][StorageApi] [0mFile 00012270 - 000123E4 open (/ext/apps/GPIO/flashlight.fap)
+6921472 [35m[T][StorageApi] [0mFile 00012270 - 000123E4 closed
+6921472 [35m[T][StorageApi] [0mFile/Dir 00012270 free
+6921476 [35m[T][StorageApi] [0mFile/Dir 00012358 alloc
+6921490 [35m[T][StorageApi] [0mFile 00012358 - 000124DC open (/ext/apps/GPIO/flipper_spi_terminal.fap)
+6921504 [35m[T][StorageApi] [0mFile 00012358 - 000124DC closed
+6921505 [35m[T][StorageApi] [0mFile/Dir 00012358 free
+6921508 [35m[T][StorageApi] [0mFile/Dir 00012220 alloc
+6921524 [35m[T][StorageApi] [0mFile 00012220 - 00012574 open (/ext/apps/GPIO/flipperscope.fap)
+6921540 [35m[T][StorageApi] [0mFile 00012220 - 00012574 closed
+6921541 [35m[T][StorageApi] [0mFile/Dir 00012220 free
+6921545 [35m[T][StorageApi] [0mFile/Dir 000124B8 alloc
+6921560 [35m[T][StorageApi] [0mFile 000124B8 - 0001262C open (/ext/apps/GPIO/fm_radio.fap)
+6921575 [35m[T][StorageApi] [0mFile 000124B8 - 0001262C closed
+6921575 [35m[T][StorageApi] [0mFile/Dir 000124B8 free
+6921578 [35m[T][StorageApi] [0mFile/Dir 000121F8 alloc
+6921594 [35m[T][StorageApi] [0mFile 000121F8 - 0001272C open (/ext/apps/GPIO/flipper_geiger.fap)
+6921604 [35m[T][StorageApi] [0mFile 000121F8 - 0001272C closed
+6921604 [35m[T][StorageApi] [0mFile/Dir 000121F8 free
+6921607 [35m[T][StorageApi] [0mFile/Dir 0000F210 alloc
+6921623 [35m[T][StorageApi] [0mFile 0000F210 - 000127E4 open (/ext/apps/GPIO/ws2812b_tester_app.fap)
+6921634 [35m[T][StorageApi] [0mFile 0000F210 - 000127E4 closed
+6921635 [35m[T][StorageApi] [0mFile/Dir 0000F210 free
+6921638 [35m[T][StorageApi] [0mFile/Dir 00012728 alloc
+6921658 [35m[T][StorageApi] [0mFile 00012728 - 0001289C open (/ext/apps/GPIO/fmtx_app.fap)
+6921669 [35m[T][StorageApi] [0mFile 00012728 - 0001289C closed
+6921669 [35m[T][StorageApi] [0mFile/Dir 00012728 free
+6921675 [35m[T][StorageApi] [0mFile/Dir 0000E480 alloc
+6921690 [35m[T][StorageApi] [0mFile 0000E480 - 0001275C open (/ext/apps/GPIO/flipboard_blinky.fap)
+6921704 [35m[T][StorageApi] [0mFile 0000E480 - 0001275C closed
+6921705 [35m[T][StorageApi] [0mFile/Dir 0000E480 free
+6921708 [35m[T][StorageApi] [0mFile/Dir 0000E4C0 alloc
+6921727 [35m[T][StorageApi] [0mFile 0000E4C0 - 000127EC open (/ext/apps/GPIO/gpio.fap)
+6921743 [35m[T][StorageApi] [0mFile 0000E4C0 - 000127EC closed
+6921744 [35m[T][StorageApi] [0mFile/Dir 0000E4C0 free
+6921747 [35m[T][StorageApi] [0mFile/Dir 0000E3D8 alloc
+6921767 [35m[T][StorageApi] [0mFile 0000E3D8 - 00012CBC open (/ext/apps/GPIO/gpio_badge.fap)
+6921786 [35m[T][StorageApi] [0mFile 0000E3D8 - 00012CBC closed
+6921787 [35m[T][StorageApi] [0mFile/Dir 0000E3D8 free
+6921790 [35m[T][StorageApi] [0mFile/Dir 00012480 alloc
+6921806 [35m[T][StorageApi] [0mFile 00012480 - 00012D7C open (/ext/apps/GPIO/flip_world.fap)
+6921947 [35m[T][StorageApi] [0mFile 00012480 - 00012D7C closed
+6921948 [35m[T][StorageApi] [0mFile/Dir 00012480 free
+6921951 [35m[T][StorageApi] [0mFile/Dir 000126E8 alloc
+6921968 [35m[T][StorageApi] [0mFile 000126E8 - 00012DB4 open (/ext/apps/GPIO/gpio_controller.fap)
+6921983 [35m[T][StorageApi] [0mFile 000126E8 - 00012DB4 closed
+6921984 [35m[T][StorageApi] [0mFile/Dir 000126E8 free
+6921988 [35m[T][StorageApi] [0mFile/Dir 00012DB0 alloc
+6922004 [35m[T][StorageApi] [0mFile 00012DB0 - 00012704 open (/ext/apps/GPIO/simultaneous_rfid_reader.fap)
+6922015 [35m[T][StorageApi] [0mFile 00012DB0 - 00012704 closed
+6922016 [35m[T][StorageApi] [0mFile/Dir 00012DB0 free
+6922019 [35m[T][StorageApi] [0mFile/Dir 000127E8 alloc
+6922040 [35m[T][StorageApi] [0mFile 000127E8 - 00012FE4 open (/ext/apps/GPIO/lightmeter.fap)
+6922058 [35m[T][StorageApi] [0mFile 000127E8 - 00012FE4 closed
+6922059 [35m[T][StorageApi] [0mFile/Dir 000127E8 free
+6922063 [35m[T][StorageApi] [0mFile/Dir 00012D48 alloc
+6922084 [35m[T][StorageApi] [0mFile 00012D48 - 0001308C open (/ext/apps/GPIO/gpio_explorer_app.fap)
+6922096 [35m[T][StorageApi] [0mFile 00012D48 - 0001308C closed
+6922097 [35m[T][StorageApi] [0mFile/Dir 00012D48 free
+6922100 [35m[T][StorageApi] [0mFile/Dir 00012FF0 alloc
+6922117 [35m[T][StorageApi] [0mFile 00012FF0 - 00013164 open (/ext/apps/GPIO/flip_weather.fap)
+6922129 [35m[T][StorageApi] [0mFile 00012FF0 - 00013164 closed
+6922130 [35m[T][StorageApi] [0mFile/Dir 00012FF0 free
+6922134 [35m[T][StorageApi] [0mFile/Dir 00013088 alloc
+6922151 [35m[T][StorageApi] [0mFile 00013088 - 000131FC open (/ext/apps/GPIO/free_roam.fap)
+6922317 [35m[T][StorageApi] [0mFile 00013088 - 000131FC closed
+6922318 [35m[T][StorageApi] [0mFile/Dir 00013088 free
+6922321 [35m[T][StorageApi] [0mFile/Dir 00013130 alloc
+6922338 [35m[T][StorageApi] [0mFile 00013130 - 000132A4 open (/ext/apps/GPIO/sio2flip.fap)
+6922352 [35m[T][StorageApi] [0mFile 00013130 - 000132A4 closed
+6922353 [35m[T][StorageApi] [0mFile/Dir 00013130 free
+6922356 [35m[T][StorageApi] [0mFile/Dir 00012EB0 alloc
+6922374 [35m[T][StorageApi] [0mFile 00012EB0 - 00013374 open (/ext/apps/GPIO/gpio_reader_a.fap)
+6922384 [35m[T][StorageApi] [0mFile 00012EB0 - 00013374 closed
+6922385 [35m[T][StorageApi] [0mFile/Dir 00012EB0 free
+6922388 [35m[T][StorageApi] [0mFile/Dir 000132D0 alloc
+6922410 [35m[T][StorageApi] [0mFile 000132D0 - 0001344C open (/ext/apps/GPIO/logic_analyzer.fap)
+6922421 [35m[T][StorageApi] [0mFile 000132D0 - 0001344C closed
+6922422 [35m[T][StorageApi] [0mFile/Dir 000132D0 free
+6922425 [35m[T][StorageApi] [0mFile/Dir 00013190 alloc
+6922443 [35m[T][StorageApi] [0mFile 00013190 - 00013514 open (/ext/apps/GPIO/gpio_reader_b.fap)
+6922460 [35m[T][StorageApi] [0mFile 00013190 - 00013514 closed
+6922461 [35m[T][StorageApi] [0mFile/Dir 00013190 free
+6922466 [35m[T][StorageApi] [0mFile/Dir 00013438 alloc
+6922483 [35m[T][StorageApi] [0mFile 00013438 - 000135B4 open (/ext/apps/GPIO/gpio_sentry_safe.fap)
+6922495 [35m[T][StorageApi] [0mFile 00013438 - 000135B4 closed
+6922496 [35m[T][StorageApi] [0mFile/Dir 00013438 free
+6922499 [35m[T][StorageApi] [0mFile/Dir 00013538 alloc
+6922518 [35m[T][StorageApi] [0mFile 00013538 - 0001369C open (/ext/apps/GPIO/longwave_clock.fap)
+6922537 [35m[T][StorageApi] [0mFile 00013538 - 0001369C closed
+6922538 [35m[T][StorageApi] [0mFile/Dir 00013538 free
+6922541 [35m[T][StorageApi] [0mFile/Dir 000135F8 alloc
+6922559 [35m[T][StorageApi] [0mFile 000135F8 - 0001376C open (/ext/apps/GPIO/magspoof.fap)
+6922574 [35m[T][StorageApi] [0mFile 000135F8 - 0001376C closed
+6922574 [35m[T][StorageApi] [0mFile/Dir 000135F8 free
+6922577 [35m[T][StorageApi] [0mFile/Dir 000136A8 alloc
+6922596 [35m[T][StorageApi] [0mFile 000136A8 - 00013814 open (/ext/apps/GPIO/pokemon.fap)
+6922610 [35m[T][StorageApi] [0mFile 000136A8 - 00013814 closed
+6922611 [35m[T][StorageApi] [0mFile/Dir 000136A8 free
+6922615 [35m[T][StorageApi] [0mFile/Dir 00013758 alloc
+6922634 [35m[T][StorageApi] [0mFile 00013758 - 000138D4 open (/ext/apps/GPIO/signal_generator.fap)
+6922644 [35m[T][StorageApi] [0mFile 00013758 - 000138D4 closed
+6922645 [35m[T][StorageApi] [0mFile/Dir 00013758 free
+6922648 [35m[T][StorageApi] [0mFile/Dir 000134B8 alloc
+6922672 [35m[T][StorageApi] [0mFile 000134B8 - 0001399C open (/ext/apps/GPIO/timelapse.fap)
+6922684 [35m[T][StorageApi] [0mFile 000134B8 - 0001399C closed
+6922685 [35m[T][StorageApi] [0mFile/Dir 000134B8 free
+6922688 [35m[T][StorageApi] [0mFile/Dir 00013708 alloc
+6922707 [35m[T][StorageApi] [0mFile 00013708 - 00013A94 open (/ext/apps/GPIO/uart_terminal.fap)
+6922719 [35m[T][StorageApi] [0mFile 00013708 - 00013A94 closed
+6922720 [35m[T][StorageApi] [0mFile/Dir 00013708 free
+6922723 [35m[T][StorageApi] [0mFile/Dir 000139C0 alloc
+6922747 [35m[T][StorageApi] [0mFile 000139C0 - 00013B34 open (/ext/apps/GPIO/wii_ec_anal.fap)
+6922773 [35m[T][StorageApi] [0mFile 000139C0 - 00013B34 closed
+6922774 [35m[T][StorageApi] [0mFile/Dir 000139C0 free
+6922777 [35m[T][StorageApi] [0mFile/Dir 00013A78 alloc
+6922796 [35m[T][StorageApi] [0mFile 00013A78 - 00013BEC open (/ext/apps/GPIO/wire_tester.fap)
+6922808 [35m[T][StorageApi] [0mFile 00013A78 - 00013BEC closed
+6922809 [35m[T][StorageApi] [0mFile/Dir 00013A78 free
+6922813 [35m[T][StorageApi] [0mFile/Dir 00013B30 alloc
+6922832 [35m[T][StorageApi] [0mFile 00013B30 - 00013CA4 open (/ext/apps/GPIO/flip_gemini.fap)
+6922895 [35m[T][StorageApi] [0mFile 00013B30 - 00013CA4 closed
+6922895 [35m[T][StorageApi] [0mFile/Dir 00013B30 free
+6922898 [35m[T][StorageApi] [0mFile/Dir 00013BD8 alloc
+6922918 [35m[T][StorageApi] [0mFile 00013BD8 - 00013D54 open (/ext/apps/GPIO/flip_telegram.fap)
+6922975 [35m[T][StorageApi] [0mFile 00013BD8 - 00013D54 closed
+6922976 [35m[T][StorageApi] [0mFile/Dir 00013BD8 free
+6922980 [35m[T][StorageApi] [0mFile/Dir 000137F8 alloc
+6922999 [35m[T][StorageApi] [0mFile 000137F8 - 00013E0C open (/ext/apps/GPIO/bme680_flipper_zero.fap)
+6923010 [35m[T][StorageApi] [0mFile 000137F8 - 00013E0C closed
+6923011 [35m[T][StorageApi] [0mFile/Dir 000137F8 free
+6923015 [35m[T][StorageApi] [0mFile/Dir 00013D50 alloc
+6923038 [35m[T][StorageApi] [0mFile 00013D50 - 00013EC4 open (/ext/apps/GPIO/uhf_rfid.fap)
+6923059 [35m[T][StorageApi] [0mFile 00013D50 - 00013EC4 closed
+6923059 [35m[T][StorageApi] [0mFile/Dir 00013D50 free
+6923062 [35m[T][StorageApi] [0mFile/Dir 00013DF0 alloc
+6923087 [35m[T][StorageApi] [0mFile 00013DF0 - 00013F5C open (/ext/apps/GPIO/usping.fap)
+6923098 [35m[T][StorageApi] [0mFile 00013DF0 - 00013F5C closed
+6923098 [35m[T][StorageApi] [0mFile/Dir 00013DF0 free
+6923103 [35m[T][StorageApi] [0mFile/Dir 00013C10 alloc
+6923123 [35m[T][StorageApi] [0mFile 00013C10 - 00014024 open (/ext/apps/GPIO/flipper_http.fap)
+6923230 [35m[T][StorageApi] [0mFile 00013C10 - 00014024 closed
+6923231 [35m[T][StorageApi] [0mFile/Dir 00013C10 free
+6923240 [35m[T][StorageApi] [0mDir 0000A218 - 0000B624 closed
+6923240 [35m[T][StorageApi] [0mFile/Dir 0000A218 free
+6923989 [35m[T][StorageApi] [0mFile/Dir 0000A238 alloc
+6923991 [35m[T][StorageApi] [0mDir 0000A238 - 0000DF34 open (/ext/apps)
+6923998 [35m[T][StorageApi] [0mDir 0000A238 - 0000DF34 closed
+6923999 [35m[T][StorageApi] [0mFile/Dir 0000A238 free
+6923999 [34m[D][BrowserWorker] [0mExit to: /ext/apps items: 13 idx: 3
+6924004 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6924005 [35m[T][StorageApi] [0mFile/Dir 0000A218 alloc
+6924007 [35m[T][StorageApi] [0mDir 0000A218 - 0000B734 open (/ext/apps)
+6924087 [35m[T][StorageApi] [0mDir 0000A218 - 0000B734 closed
+6924087 [35m[T][StorageApi] [0mFile/Dir 0000A218 free
+6930868 [35m[T][StorageApi] [0mFile/Dir 0000A218 alloc
+6930871 [35m[T][StorageApi] [0mDir 0000A218 - 0000B7DC open (/ext/apps/In-Development)
+6930875 [35m[T][StorageApi] [0mDir 0000A218 - 0000B7DC closed
+6930876 [35m[T][StorageApi] [0mFile/Dir 0000A218 free
+6930877 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 2 idx: -1
+6930879 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6930880 [35m[T][StorageApi] [0mFile/Dir 0000A218 alloc
+6930887 [35m[T][StorageApi] [0mDir 0000A218 - 0000B734 open (/ext/apps/In-Development)
+6930892 [35m[T][StorageApi] [0mFile/Dir 0000B778 alloc
+6930903 [35m[T][StorageApi] [0mFile 0000B778 - 0000BB14 open (/ext/apps/In-Development/mesh_framework-alpha1.fap)
+6930912 [35m[T][StorageApi] [0mFile 0000B778 - 0000BB14 closed
+6930913 [35m[T][StorageApi] [0mFile/Dir 0000B778 free
+6930916 [35m[T][StorageApi] [0mFile/Dir 0000B678 alloc
+6930927 [35m[T][StorageApi] [0mFile 0000B678 - 0000DCDC open (/ext/apps/In-Development/molecule_retrosynth.fap)
+6930937 [35m[T][StorageApi] [0mFile 0000B678 - 0000DCDC closed
+6930938 [35m[T][StorageApi] [0mFile/Dir 0000B678 free
+6930946 [35m[T][StorageApi] [0mDir 0000A218 - 0000B734 closed
+6930946 [35m[T][StorageApi] [0mFile/Dir 0000A218 free
+6932305 [34m[D][BrowserWorker] [0mEnd
+6932318 [34m[D][DolphinState] [0micounter 10835, butthurt 0
+6932332 [32m[I][AnimationManager] [0mUnload animation 'L1_Happy_holidays_128x64'
+6932340 [35m[T][StorageApi] [0mFile/Dir 00002E80 alloc
+6932341 [32m[I][Loader] [0mLoading /ext/apps/In-Development/molecule_retrosynth.fap
+6932350 [35m[T][StorageApi] [0mFile 00002E80 - 00006674 open (/ext/apps/In-Development/molecule_retrosynth.fap)
+6932384 [32m[I][Loader] [0mMapping
+6932386 [32m[I][Elf] [0mTotal size of loaded sections: 2883
+6932387 [35m[T][StorageApi] [0mFile 00002E80 - 00006674 closed
+6932388 [35m[T][StorageApi] [0mFile/Dir 00002E80 free
+6932389 [32m[I][Loader] [0mLoaded in 48ms
+6932389 [32m[I][Loader] [0mStarting app
+6932402 [34m[D][ExpansionSrv] [0mDetection disabled
+6933579 [34m[D][BrowserWorker] [0mStart
+6933587 [35m[T][StorageApi] [0mFile/Dir 000118B8 alloc
+6933587 [35m[T][StorageApi] [0mDir 000118B8 - 000119AC open (/ext)
+6933601 [35m[T][StorageApi] [0mDir 000118B8 - 000119AC closed
+6933601 [35m[T][StorageApi] [0mFile/Dir 000118B8 free
+6933602 [34m[D][BrowserWorker] [0mEnter folder: /ext items: 26 idx: -1
+6933602 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6933603 [35m[T][StorageApi] [0mFile/Dir 000118B8 alloc
+6933604 [35m[T][StorageApi] [0mDir 000118B8 - 000119AC open (/ext)
+6933623 [35m[T][StorageApi] [0mDir 000118B8 - 000119AC closed
+6933623 [35m[T][StorageApi] [0mFile/Dir 000118B8 free
+6934152 [35m[T][StorageApi] [0mFile/Dir 00011918 alloc
+6934154 [35m[T][StorageApi] [0mDir 00011918 - 00011A0C open (/ext/apps)
+6934161 [35m[T][StorageApi] [0mDir 00011918 - 00011A0C closed
+6934161 [35m[T][StorageApi] [0mFile/Dir 00011918 free
+6934162 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+6934163 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6934163 [35m[T][StorageApi] [0mFile/Dir 00011930 alloc
+6934168 [35m[T][StorageApi] [0mDir 00011930 - 00011A0C open (/ext/apps)
+6934182 [35m[T][StorageApi] [0mDir 00011930 - 00011A0C closed
+6934182 [35m[T][StorageApi] [0mFile/Dir 00011930 free
+6935978 [35m[T][StorageApi] [0mFile/Dir 000118B8 alloc
+6935980 [35m[T][StorageApi] [0mDir 000118B8 - 00011A9C open (/ext/apps/In-Development)
+6935984 [35m[T][StorageApi] [0mDir 000118B8 - 00011A9C closed
+6935985 [35m[T][StorageApi] [0mFile/Dir 000118B8 free
+6935985 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 1 idx: -1
+6935986 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+6935986 [35m[T][StorageApi] [0mFile/Dir 000118B8 alloc
+6935991 [35m[T][StorageApi] [0mDir 000118B8 - 00011A6C open (/ext/apps/In-Development)
+6935999 [35m[T][StorageApi] [0mDir 000118B8 - 00011A6C closed
+6935999 [35m[T][StorageApi] [0mFile/Dir 000118B8 free
+6937140 [34m[D][BrowserWorker] [0mEnd
+6937148 [32m[I][MolRetroApp] [0m1. Opening Storage
+6937148 [35m[T][StorageApi] [0mFile/Dir 0000F008 alloc
