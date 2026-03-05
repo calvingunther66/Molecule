@@ -1,0 +1,267 @@
+
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (7a614a36 built on 02-03-2026)
+
+>: 
+[38;2;255;130;0m              _.-------.._                    -,
+          .-"```"--..,,_/ /`-,               -,  \ 
+       .:"          /:/  /'\  \     ,_...,  `. |  |
+      /       ,----/:/  /`\ _\~`_-"`     _;
+     '      / /`"""'\ \ \.~`_-'      ,-"'/ 
+    |      | |  0    | | .-'      ,/`  /
+   |    ,..\ \     ,.-"`       ,/`    /
+  ;    :    `/`""\`           ,/--==,/-----,
+  |    `-...|        -.___-Z:_______J...---;
+  :         `                           _-'
+ _L_  _     ___  ___  ___  ___  ____--"`___  _     ___
+| __|| |   |_ _|| _ \| _ \| __|| _ \   / __|| |   |_ _|
+| _| | |__  | | |  _/|  _/| _| |   /  | (__ | |__  | |
+|_|  |____||___||_|  |_|  |___||_|_\   \___||____||___|
+
+[97mWelcome to Flipper Zero Command Line Interface!
+Read the manual: https://docs.flipper.net/development/cli
+Run `help` or `?` to list available commands
+
+[0mFirmware version: dev mntm-dev (7a614a36 built on 02-03-2026)
+
+>: log trace
+Current log level: trace
+Use <log ?> to list available log levels
+Press CTRL+C to stop...
+7811 [34m[D][BtSerialSvc] [0mReceived 31 bytes
+7812 [34m[D][BtSerialSvc] [0mAvailable buff size: 993
+7813 [34m[D][RpcProperty] [0mGetProperty
+7871 [35m[T][BtSerialSvc] [0mAck received
+8111 [35m[T][BtSerialSvc] [0mAck received
+8171 [34m[D][BtSerialSvc] [0mReceived 21 bytes
+8172 [34m[D][BtSerialSvc] [0mAvailable buff size: 1003
+8173 [34m[D][RpcStorage] [0mStat
+8553 [34m[D][ViewDispatcher] [0mView changed while key press 200099F8 -> 20006A28. Sending key: Up, type: Release, sequence: 00000004 to previous view
+8711 [35m[T][BtSerialSvc] [0mAck received
+8712 [34m[D][BtSerialSvc] [0mReceived 24 bytes
+8712 [34m[D][BtSerialSvc] [0mAvailable buff size: 1000
+8714 [34m[D][RpcStorage] [0mRead
+8715 [35m[T][StorageApi] [0mFile/Dir 0000DD50 alloc
+8721 [35m[T][StorageApi] [0mFile 0000DD50 - 0000F154 open (/int/.region_data)
+8921 [35m[T][BtSerialSvc] [0mAck received
+8922 [34m[D][BtSerialSvc] [0mReceived 12 bytes
+8922 [34m[D][BtSerialSvc] [0mAvailable buff size: 1012
+8924 [35m[T][StorageApi] [0mFile 0000DD50 - 0000F154 closed
+8925 [35m[T][StorageApi] [0mFile/Dir 0000DD50 free
+8926 [34m[D][RpcStorage] [0mInfo
+9041 [35m[T][BtSerialSvc] [0mAck received
+9101 [34m[D][BtSerialSvc] [0mReceived 23 bytes
+9102 [34m[D][BtSerialSvc] [0mAvailable buff size: 1001
+9103 [34m[D][RpcSystem] [0mSetDatetime
+9161 [35m[T][BtSerialSvc] [0mAck received
+9162 [34m[D][BtSerialSvc] [0mReceived 28 bytes
+9162 [34m[D][BtSerialSvc] [0mAvailable buff size: 996
+9164 [34m[D][RpcProperty] [0mGetProperty
+9251 [35m[T][BtSerialSvc] [0mAck received
+9311 [35m[T][BtSerialSvc] [0mAck received
+9371 [35m[T][BtSerialSvc] [0mAck received
+9372 [34m[D][BtSerialSvc] [0mReceived 12 bytes
+9372 [34m[D][BtSerialSvc] [0mAvailable buff size: 1012
+9375 [34m[D][RpcStorage] [0mInfo
+9551 [35m[T][BtSerialSvc] [0mAck received
+9641 [34m[D][BtSerialSvc] [0mReceived 29 bytes
+9642 [34m[D][BtSerialSvc] [0mAvailable buff size: 995
+9643 [34m[D][RpcStorage] [0mStat
+9911 [35m[T][BtSerialSvc] [0mAck received
+9912 [34m[D][BtSerialSvc] [0mReceived 36 bytes
+9912 [34m[D][BtSerialSvc] [0mAvailable buff size: 988
+9914 [34m[D][RpcProperty] [0mGetProperty
+10151 [35m[T][BtSerialSvc] [0mAck received
+10241 [35m[T][BtSerialSvc] [0mAck received
+10242 [34m[D][BtSerialSvc] [0mReceived 11 bytes
+10242 [34m[D][BtSerialSvc] [0mAvailable buff size: 1013
+10247 [34m[D][RpcStorage] [0mList
+10247 [35m[T][StorageApi] [0mFile/Dir 0000BC88 alloc
+10249 [35m[T][StorageApi] [0mFile/Dir 0000EE88 alloc
+10251 [35m[T][StorageApi] [0mDir 0000BC88 - 0000EF34 open (/ext)
+10785 [34m[D][ViewDispatcher] [0mView changed while key press 20006A28 -> 20009918. Sending key: OK, type: Release, sequence: 0000001C to previous view
+11021 [35m[T][BtSerialSvc] [0mAck received
+11081 [35m[T][BtSerialSvc] [0mAck received
+11141 [35m[T][BtSerialSvc] [0mAck received
+11201 [35m[T][BtSerialSvc] [0mAck received
+11202 [34m[D][BtSerialSvc] [0mReceived 35 bytes
+11202 [34m[D][BtSerialSvc] [0mAvailable buff size: 989
+11206 [35m[T][StorageApi] [0mDir 0000BC88 - 0000EF34 closed
+11206 [35m[T][StorageApi] [0mFile/Dir 0000BC88 free
+11208 [35m[T][StorageApi] [0mFile/Dir 0000EE88 free
+11212 [34m[D][RpcProperty] [0mGetProperty
+11441 [35m[T][BtSerialSvc] [0mAck received
+11561 [35m[T][BtSerialSvc] [0mAck received
+11562 [34m[D][BtSerialSvc] [0mReceived 25 bytes
+11562 [34m[D][BtSerialSvc] [0mAvailable buff size: 999
+11565 [34m[D][RpcStorage] [0mList
+11565 [35m[T][StorageApi] [0mFile/Dir 0000BC90 alloc
+11566 [35m[T][StorageApi] [0mFile/Dir 0000DD40 alloc
+11572 [35m[T][StorageApi] [0mDir 0000BC90 - 0000EF24 open (/ext/subghz)
+11576 [35m[T][StorageApi] [0mFile 0000DD40 - 0000F14C open (/ext/subghz/SubGHz_liquid-pingwin.sub)
+11579 [35m[T][StorageApi] [0mFile 0000DD40 - 0000F14C closed
+11585 [35m[T][StorageApi] [0mFile 0000DD40 - 0000F7A4 open (/ext/subghz/RAW_quantum-cult.sub)
+12670 [35m[T][StorageApi] [0mFile/Dir 0000FC90 alloc
+12677 [35m[T][StorageApi] [0mFile 0000FC90 - 0000FD6C open (/int/.desktop_keybinds.txt)
+12695 [35m[T][StorageApi] [0mFile 0000FC90 - 0000FD6C closed
+12696 [35m[T][StorageApi] [0mFile/Dir 0000FC90 free
+12713 [34m[D][BrowserWorker] [0mStart
+12724 [35m[T][StorageApi] [0mFile/Dir 000110C8 alloc
+12727 [35m[T][StorageApi] [0mDir 000110C8 - 000111A4 open (/ext/apps)
+12747 [35m[T][StorageApi] [0mDir 000110C8 - 000111A4 closed
+12748 [35m[T][StorageApi] [0mFile/Dir 000110C8 free
+12749 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps items: 13 idx: -1
+12750 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+12751 [35m[T][StorageApi] [0mFile/Dir 0000FCA8 alloc
+12758 [35m[T][StorageApi] [0mDir 0000FCA8 - 000111A4 open (/ext/apps)
+12863 [35m[T][StorageApi] [0mDir 0000FCA8 - 000111A4 closed
+12865 [35m[T][StorageApi] [0mFile/Dir 0000FCA8 free
+14978 [35m[T][StorageApi] [0mFile/Dir 000106F8 alloc
+14987 [35m[T][StorageApi] [0mDir 000106F8 - 0001178C open (/ext/apps/In-Development)
+14994 [35m[T][StorageApi] [0mDir 000106F8 - 0001178C closed
+14995 [35m[T][StorageApi] [0mFile/Dir 000106F8 free
+14996 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 2 idx: -1
+14999 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+15000 [35m[T][StorageApi] [0mFile/Dir 000106C8 alloc
+15009 [35m[T][StorageApi] [0mDir 000106C8 - 00011204 open (/ext/apps/In-Development)
+15015 [35m[T][StorageApi] [0mFile/Dir 00011598 alloc
+15028 [35m[T][StorageApi] [0mFile 00011598 - 000116FC open (/ext/apps/In-Development/mesh_framework-alpha1.fap)
+15068 [35m[T][StorageApi] [0mFile 00011598 - 000116FC closed
+15068 [35m[T][StorageApi] [0mFile/Dir 00011598 free
+15073 [35m[T][StorageApi] [0mFile/Dir 000111B8 alloc
+15085 [35m[T][StorageApi] [0mFile 000111B8 - 000117DC open (/ext/apps/In-Development/molecule_retrosynth.fap)
+15127 [35m[T][StorageApi] [0mFile 000111B8 - 000117DC closed
+15128 [35m[T][StorageApi] [0mFile/Dir 000111B8 free
+15143 [35m[T][StorageApi] [0mDir 000106C8 - 00011204 closed
+15143 [35m[T][StorageApi] [0mFile/Dir 000106C8 free
+16410 [34m[D][BrowserWorker] [0mEnd
+16425 [34m[D][DolphinState] [0micounter 10849, butthurt 0
+16440 [32m[I][AnimationManager] [0mUnload animation 'L1_Waves_128x50'
+16449 [35m[T][StorageApi] [0mFile/Dir 00002E48 alloc
+16449 [32m[I][Loader] [0mLoading /ext/apps/In-Development/molecule_retrosynth.fap
+16459 [35m[T][StorageApi] [0mFile 00002E48 - 00002FBC open (/ext/apps/In-Development/molecule_retrosynth.fap)
+16646 [32m[I][Loader] [0mMapping
+16648 [32m[I][Elf] [0mTotal size of loaded sections: 2830
+16650 [35m[T][StorageApi] [0mFile 00002E48 - 00002FBC closed
+16651 [35m[T][StorageApi] [0mFile/Dir 00002E48 free
+16652 [32m[I][Loader] [0mLoaded in 203ms
+16654 [32m[I][Loader] [0mStarting app
+16671 [34m[D][ExpansionSrv] [0mDetection disabled
+17040 [35m[T][StorageApi] [0mFile 0000DD40 - 0000F7A4 closed
+17141 [35m[T][BtSerialSvc] [0mAck received
+17142 [34m[D][BtSerialSvc] [0mReceived 25 bytes
+17142 [34m[D][BtSerialSvc] [0mAvailable buff size: 999
+17144 [35m[T][StorageApi] [0mDir 0000BC90 - 0000EF24 closed
+17144 [35m[T][StorageApi] [0mFile/Dir 0000BC90 free
+17144 [35m[T][StorageApi] [0mFile/Dir 0000DD40 free
+17146 [34m[D][RpcStorage] [0mList
+17146 [35m[T][StorageApi] [0mFile/Dir 00003310 alloc
+17146 [35m[T][StorageApi] [0mFile/Dir 0000DD10 alloc
+17149 [35m[T][StorageApi] [0mDir 00003310 - 0000EF5C open (/ext/lfrfid)
+17152 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F174 open (/ext/lfrfid/RfidRecord.ask.raw)
+17154 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F174 closed
+17156 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F3AC open (/ext/lfrfid/ o.ask.raw)
+17209 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F3AC closed
+17212 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4B4 open (/ext/lfrfid/ o.psk.raw)
+17692 [34m[D][BrowserWorker] [0mStart
+17715 [35m[T][StorageApi] [0mFile/Dir 00015030 alloc
+17726 [35m[T][StorageApi] [0mDir 00015030 - 00015124 open (/ext/apps/In-Development)
+17736 [35m[T][StorageApi] [0mDir 00015030 - 00015124 closed
+17737 [35m[T][StorageApi] [0mFile/Dir 00015030 free
+17737 [34m[D][BrowserWorker] [0mEnter folder: /ext/apps/In-Development items: 1 idx: -1
+17738 [34m[D][BrowserWorker] [0mLoad offset: 0 cnt: 50
+17738 [35m[T][StorageApi] [0mFile/Dir 00015030 alloc
+17747 [35m[T][StorageApi] [0mDir 00015030 - 00015124 open (/ext/apps/In-Development)
+17760 [35m[T][StorageApi] [0mDir 00015030 - 00015124 closed
+17762 [35m[T][StorageApi] [0mFile/Dir 00015030 free
+17785 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4B4 closed
+17790 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F5FC open (/ext/lfrfid/HIDProx_smart-bidet.rfid)
+17792 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F5FC closed
+17794 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F704 open (/ext/lfrfid/Passport_card.ask.raw)
+17800 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F704 closed
+17804 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F80C open (/ext/lfrfid/Passport_card.psk.raw)
+18044 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F80C closed
+18131 [35m[T][BtSerialSvc] [0mAck received
+18132 [34m[D][BtSerialSvc] [0mReceived 22 bytes
+18132 [34m[D][BtSerialSvc] [0mAvailable buff size: 1002
+18133 [35m[T][StorageApi] [0mDir 00003310 - 0000EF5C closed
+18134 [35m[T][StorageApi] [0mFile/Dir 00003310 free
+18134 [35m[T][StorageApi] [0mFile/Dir 0000DD10 free
+18135 [34m[D][RpcStorage] [0mList
+18135 [35m[T][StorageApi] [0mFile/Dir 00003310 alloc
+18136 [35m[T][StorageApi] [0mFile/Dir 0000DD10 alloc
+18141 [35m[T][StorageApi] [0mDir 00003310 - 0000EF8C open (/ext/nfc)
+18145 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F1A4 open (/ext/nfc/Zelda_guardian_amiibo.nfc)
+18153 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F1A4 closed
+18159 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2CC open (/ext/nfc/RickRoll.nfc)
+18170 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2CC closed
+18177 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4DC open (/ext/nfc/MFC_1K_qq-pp.nfc)
+18187 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4DC closed
+18194 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F6EC open (/ext/nfc/MFC_1K_qq-pp.shd)
+18204 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F6EC closed
+18210 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F7FC open (/ext/nfc/MFC_1K_silly-kot.nfc)
+18220 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F7FC closed
+18227 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F904 open (/ext/nfc/MFC_1K_silly-kot.shd)
+18237 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F904 closed
+18371 [35m[T][BtSerialSvc] [0mAck received
+18381 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F094 open (/ext/nfc/EMV_liquid-juzyk.nfc)
+18384 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F094 closed
+18461 [35m[T][BtSerialSvc] [0mAck received
+18462 [34m[D][BtSerialSvc] [0mReceived 22 bytes
+18462 [34m[D][BtSerialSvc] [0mAvailable buff size: 1002
+18466 [35m[T][StorageApi] [0mDir 00003310 - 0000EF8C closed
+18466 [35m[T][StorageApi] [0mFile/Dir 00003310 free
+18466 [35m[T][StorageApi] [0mFile/Dir 0000DD10 free
+18468 [34m[D][RpcStorage] [0mList
+18470 [35m[T][StorageApi] [0mFile/Dir 00003310 alloc
+18470 [35m[T][StorageApi] [0mFile/Dir 0000DD10 alloc
+18472 [35m[T][StorageApi] [0mDir 00003310 - 0000EF8C open (/ext/nfc)
+18475 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F1A4 open (/ext/nfc/Zelda_guardian_amiibo.nfc)
+18484 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F1A4 closed
+18490 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2CC open (/ext/nfc/RickRoll.nfc)
+18502 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2CC closed
+18508 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4DC open (/ext/nfc/MFC_1K_qq-pp.nfc)
+18523 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F4DC closed
+18530 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F6EC open (/ext/nfc/MFC_1K_qq-pp.shd)
+18540 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F6EC closed
+18547 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F7FC open (/ext/nfc/MFC_1K_silly-kot.nfc)
+18557 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F7FC closed
+18563 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F904 open (/ext/nfc/MFC_1K_silly-kot.shd)
+18573 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F904 closed
+18821 [35m[T][BtSerialSvc] [0mAck received
+18829 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F094 open (/ext/nfc/EMV_liquid-juzyk.nfc)
+18833 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F094 closed
+18941 [35m[T][BtSerialSvc] [0mAck received
+18942 [34m[D][BtSerialSvc] [0mReceived 27 bytes
+18942 [34m[D][BtSerialSvc] [0mAvailable buff size: 997
+18943 [35m[T][StorageApi] [0mDir 00003310 - 0000EF8C closed
+18943 [35m[T][StorageApi] [0mFile/Dir 00003310 free
+18944 [35m[T][StorageApi] [0mFile/Dir 0000DD10 free
+18945 [34m[D][RpcStorage] [0mList
+18945 [35m[T][StorageApi] [0mFile/Dir 00003310 alloc
+18946 [35m[T][StorageApi] [0mFile/Dir 0000DD10 alloc
+18950 [35m[T][StorageApi] [0mDir 00003310 - 0000EF94 open (/ext/infrared)
+18957 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F18C open (/ext/infrared/Samsung.ir)
+18971 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F18C closed
+18978 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2C4 open (/ext/infrared/.tmp.ir)
+18980 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F2C4 closed
+18985 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F5E4 open (/ext/infrared/Remote_home_tv.ir)
+18991 [35m[T][StorageApi] [0mFile 0000DD10 - 0000F5E4 closed

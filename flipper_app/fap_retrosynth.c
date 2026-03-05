@@ -20,6 +20,17 @@
 #define MAX_DRAW_LINES 120
 
 typedef enum {
+  WorkerEventStop,
+  WorkerEventProcessSMILES,
+} WorkerEvent;
+
+typedef enum {
+  MolRetroCustomEventFileLoaded,
+  MolRetroCustomEventFileError,
+  MolRetroCustomEventDrawComplete,
+} MolRetroCustomEvent;
+
+typedef enum {
   MolRetroViewSubmenu,
   MolRetroViewTextInput,
   MolRetroViewCanvas,
@@ -57,6 +68,13 @@ typedef struct {
 
   bool is_drawing;
   bool is_analyzing;
+
+  FuriThread *worker_thread;
+  FuriMessageQueue *worker_queue;
+
+  char status_message[64];
+  bool needs_view_switch_canvas;
+  bool needs_view_switch_submenu;
   bool should_run_file_browser;
 } MolRetroApp;
 
@@ -73,24 +91,6 @@ static void furi_hal_serial_tx_chunked(FuriHalSerialHandle *handle,
     }
     furi_hal_serial_tx(handle, buffer + sent, chunk);
     sent += chunk;
-  }
-}
-
-static void trigger_drawing(MolRetroApp *app) {
-  app->is_drawing = true;
-  app->num_lines = 0;
-  FURI_LOG_I("MolRetroApp", "trigger_drawing: switching view");
-  view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewCanvas);
-
-  snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "DRAW:%s\n",
-           app->smiles_buffer);
-
-  FURI_LOG_I("MolRetroApp", "trigger_drawing: checking serial_handle");
-  if (app->serial_handle) {
-    FURI_LOG_I("MolRetroApp", "trigger_drawing: starting tx_chunked");
-    furi_hal_serial_tx_chunked(app->serial_handle, (uint8_t *)app->cmd_buffer,
-                               strlen(app->cmd_buffer));
-    FURI_LOG_I("MolRetroApp", "trigger_drawing: tx_chunked complete");
   }
 }
 
@@ -133,6 +133,7 @@ static void uart_on_irq_cb(FuriHalSerialHandle *handle,
 
 static void submenu_callback(void *context, uint32_t index) {
   MolRetroApp *app = context;
+
   if (index == MolRetroEventSubmenuText) {
     view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewTextInput);
   } else if (index == MolRetroEventSubmenuFile) {
@@ -141,8 +142,27 @@ static void submenu_callback(void *context, uint32_t index) {
   }
 }
 
+static bool custom_event_callback(void *context, uint32_t event) {
+  MolRetroApp *app = context;
+
+  switch (event) {
+  case MolRetroCustomEventFileLoaded:
+  case MolRetroCustomEventDrawComplete:
+    app->is_drawing = true;
+    app->needs_view_switch_canvas = true;
+    return true;
+  case MolRetroCustomEventFileError:
+    app->needs_view_switch_submenu = true;
+    return true;
+  default:
+    return false;
+  }
+}
+
 static void text_input_callback(void *context) {
-  trigger_drawing((MolRetroApp *)context);
+  MolRetroApp *app = context;
+  WorkerEvent event = WorkerEventProcessSMILES;
+  furi_message_queue_put(app->worker_queue, &event, 0);
 }
 
 static void canvas_draw_cb(Canvas *canvas, void *context) {
@@ -152,7 +172,7 @@ static void canvas_draw_cb(Canvas *canvas, void *context) {
   if (app->is_drawing) {
     canvas_set_font(canvas, FontSecondary);
     canvas_draw_str_aligned(canvas, 64, 32, AlignCenter, AlignCenter,
-                            "Generating 2D Layout...");
+                            app->status_message);
   } else {
     for (int i = 0; i < app->num_lines; ++i) {
       canvas_draw_line(canvas, app->lines[i].x1, app->lines[i].y1,
@@ -174,14 +194,11 @@ static bool canvas_input_cb(InputEvent *event, void *context) {
       app->is_analyzing = true;
       memset(app->result_buffer, 0, sizeof(app->result_buffer));
 
-      snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "RETRO:%s\n",
-               app->smiles_buffer);
+      snprintf(app->status_message, sizeof(app->status_message),
+               "Running Inference...");
 
-      if (app->serial_handle) {
-        furi_hal_serial_tx_chunked(app->serial_handle,
-                                   (uint8_t *)app->cmd_buffer,
-                                   strlen(app->cmd_buffer));
-      }
+      WorkerEvent ev = WorkerEventProcessSMILES;
+      furi_message_queue_put(app->worker_queue, &ev, 0);
 
       widget_reset(app->widget);
       widget_add_string_element(app->widget, 2, 10, AlignLeft, AlignTop,
@@ -217,6 +234,16 @@ static uint32_t widget_prev_callback(void *context) {
 static void app_tick(void *context) {
   MolRetroApp *app = context;
 
+  if (app->needs_view_switch_canvas) {
+    app->needs_view_switch_canvas = false;
+    view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewCanvas);
+  }
+
+  if (app->needs_view_switch_submenu) {
+    app->needs_view_switch_submenu = false;
+    view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewSubmenu);
+  }
+
   uint8_t data;
   while (furi_stream_buffer_receive(app->rx_stream, &data, 1, 0) == 1) {
     if (data == '\n') {
@@ -241,12 +268,52 @@ static void app_tick(void *context) {
   }
 }
 
+static int32_t app_worker_thread(void *context) {
+  MolRetroApp *app = context;
+  WorkerEvent event;
+
+  while (1) {
+    if (furi_message_queue_get(app->worker_queue, &event, FuriWaitForever) ==
+        FuriStatusOk) {
+      if (event == WorkerEventStop) {
+        break;
+      }
+
+      if (event == WorkerEventProcessSMILES) {
+        snprintf(app->status_message, sizeof(app->status_message),
+                 "Generating Layout...");
+        view_dispatcher_send_custom_event(app->view_dispatcher,
+                                          MolRetroCustomEventDrawComplete);
+
+        app->num_lines = 0;
+
+        if (app->is_analyzing) {
+          snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "RETRO:%s\n",
+                   app->smiles_buffer);
+        } else {
+          snprintf(app->cmd_buffer, sizeof(app->cmd_buffer), "DRAW:%s\n",
+                   app->smiles_buffer);
+        }
+
+        if (app->serial_handle) {
+          furi_hal_serial_tx_chunked(app->serial_handle,
+                                     (uint8_t *)app->cmd_buffer,
+                                     strlen(app->cmd_buffer));
+        }
+      }
+    }
+  }
+
+  return 0;
+}
+
 int32_t mol_retro_app(void *p) {
   UNUSED(p);
   MolRetroApp *app = malloc(sizeof(MolRetroApp));
   memset(app, 0, sizeof(MolRetroApp));
 
   app->rx_stream = furi_stream_buffer_alloc(512, 1);
+  app->worker_queue = furi_message_queue_alloc(8, sizeof(WorkerEvent));
 
   app->gui = furi_record_open(RECORD_GUI);
   app->view_dispatcher = view_dispatcher_alloc();
@@ -254,6 +321,8 @@ int32_t mol_retro_app(void *p) {
                                 ViewDispatcherTypeFullscreen);
 
   view_dispatcher_set_tick_event_callback(app->view_dispatcher, app_tick, 50);
+  view_dispatcher_set_custom_event_callback(app->view_dispatcher,
+                                            custom_event_callback);
   view_dispatcher_set_event_callback_context(app->view_dispatcher, app);
 
   app->submenu = submenu_alloc();
@@ -297,6 +366,13 @@ int32_t mol_retro_app(void *p) {
   furi_hal_serial_init(app->serial_handle, BAUD_RATE);
   furi_hal_serial_async_rx_start(app->serial_handle, uart_on_irq_cb, app,
                                  false);
+
+  app->worker_thread = furi_thread_alloc();
+  furi_thread_set_name(app->worker_thread, "MolRetroWorker");
+  furi_thread_set_stack_size(app->worker_thread, 2048);
+  furi_thread_set_context(app->worker_thread, app);
+  furi_thread_set_callback(app->worker_thread, app_worker_thread);
+  furi_thread_start(app->worker_thread);
 
   view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewSubmenu);
 
@@ -348,22 +424,27 @@ int32_t mol_retro_app(void *p) {
         furi_record_close(RECORD_STORAGE);
 
         if (strlen(app->smiles_buffer) > 0) {
-          trigger_drawing(app);
+          WorkerEvent event = WorkerEventProcessSMILES;
+          furi_message_queue_put(app->worker_queue, &event, 0);
+
+          app->is_drawing = true;
+          app->needs_view_switch_canvas = true;
         } else {
-          view_dispatcher_switch_to_view(app->view_dispatcher,
-                                         MolRetroViewSubmenu);
+          app->needs_view_switch_submenu = true;
         }
       } else {
-        view_dispatcher_switch_to_view(app->view_dispatcher,
-                                       MolRetroViewSubmenu);
+        app->needs_view_switch_submenu = true;
       }
       furi_string_free(result_path);
     } else {
-      // If we cleanly exit view_dispatcher_run because of a Back button on
-      // root, terminate!
       break;
     }
   }
+
+  WorkerEvent stop_ev = WorkerEventStop;
+  furi_message_queue_put(app->worker_queue, &stop_ev, FuriWaitForever);
+  furi_thread_join(app->worker_thread);
+  furi_thread_free(app->worker_thread);
 
   furi_hal_serial_async_rx_stop(app->serial_handle);
   furi_hal_serial_deinit(app->serial_handle);
@@ -383,6 +464,7 @@ int32_t mol_retro_app(void *p) {
   view_dispatcher_free(app->view_dispatcher);
   furi_record_close(RECORD_GUI);
 
+  furi_message_queue_free(app->worker_queue);
   furi_stream_buffer_free(app->rx_stream);
   free(app);
 
