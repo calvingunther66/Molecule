@@ -57,6 +57,7 @@ typedef struct {
 
   bool is_drawing;
   bool is_analyzing;
+  bool should_run_file_browser;
 } MolRetroApp;
 
 // Helper to prevent Flipper `tx_stream` deadlocks on strings longer than 128
@@ -135,66 +136,8 @@ static void submenu_callback(void *context, uint32_t index) {
   if (index == MolRetroEventSubmenuText) {
     view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewTextInput);
   } else if (index == MolRetroEventSubmenuFile) {
-    FuriString *initial_path =
-        furi_string_alloc_set_str(EXT_PATH("apps/In-Development"));
-    FuriString *result_path = furi_string_alloc();
-    DialogsApp *dialogs = furi_record_open(RECORD_DIALOGS);
-
-    DialogsFileBrowserOptions browser_options;
-    memset(&browser_options, 0, sizeof(DialogsFileBrowserOptions));
-    dialog_file_browser_set_basic_options(&browser_options, ".txt", NULL);
-    browser_options.base_path = EXT_PATH("");
-
-    bool res = dialog_file_browser_show(dialogs, result_path, initial_path,
-                                        &browser_options);
-    furi_record_close(RECORD_DIALOGS);
-    furi_string_free(initial_path);
-
-    if (res && !furi_string_empty(result_path)) {
-      FURI_LOG_I("MolRetroApp", "1. Opening Storage");
-      Storage *storage = furi_record_open(RECORD_STORAGE);
-      FURI_LOG_I("MolRetroApp", "1.1 Storage record opened");
-      File *file = storage_file_alloc(storage);
-      FURI_LOG_I("MolRetroApp", "1.2 Storage file allocated");
-
-      const char *cstr_path = furi_string_get_cstr(result_path);
-      FURI_LOG_I("MolRetroApp", "1.3 cstr_path: %s",
-                 cstr_path ? cstr_path : "NULL");
-
-      if (cstr_path != NULL &&
-          storage_file_open(file, cstr_path, FSAM_READ, FSOM_OPEN_EXISTING)) {
-        FURI_LOG_I("MolRetroApp", "2. Storage File Open Success");
-        memset(app->smiles_buffer, 0, sizeof(app->smiles_buffer));
-
-        uint16_t read_bytes = storage_file_read(file, app->smiles_buffer,
-                                                sizeof(app->smiles_buffer) - 1);
-
-        FURI_LOG_I("MolRetroApp", "3. Bytes Read: %d", read_bytes);
-
-        if (read_bytes > 0) {
-          for (size_t i = 0; i < strlen(app->smiles_buffer); i++) {
-            if (app->smiles_buffer[i] == '\n' ||
-                app->smiles_buffer[i] == '\r') {
-              app->smiles_buffer[i] = '\0';
-              break;
-            }
-          }
-          FURI_LOG_I("MolRetroApp", "4. Newline filtered");
-        }
-        FURI_LOG_I("MolRetroApp", "5. Closing Storage File");
-        storage_file_close(file);
-      }
-      storage_file_free(file);
-      furi_record_close(RECORD_STORAGE);
-      FURI_LOG_I("MolRetroApp", "6. Storage Record Closed");
-
-      if (strlen(app->smiles_buffer) > 0) {
-        FURI_LOG_I("MolRetroApp", "7. Triggering Drawing");
-        trigger_drawing(app);
-        FURI_LOG_I("MolRetroApp", "8. Triggering Finished");
-      }
-    }
-    furi_string_free(result_path);
+    app->should_run_file_browser = true;
+    view_dispatcher_stop(app->view_dispatcher);
   }
 }
 
@@ -356,7 +299,71 @@ int32_t mol_retro_app(void *p) {
                                  false);
 
   view_dispatcher_switch_to_view(app->view_dispatcher, MolRetroViewSubmenu);
-  view_dispatcher_run(app->view_dispatcher);
+
+  while (1) {
+    view_dispatcher_run(app->view_dispatcher);
+
+    if (app->should_run_file_browser) {
+      app->should_run_file_browser = false;
+
+      FuriString *initial_path =
+          furi_string_alloc_set_str(EXT_PATH("apps/In-Development"));
+      FuriString *result_path = furi_string_alloc();
+      DialogsApp *dialogs = furi_record_open(RECORD_DIALOGS);
+
+      DialogsFileBrowserOptions browser_options;
+      memset(&browser_options, 0, sizeof(DialogsFileBrowserOptions));
+      dialog_file_browser_set_basic_options(&browser_options, ".txt", NULL);
+      browser_options.base_path = EXT_PATH("");
+
+      bool res = dialog_file_browser_show(dialogs, result_path, initial_path,
+                                          &browser_options);
+      furi_record_close(RECORD_DIALOGS);
+      furi_string_free(initial_path);
+
+      if (res && !furi_string_empty(result_path)) {
+        Storage *storage = furi_record_open(RECORD_STORAGE);
+        File *file = storage_file_alloc(storage);
+        const char *cstr_path = furi_string_get_cstr(result_path);
+
+        if (cstr_path != NULL &&
+            storage_file_open(file, cstr_path, FSAM_READ, FSOM_OPEN_EXISTING)) {
+          memset(app->smiles_buffer, 0, sizeof(app->smiles_buffer));
+
+          uint16_t read_bytes = storage_file_read(
+              file, app->smiles_buffer, sizeof(app->smiles_buffer) - 1);
+
+          if (read_bytes > 0) {
+            for (size_t i = 0; i < strlen(app->smiles_buffer); i++) {
+              if (app->smiles_buffer[i] == '\n' ||
+                  app->smiles_buffer[i] == '\r') {
+                app->smiles_buffer[i] = '\0';
+                break;
+              }
+            }
+          }
+          storage_file_close(file);
+        }
+        storage_file_free(file);
+        furi_record_close(RECORD_STORAGE);
+
+        if (strlen(app->smiles_buffer) > 0) {
+          trigger_drawing(app);
+        } else {
+          view_dispatcher_switch_to_view(app->view_dispatcher,
+                                         MolRetroViewSubmenu);
+        }
+      } else {
+        view_dispatcher_switch_to_view(app->view_dispatcher,
+                                       MolRetroViewSubmenu);
+      }
+      furi_string_free(result_path);
+    } else {
+      // If we cleanly exit view_dispatcher_run because of a Back button on
+      // root, terminate!
+      break;
+    }
+  }
 
   furi_hal_serial_async_rx_stop(app->serial_handle);
   furi_hal_serial_deinit(app->serial_handle);
